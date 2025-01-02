@@ -1,0 +1,22 @@
+{
+    "menu": {
+        "title": [
+            "A Seaman's Journey",
+            "/journey"
+        ],
+        "items": [
+            [
+                "Table of Contents",
+                "/journey/Index.md"
+            ],
+            [
+                "Other Publications",
+                "/pubs"
+            ],
+            [
+                "Mark Seaman",
+                "https://markseaman.org/marks"
+            ]
+        ]
+    }
+}

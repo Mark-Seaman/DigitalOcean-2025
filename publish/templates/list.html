@@ -1,0 +1,17 @@
+{% extends 'publish_theme.html' %}
+
+{% block content %}
+<h1>List of {{ model_name }}s</h1>
+<a  class="btn btn-success" href="{{ add.0 }}">{{ add.1 }}</a>
+<ul>
+    {% for object in object_list %}
+    <li>
+        <a href="{{ object.pk }}">
+            {{ object }}
+        </a>
+    </li>
+    {% empty %}
+    <li>No {{ model_name }}s yet.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

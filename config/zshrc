@@ -1,0 +1,201 @@
+#!/bin/bash
+# Linux Shell Contexts
+
+# Path Context
+syspath="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+brew=/opt/homebrew/bin:/opt/homebrew/sbin
+sublime="/Applications/Sublime Text.app/Contents/SharedSupport/bin"
+vscode1="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$brew:$sublime:$vscode1:$syspath"
+
+# Python
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+
+# ------------
+# Variables
+
+export p=~/Hammer
+export h=~/Hammer
+export d=$p/Documents
+export g=$HOME/Github
+export a=$HOME/Archive
+export i=$p/static/images
+export k='./Library/Containers/com.amazon.Kindle/Data/Library/Application Support/Kindle/My Kindle Content'
+export m="$a/rcp/mbw"
+export n=$a/ntsh
+export o=$d/shrinking-world.org
+export s=$d/Shrinking-World-Pubs
+export t=$i/history/2023/06
+export w=$d/seamansguide.com/webapps
+export EDITOR="$sublime/subl -w"
+
+
+# ------------
+# ALIASES
+
+# Unused
+alias f='echo unused'
+alias i='echo unused'
+alias j='echo unused'
+alias n='echo unused'
+alias o='echo unused'
+alias v='echo unused'
+alias y='echo unused'
+alias z='echo unused'
+
+# Pub Script
+alias b='pm pub build'
+alias build='pm pub build'
+alias project='pm pub project'
+alias cover='pm pub cover'
+alias chapter='pm pub chapter'
+alias create='pm pub create'
+alias doc='pm pub doc'
+alias edit='pm pub edit'
+alias files='pm pub files'
+alias publish='pm pub publish'
+
+# Project Scripts
+alias activity='week activity'
+alias book='subl $book'
+alias course='d $c'
+alias ba='code Documents/shrinking-world.com/bacs350'
+alias cs='code Documents/shrinking-world.com/cs350'
+alias day='task 1'
+alias demo='cd $g/PythonWebApps'
+alias docs='e Documents'
+alias e='subl'
+alias ea='subl ~/Hammer/config/zshrc'
+alias ghost='d ~/Github/GhostWriter'
+alias hammer="cd $h && source ~/.zshrc"
+alias month='task 30'
+alias pro='d $g/ProMETA && . config/zshrc'
+alias pub='d $d/Shrinking-World-Pubs'
+alias sw='code Documents/Shrinking-World-Pubs/sweng'
+alias teach='pm teach'
+alias task='pm task'
+alias today='task 1 today'
+alias week='task 7'
+alias year='task 365'
+
+# Workflow
+alias cprc='cp ~/Hammer/config/zshrc ~/.zshrc && . ~/.zshrc'
+alias todo='pm todo'
+alias epub='d $w && open textbook.epub'
+alias dropbox='open ~/Dropbox/Stacie-Mark'
+alias treed='tree -d -L 3'
+alias m='e Documents/mastodon'
+alias a='open https://chat.openai.com/'
+
+# Websites
+alias hoopla='open https://www.hoopladigital.com/my/hoopla'
+alias gmail='open https://mail.google.com'
+alias chat='open  https://mail.google.com/chat'
+alias bard='open  https://bard.google.com'
+alias github='open https://github.com/Mark-Seaman?page=1&tab=repositories'
+alias tella='open https://auth.tella.tv/u/login/identifier?state=hKFo2SBtbUdFWEpmNl9qOWRRWFFSV3dYVk9DSVZCN3BGT1poTKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGNOOGs2R2JFQ0RyWE1nVzBGY0tlS09MOEdEOHFxcDlNo2NpZNkgeTdQM0tPOGQ5QzhsWGw0NmVLalFLVFh6VUY3UnhxbWs'
+alias uncmail='open https://outlook.office.com'
+alias maps='open https://www.google.com/maps/place/404+Crystal+Beach+Dr,+Windsor,+CO+80550/@40.461123,-104.902838,17z/data=!3m1!4b1!4m2!3m1!1s0x876eae2fe3eaa51b:0xdf4f905a65d54401'
+
+# Linux command context
+alias g='grep --color=auto'
+alias l='ls -al'
+alias lc='wc -l'
+alias u='d ..'
+alias host="python -c 'import platform;print(platform.node())'"
+alias h='history 100'
+alias p=python
+alias w='open http://localhost:8000'
+
+# Git aliases
+alias ga='git add -A . && git commit -m'
+alias gc='pm vc commit'
+alias gco='git checkout'
+alias gd='git diff'
+alias gh='d $g'
+alias gl='git log --name-only'
+alias gs='pm vc status'
+alias pull='pm vc pull'
+alias push='pm vc push'
+alias s='git status'
+alias vc='cd $p && pm vc'
+
+# Django aliases
+alias pm='python manage.py'
+alias r='sh $h/config/runserver'
+alias k='pkill -f "python manage.py runserver"'
+alias migrate='pm makemigrations && pm migrate'
+alias x='pm x'
+alias deploy='x deploy'
+
+# Servers
+alias imac='ssh seaman@marks-imac.local'
+alias macbook='ssh markseaman@marks-macbook.local'
+alias ntsh='. $n/zshrc'
+alias unpack='pm pack open'
+alias pack='pm pack close'
+alias imager='pm imager'
+
+# Test aliases
+alias t='reset && pm tst run'
+alias tst='pm tst run'
+alias tlike='pm tst like && tst'
+alias tres='pm tst results | less'
+alias treset='pm tst reset'
+alias dt='pm test'
+alias q='pm tst quick'
+alias qt='pm tst quick'
+
+
+# -----------------
+# Linux functions
+
+function d {
+    directory=$1
+    [ -z "$1" ] && directory="$p"
+    [ -z "$1" ] || echo $directory && cd $directory && l
+}
+
+# Big commit on current directory
+function c {
+    git add -A .       &&
+    git commit -m "$*" &&
+    git push
+    git status
+}
+
+# Copy a file tree
+function cptree {
+    rsync -auv "$1/" "$2"
+}
+
+# Create a post on mastodon
+function post {
+    msg=`cat Documents/mastodon/$1`
+    echo toot post \"$msg\"
+}
+
+# List the path in readable form
+function path {
+    echo $PATH | perl -pe s/:/\\n/g
+}
+
+# Show the Python setup
+function py {
+    echo "Python environment"
+    echo PYTHON_PATH = `which python`
+    echo PYENV = `pyenv which python`
+    echo "Python Packages"
+    pip freeze
+}
+
+
+# Start directory
+export PS1="%3~ : "
+cd ~/Hammer
+ls
+figlet `host`
+

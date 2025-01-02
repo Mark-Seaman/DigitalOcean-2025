@@ -1,0 +1,332 @@
+QUICK TEST
+TASKS
+  
+
+Enjoy      39%
+    Fun               20 hr   20%
+    Grow              19 hr   19%
+Connect    30%
+    Church            19 hr   19%
+    Family            11 hr   11%
+Create     19%
+    ProMETA           11 hr   11%
+    Write              8 hr    8%
+Work       10%
+    Business          10 hr   10%
+
+7 days, 2024-04-20
+Total Hours: 98
+
+
+
+
+---------------------------------
+
+
+  
+
+Enjoy      36%
+    Fun               25 hr   26%
+    Grow              10 hr   10%
+Connect    27%
+    Family            16 hr   16%
+    Church            11 hr   11%
+Create     25%
+    ProMETA           14 hr   14%
+    Innovate           6 hr    6%
+    Write              5 hr    5%
+Work       11%
+    Business          11 hr   11%
+
+7 days, 2024-04-27
+Total Hours: 98
+
+
+
+
+---------------------------------
+
+
+  
+
+Connect    34%
+    Church            25 hr   26%
+    Family             8 hr    8%
+Enjoy      29%
+    Fun               20 hr   20%
+    Grow               9 hr    9%
+Create     29%
+    Innovate          12 hr   12%
+    ProMETA           10 hr   10%
+    Write              7 hr    7%
+Work       7%
+    Business           7 hr    7%
+
+7 days, 2024-05-04
+Total Hours: 98
+
+
+
+
+---------------------------------
+
+
+ Incomplete Days: recent 7 days 2024-05-11
+
+2024-05-10 - 4 hours
+ 
+
+Enjoy      54%
+    Travel            21 hr   24%
+    Fun               20 hr   23%
+    Grow               6 hr    7%
+Work       19%
+    Business          17 hr   19%
+Create     15%
+    Innovate          10 hr   11%
+    Write              2 hr    2%
+    ProMETA            2 hr    2%
+Connect    11%
+    Church             7 hr    8%
+    Family             3 hr    3%
+
+7 days, 2024-05-11
+Total Hours: 88
+
+
+
+
+---------------------------------
+
+
+  
+
+Enjoy      100%
+    Travel            98 hr  100%
+
+7 days, 2024-05-18
+Total Hours: 98
+
+
+
+
+---------------------------------
+
+
+  
+
+Enjoy      100%
+    Travel            98 hr  100%
+
+7 days, 2024-05-25
+Total Hours: 98
+
+
+
+
+---------------------------------
+
+
+  
+
+Enjoy      100%
+    Travel            98 hr  100%
+
+7 days, 2024-06-01
+Total Hours: 98
+
+
+
+
+---------------------------------
+
+
+  
+
+Enjoy      100%
+    Travel            98 hr  100%
+
+7 days, 2024-06-08
+Total Hours: 98
+
+
+
+
+---------------------------------
+
+
+  
+
+Enjoy      55%
+    Travel            20 hr   20%
+    Fun               20 hr   20%
+    Grow              15 hr   15%
+Connect    19%
+    Family            15 hr   15%
+    Church             4 hr    4%
+Work       13%
+    Business          13 hr   13%
+Create     11%
+    Write              8 hr    8%
+    Innovate           3 hr    3%
+
+7 days, 2024-06-15
+Total Hours: 98
+
+
+
+
+---------------------------------
+
+
+  
+
+Connect    73%
+    Church            63 hr   64%
+    Family             9 hr    9%
+Enjoy      16%
+    Grow              12 hr   12%
+    Fun                4 hr    4%
+Work       8%
+    Business           8 hr    8%
+Create     2%
+    Write              2 hr    2%
+
+7 days, 2024-06-22
+Total Hours: 98
+
+
+
+
+---------------------------------
+
+
+  
+
+Connect    31%
+    Church            24 hr   24%
+    Family             7 hr    7%
+Enjoy      38%
+    Fun               18 hr   18%
+    Grow              12 hr   12%
+    Travel             8 hr    8%
+Create     16%
+    Write             14 hr   14%
+    ProMETA            2 hr    2%
+Work       13%
+    Business          13 hr   13%
+
+7 days, 2024-06-29
+Total Hours: 98
+
+
+
+
+---------------------------------
+
+
+  
+
+Enjoy      36%
+    Fun               20 hr   20%
+    Grow              14 hr   14%
+    Travel             2 hr    2%
+Create     30%
+    Write             17 hr   17%
+    ProMETA           10 hr   10%
+    Innovate           3 hr    3%
+Connect    27%
+    Friends           11 hr   11%
+    Family             8 hr    8%
+    Church             8 hr    8%
+Work       5%
+    Business           5 hr    5%
+
+7 days, 2024-07-06
+Total Hours: 98
+
+
+
+
+---------------------------------
+
+
+  
+
+Connect    35%
+    Friends           23 hr   23%
+    Family            12 hr   12%
+Enjoy      36%
+    Fun               19 hr   19%
+    Grow              16 hr   16%
+    Travel             1 hr    1%
+Create     20%
+    Write             12 hr   12%
+    Innovate           5 hr    5%
+    Teach              3 hr    3%
+Work       7%
+    Business           7 hr    7%
+
+7 days, 2024-07-13
+Total Hours: 98
+
+
+
+
+---------------------------------
+
+
+  
+
+Enjoy      60%
+    Travel            34 hr   35%
+    Fun               13 hr   13%
+    Grow              12 hr   12%
+Connect    37%
+    Family            21 hr   21%
+    Friends           13 hr   13%
+    Church             3 hr    3%
+Create     1%
+    Innovate           1 hr    1%
+Work       1%
+    Business           1 hr    1%
+
+7 days, 2024-07-20
+Total Hours: 98
+
+
+
+
+---------------------------------
+
+
+Missing Days: recent 7 days  2024-07-27
+
+Missing 2024-07-27
+ Incomplete Days: recent 7 days 2024-07-27
+
+2024-07-26 - 3 hours
+ 
+
+Enjoy      56%
+    Travel            36 hr   49%
+    Grow               3 hr    4%
+    Fun                2 hr    3%
+Connect    29%
+    Family            18 hr   25%
+    Friends            2 hr    3%
+    Church             1 hr    1%
+Create     15%
+    Write             10 hr   14%
+    Innovate           1 hr    1%
+
+7 days, 2024-07-27
+Total Hours: 73
+
+
+
+
+---------------------------------
+
+
+No quick test defined

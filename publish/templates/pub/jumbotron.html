@@ -1,0 +1,20 @@
+{% extends 'publish_theme.html' %}
+
+{% block content %}
+  <div class="container my-4">
+    <div class="row">
+      {% for j in jumbotrons %}
+        <!-- Jumbotron -->
+        <div class="col-lg-4">
+          <div class="jumbotron m-lg-3">
+            <h1 class="display-5">{{ j.title }}</h1>
+            <p class="lead text-dark">{{ j.description }}</p>
+            <hr class="my-4" />
+            <p class="text-dark">{{ j.content }}</p>
+            <a class="btn btn-primary btn-lg" href="{{ j.link }}" role="button">Read more</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

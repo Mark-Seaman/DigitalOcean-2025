@@ -1,0 +1,42 @@
+{% extends 'publish_theme.html' %}
+
+{% block content %}
+  {% if html %}
+    <div class="card light p-5">
+      {% if prev %}
+        <a href="{{ prev }}" class="btn btn-large btn-success m-lg-3">Previous</a>
+      {% endif %}
+
+      {% if more %}
+        <a href="{{ more }}" class="btn btn-large btn-success m-lg-3">More</a>
+      {% endif %}
+
+      {% if next %}
+        <a href="{{ next }}" class="btn btn-large btn-success m-lg-3">Next</a>
+      {% endif %}
+
+      {% autoescape off %}
+        {{ html }}
+      {% endautoescape %}
+    </div>
+
+    {% if jumbotrons %}
+      <div class="container my-4">
+        <div class="row">
+          {% for j in jumbotrons %}
+            <!-- Jumbotron -->
+            <div class="col-lg-4">
+              <div class="jumbotron m-lg-3 bg-dark">
+                <h1 class="display-5">{{ j.title }}</h1>
+                <p class="lead text-light">{{ j.description }}</p>
+                <hr class="my-4 bg-light" />
+                <p class="text-light">{{ j.content }}</p>
+                <a class="btn btn-primary btn-lg" href="{{ j.link }}" role="button">Read more</a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  {% endif %}
+{% endblock %}

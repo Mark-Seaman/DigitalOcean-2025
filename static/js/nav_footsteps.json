@@ -1,0 +1,14 @@
+{
+    "menu": {
+        "title": [
+            "Paul's Footsteps",
+            "/footsteps"
+        ],
+        "items": [
+            [
+                "Mark Seaman Publications",
+                "https://markseaman.org/pubs"
+            ]
+        ]
+    }
+}

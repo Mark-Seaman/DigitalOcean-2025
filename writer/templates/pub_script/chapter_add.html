@@ -1,0 +1,27 @@
+{% extends 'pub_script/writer_theme.html' %}
+
+
+{% block content %}
+
+<div>
+    <div class="card m-2">
+        <div class="card-header bg-success text-light">
+            Add Path for New Project, Chapter, or Doc
+        </div>
+        <div class="card-body bg-light text-dark">
+
+            {% if form.non_field_errors %}
+            <p>{{ form.non_field_errors }}</p>
+            {% endif %}
+
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="btn btn-primary m-2">Create Pub Content</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}

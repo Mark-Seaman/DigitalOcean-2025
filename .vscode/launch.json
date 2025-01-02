@@ -1,0 +1,71 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Server",
+            "type": "python",
+            "request": "launch",
+            "module": "manage",
+            "args": [
+                "runserver",
+            ],
+            "django": true
+        },
+        {
+            "name": "Full Test",
+            "type": "python",
+            "request": "launch",
+            "program": "manage.py",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "tst",
+                "run"
+            ],
+            "django": true,
+            "justMyCode": true
+        },
+        {
+            "name": "Quick Test",
+            "type": "python",
+            "request": "launch",
+            "program": "manage.py",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "tst",
+                "quick"
+            ],
+            "django": true,
+            "justMyCode": true
+        },
+        {
+            "name": "Django Test",
+            "type": "python",
+            "request": "launch",
+            "program": "manage.py",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "test",
+                "writer.tests_author"
+            ],
+            "django": true,
+            "justMyCode": true
+        },
+        {
+            "name": "Pub Script",
+            "type": "python",
+            "request": "launch",
+            "program": "manage.py",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "pub",
+                "cover",
+                "cruise"
+            ],
+            "django": true,
+            "justMyCode": true
+        }
+    ]
+}

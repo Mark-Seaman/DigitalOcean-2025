@@ -1,0 +1,22 @@
+{
+    "menu": {
+        "title": [
+            "Life After",
+            "/after"
+        ],
+        "items": [
+            [
+                "Remember Stacie",
+                "/stacie"
+            ],
+            [
+                "Yearbook",
+                "/yearbook"
+            ],
+            [
+                "Shrinking World",
+                "https://shrinking-world.com"
+            ]
+        ]
+    }
+}

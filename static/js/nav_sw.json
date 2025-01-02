@@ -1,0 +1,34 @@
+{
+    "menu": {
+        "title": [
+            "Shrinking World",
+            "/"
+        ],
+        "items": [
+            [
+                "Courses",
+                "/pubs/course"
+            ],
+            [
+                "Books",
+                "/pubs/book"
+            ],
+            [
+                "Blogs",
+                "/pubs/blog"
+            ],
+            [
+                "Unpublished",
+                "/pubs/private"
+            ],
+            [
+                "Edit Content",
+                "/writer/"
+            ],
+            [
+                "Mark Seaman",
+                "/marks/contact"
+            ]
+        ]
+    }
+}

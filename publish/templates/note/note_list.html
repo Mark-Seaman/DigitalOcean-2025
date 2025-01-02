@@ -1,0 +1,37 @@
+{% extends 'publish_theme.html' %}
+
+{% block content %}
+  <div class="bg-light text-dark m-5 p-5">
+    <h2 class="text-center">Messages for Stacie</h2>
+
+    {% if notes %}
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Published</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for note in notes %}
+            {% if not user.is_anonymous or note.published %}
+              <tr>
+                <td>
+                  <a href="/note/{{ note.pk }}">{{ note.title }}</a>
+                </td>
+                <td>{{ note.author }}</td>
+                <td>{{ note.published }}</td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>There are no notes to edit.</p>
+    {% endif %}
+
+    <a class="btn brown m-5" href="/note/add">Add Memory</a>
+  </div>
+{% endblock %}

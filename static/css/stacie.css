@@ -1,0 +1,123 @@
+/*  C O L O R S  */
+
+/*
+--primary: #007bff;
+--secondary: #6c757d;
+--success: #28a745;
+--info: #17a2b8;
+--warning: #ffc107;
+--danger: #dc3545;
+--light: #f8f9fa;
+--dark: #343a40;
+--brown: #162f55;
+--charcoal: #961c1f;
+*/
+
+.blue {
+    background-color: rgb(13, 110, 253);
+    color: white;
+}
+
+.green {
+    background-color: rgb(25, 135, 84);
+    color: white;
+}
+
+.red {
+    background-color: rgb(220, 53, 69);
+    color: white;
+}
+
+.yellow {
+    background-color: rgb(255, 193, 7);
+    color: black;
+}
+
+.brown {
+    background-color: #961c1f;
+    color: white;
+}
+
+input,
+textarea {
+    width: 100%;
+}
+
+.dark {
+    background-color: rgb(33, 37, 41);
+    color: rgb(248, 249, 250);
+}
+
+
+.light {
+    background-color: rgb(248, 249, 250);
+    color: rgb(33, 37, 41);
+}
+
+/* C L A S S E S */
+
+.logo {
+    width: 200px;
+    border-radius: 20px;
+    border: 5px solid white;
+}
+
+.card {
+    border: 1px solid gray;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 20px;
+}
+
+.photo {
+    margin: 3em;
+}
+
+/* E L E M E N T S */
+
+a {
+    color: green;
+}
+
+header {
+    background-image: url(/static/images/Shrinking-World-Pubs/stacie/Family.jpg);
+    background-size: cover;
+}
+
+header h1,
+header h2,
+header a {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+header a:hover {
+    color: white;
+}
+
+a.btn:hover {
+    color: yellow;
+}
+
+h1 {
+    color: #961c1f;
+}
+
+h2 {
+    color: #162f55;
+}
+
+img {
+    max-width: 100%;
+}
+
+label.checkbox input.checkboxinput {
+    width: 30px;
+    margin-top: 2em;
+}
+
+pre {
+    background-color: #eee;
+    padding: 1em;
+    margin: 1em 2em;
+    border: 1px solid black;
+}

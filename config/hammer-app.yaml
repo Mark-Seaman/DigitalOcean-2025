@@ -1,0 +1,89 @@
+alerts:
+- rule: DEPLOYMENT_FAILED
+- rule: DOMAIN_FAILED
+databases:
+- engine: PG
+  name: db-hammer
+  version: "14"
+domains:
+- domain: markseaman.org
+  type: PRIMARY
+  zone: markseaman.org
+- domain: markseaman.info
+  type: ALIAS
+  zone: markseaman.info
+- domain: seamanfamily.org
+  type: ALIAS
+  zone: seamanfamily.org
+- domain: seamanslog.com
+  type: ALIAS
+  zone: seamanslog.com
+- domain: shrinking-world.com
+  type: ALIAS
+  zone: shrinking-world.com
+features:
+- buildpack-stack=ubuntu-22
+ingress:
+  rules:
+  - component:
+      name: hammer-app
+    match:
+      path:
+        prefix: /
+  - component:
+      name: hammer-app-static
+    match:
+      path:
+        prefix: /static
+name: hammer-app
+region: nyc
+services:
+- environment_slug: python
+  envs:
+  - key: DISABLE_COLLECTSTATIC
+    scope: RUN_AND_BUILD_TIME
+    value: "1"
+  - key: DATABASE_URL
+    scope: RUN_TIME
+    value: ${db-hammer.DATABASE_URL}
+  - key: POSTGRES_DB
+    scope: RUN_AND_BUILD_TIME
+    value: ${db-hammer.DATABASE}
+  - key: POSTGRES_HOST
+    scope: RUN_AND_BUILD_TIME
+    value: ${db-hammer.HOSTNAME}
+  - key: POSTGRES_USER
+    scope: RUN_AND_BUILD_TIME
+    value: ${db-hammer.USERNAME}
+  - key: POSTGRES_PASSWORD
+    scope: RUN_AND_BUILD_TIME
+    value: ${db-hammer.PASSWORD}
+  - key: POSTGRES_PORT
+    scope: RUN_AND_BUILD_TIME
+    value: ${db-hammer.PORT}
+  - key: SHRINKING_WORLD_PUBS
+    scope: RUN_AND_BUILD_TIME
+    value: Documents/Shrinking-World-Pubs
+  github:
+    branch: production
+    deploy_on_push: true
+    repo: Mark-Seaman/DigitalOcean-2024
+  http_port: 8080
+  instance_count: 1
+  instance_size_slug: basic-xs
+  name: hammer-app
+  run_command: |
+    python manage.py migrate --no-input
+    cd Documents
+    git clone https://github.com/Mark-Seaman/Shrinking-World-Pubs.git
+    cd
+    gunicorn --worker-tmp-dir /dev/shm config.wsgi
+  source_dir: /
+static_sites:
+- environment_slug: html
+  github:
+    branch: production
+    deploy_on_push: true
+    repo: Mark-Seaman/DigitalOcean-2024
+  name: hammer-app-static
+  source_dir: /static

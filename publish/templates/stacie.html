@@ -1,0 +1,48 @@
+{% extends 'publish_theme.html' %}
+
+
+{% block content %}
+
+{% if subscribe %}
+<div class="card bg-light text-dark m-1 p-2 m-md-5 p-md-5">
+    <h1>Digital Guest Book</h1>
+    <p>
+        I am writing a biography on Stacie's life,
+        entitled, "<b>She Loved Well: The life of Stacie Seaman</b>".  I cannot imagine a more fitting tribute at the end of someone's life.
+    </p>
+    <p>
+        Help tell her story by relating your interactions with her.
+        Join the ongoing conversation about Stacie's life by subscribing to the email list below.
+    </p>
+    <p>        
+        Let's process all that we learned from her life and how we can apply it to our own.   
+        Please me a part of this important project.
+    </p>
+    <p>
+        <a class="btn brown" href="https://shrinking-world.ck.page/bcf3f39efc" target="subscribe">Sign the Guest Book</a>
+    </p>
+</div>
+{% endif %}
+
+{% if html %}
+<div class="card bg-light text-dark m-1 p-2 m-md-5 p-md-5">
+    {% autoescape off %}
+        {{ html }}
+    {% endautoescape %}
+</div>
+{% endif %}
+
+
+{% if notes %}
+<div class="card bg-light text-dark p-sm-2 m-md-5 p-md-5">
+    <h2 class="text-center">Messages for Stacie</h2>
+    {% autoescape off %}
+        {{ notes }}
+    {% endautoescape %}
+
+</div>
+{% endif %}
+
+
+
+{% endblock %}

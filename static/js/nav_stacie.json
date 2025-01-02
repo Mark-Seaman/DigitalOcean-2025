@@ -1,0 +1,34 @@
+{
+    "menu": {
+        "title": [
+            "Stacie Seaman's Life",
+            "/stacie"
+        ],
+        "items": [
+            [
+                "Memorial",
+                "/stacie/Memorial.md"
+            ],
+            [
+                "Stories",
+                "/stacie/Stories.md"
+            ],
+            [
+                "Memories",
+                "/stacie/Memories.md"
+            ],
+            [
+                "Life After Death",
+                "/after"
+            ],
+            [
+                "Get Involved",
+                "/stacie/Donate.md"
+            ],
+            [
+                "Connect",
+                "/stacie/Connect.md"
+            ]
+        ]
+    }
+}

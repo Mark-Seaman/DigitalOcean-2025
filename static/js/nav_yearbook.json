@@ -1,0 +1,18 @@
+{
+    "menu": {
+        "title": [
+            "Yearbook",
+            "/yearbook"
+        ],
+        "items": [
+            [
+                "2023",
+                "/yearbook/2023"
+            ],
+            [
+                "After",
+                "https://seamanfamily.org/after"
+            ]
+        ]
+    }
+}

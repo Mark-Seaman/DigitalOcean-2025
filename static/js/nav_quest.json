@@ -1,0 +1,22 @@
+{
+    "menu": {
+        "title": [
+            "The Four Quests",
+            "/quest"
+        ],
+        "items": [
+            [
+                "Table of Contents",
+                "/quest/Index.md"
+            ],
+            [
+                "Other Publications",
+                "/pubs"
+            ],
+            [
+                "Mark Seaman",
+                "https://markseaman.org/marks"
+            ]
+        ]
+    }
+}

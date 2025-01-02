@@ -1,0 +1,75 @@
+{% extends 'publish_theme.html' %}
+
+
+{% block content %}
+
+{% if album %}
+
+    {% if page %}
+        <h2><a href="../{{ album }}">Year {{ album }} Album</a></h2>
+        <div class="container-fluid">   
+            <div class="row">
+                {% for i in story.images %}
+                <div class="col-sm-5  text-center">
+                    <a href="{{ image_path }}/{{ album }}/{{ i }}">
+                        <img src="{{ image_path }}/{{ album }}/{{ i }}" 
+                        alt="{{ image_path }}/{{ album }}/{{ i }}" 
+                        width="400" />
+                    </a>
+                </div>
+                {% endfor %}
+                <div class="col-sm-7">
+
+                    <p>
+                        {% autoescape off %}
+                            {{ story.html }}
+                        {% endautoescape %}
+                    </p>
+                </div>
+            </div>
+        
+    {% else%}
+
+        <h2>Year {{ album }} Album</h2>
+        <div class="container-fluid">   
+            <div class="row">
+                {% for key, value in content.items %}
+                    <div class="col-sm-3">
+                        <a class="m-lg-3 m-xl-5 m-2 text-center" href="{{ album }}/{{ value.page }}">
+                            <div>
+                                <img src="{{ image_path }}/{{ album }}/{{ value.images.0 }}" alt="{{ image_path }}/{{ album }}/{{ value.images.0 }}" width="200" />
+                            </div>
+                            <div>
+                                {{ value.page }}
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+
+{% else %}
+  <h2>Year Book Gallery</h2>
+  <ul>
+    {% for a in albums %}
+      <li>
+        <a href="{{ pub }}/{{ a }}">{{ a }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+
+{% if html %}
+
+<div class="card light p-5">
+    {% autoescape off %}
+    {{ html }}
+    {% endautoescape %}
+
+</div>
+
+{% endif %}
+
+{% endblock content %}

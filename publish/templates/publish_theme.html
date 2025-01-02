@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+
+    <title>{{ title }}</title>
+    {% load static %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}" />
+    {% if css %}
+      <link rel="stylesheet" href="{{ css }}" />
+    {% else %}
+      <link rel="stylesheet" href="/static/css/shrinking-world.css" />
+    {% endif %}
+  </head>
+
+  <body class="dark m-3">
+    {% if not no_navbar %}
+      {% block navbar %}
+        {% include '_navbar_pub.html' %}
+      {% endblock %}
+    {% endif %}
+
+    {% if not no_header %}
+      <header class="p-2 p-md-5 mb-md-5">
+        {% if logo %}
+          <img class="logo d-none d-sm-block" src="{{ logo }}" />
+        {% endif %}
+        <h1 class="text-center">{{ site_title }}</h1>
+        <h2 class="text-center">{{ site_subtitle }}</h2>
+      </header>
+    {% endif %}
+
+    <div class="container-fluid">
+      {% block content %}
+        <h2>No Block Defined</h2>
+      {% endblock %}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

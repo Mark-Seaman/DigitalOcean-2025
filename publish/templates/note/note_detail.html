@@ -1,0 +1,22 @@
+{% extends 'publish_theme.html' %}
+
+{% block navbar %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="bg-light text-dark m-5 p-5">
+    <h2>{{ note.title }}</h2>
+    <p>by {{ note.author }}</p>
+    <p>
+      {% autoescape off %}
+        {{ text }}
+      {% endautoescape %}
+    </p>
+
+    {% if not user.is_anonymous or note.published %}
+      <a class="btn brown" href="/note/{{ note.id }}/">Edit Story</a>
+    {% endif %}
+    <a class="btn brown" href="/stacie/Memories.md">Show All Memories</a>
+  </div>
+{% endblock %}

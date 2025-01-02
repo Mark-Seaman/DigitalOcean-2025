@@ -1,0 +1,22 @@
+{
+    "menu": {
+        "title": [
+            "A Seaman's Voyage",
+            "/cruise"
+        ],
+        "items": [
+            [
+                "Table of Contents",
+                "/cruise"
+            ],
+            [
+                "Other Publications",
+                "https://shrinking-world.com"
+            ],
+            [
+                "Shrinking World",
+                "https://shrinking-world.org"
+            ]
+        ]
+    }
+}

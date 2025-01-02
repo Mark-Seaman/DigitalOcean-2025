@@ -1,0 +1,31 @@
+{% extends 'publish_theme.html' %}
+
+{% block content %}
+
+<h1 class="text-center">{{ title }}</h1>
+
+<a  class="btn btn-success m-3" href="{{ edit.0 }}">{{ edit.1 }}</a>
+<a  class="btn btn-success m-3" href="{{ list.0 }}">{{ list.1 }}</a>
+
+<table class="table table-hover bg-light text-dark p-5">
+    <tr>
+        {% for field in object.get_fields %}
+        <th>{{ field.verbose_name }}</th>
+        {% endfor %}
+    </tr>
+
+    {% for label, value in object.get_fields %}
+    <tr>
+        <td><b>{{ label }}</b></td>
+        <td>{{ value }}<br><br></td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+<!-- <p>
+    {% autoescape off %}{{ edit_button }}{% endautoescape %}
+    {% autoescape off %}{{ list_button }}{% endautoescape %}
+</p> -->
+
+{% endblock content %}

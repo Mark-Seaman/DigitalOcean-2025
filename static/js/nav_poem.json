@@ -1,0 +1,22 @@
+{
+    "menu": {
+        "title": [
+            "From the Edge of Reality",
+            "/poem"
+        ],
+        "items": [
+            [
+                "Table of Contents",
+                "/poem/Index.md"
+            ],
+            [
+                "Other Publications",
+                "/pubs"
+            ],
+            [
+                "Mark Seaman",
+                "https://markseaman.org/marks"
+            ]
+        ]
+    }
+}
