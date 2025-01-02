@@ -53,7 +53,7 @@ def edit_task_files():
         return path / (date.strftime("%Y/%m/%d"))
 
     path = Path("Documents/markseaman.info/history")
-    edit_file([path/localdate().strftime("%Y/%m")])
+    edit_file([path/'Goals.md', path/localdate().strftime("%Y/%m")])
     # edit_file([path/'Goals.md'])
     open_files(path, 0, 3, path_name, create_history_file)
 
