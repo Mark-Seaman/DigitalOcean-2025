@@ -34,10 +34,11 @@ def quick_test():
     # pub()
     # tasks()
     # tests()
-    gwriter()
+    # gwriter()
+    fix_tasks()
     # subscribers()
     # yearbook()
-    return 'No quick test defined'
+    return 'Running quick test'
 
 
 def yearbook():

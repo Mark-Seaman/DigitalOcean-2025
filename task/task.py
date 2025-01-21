@@ -92,9 +92,10 @@ def fix_tasks(**kwargs):
             text += f'{a.type.name}: {a.name}\n'
         return text
 
-    def define_activity(name, type):
-        type = TaskType.objects.get_or_create(name=type)[0]
-        a = Activity.objects.get_or_create(name=name)[0]
+    def define_activity(xname, xtype):
+        type = TaskType.objects.get_or_create(name=xtype)[0]
+        a = Activity.objects.get_or_create(
+            name=xname, defaults=dict(type=type))[0]
         a.type = type
         a.save()
 
@@ -129,6 +130,7 @@ def fix_tasks(**kwargs):
         # delete_activity('Tools')
 
         define_activity('ProMETA', 'Connect')
+        define_activity('Seta', 'Connect')
         # define_activity('Stacie', 'Connect')
         # define_activity('Friends', 'Connect')
         # define_activity('Family', 'Connect')
@@ -504,7 +506,7 @@ def show_incomplete_days(days, date):
 
 
 def update_tasks(**kwargs):
-    days = kwargs.get('days', 7)
+    days = kwargs.get('days', 31)
     date = kwargs.get('date')
     show_activity = kwargs.get('activity')
     if date:
