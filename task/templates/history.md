@@ -1,6 +1,10 @@
 {{ day }}
 
+
+
+
 Family 0
+Seta 0
 Friends 0
 Church 0
 
