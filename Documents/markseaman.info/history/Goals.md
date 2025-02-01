@@ -1,29 +1,35 @@
 Personal Goals
     Creative Life (30%)
         Write
-            Voyage Blog
-            Life After Death Weekly (Week 6 Quests)
+            Life After Death Handbook
             Stacie's Life Story
             Seaman Year Book
-            2023 Heaven & Hell
             Publish Poems
+            Who Am I Now? - my identity
         Innovate
-            Shrinking-World-Pubs Git Pull
+            Hosting Websites
+            Shrinking World Pubs
             Photo Book
-            Copilot
-            Ghost Writer
             Artwork Maker
             Cover Maker
             Hammer Engine
         Teach
+            Publish
+                Seaman's Journey
+                Four Quests
+                Poems
+                Life After Death
+                Life With God
             AI Playbook
             Daily writing habits
+            Techniques for Writing with AI 
     Public Life (30%)
         Family
             Kids
             Grandkids
             Extended family
         Church
+            Email
             Lunches
             Sunday meetings
             Church Board
@@ -46,6 +52,7 @@ Personal Goals
                 History and Sociology
                 Psychology
                 Technology
+                Social health - relationships
             Emotional health
                 Reflection
                 Gratitude
@@ -56,25 +63,17 @@ Personal Goals
                 Humility, Faith, Hope, Love
                 Social relationships
         Travel
-            Packing for voyage
             Itinerary and planning
             Team communication
         Daily enjoyment
     Business Life (10%)
+        Healthcare
+            Medical Bills & Insurance
+            Dermatologist
+            Colonoscopy
+            Daily Medicines
+            Checkups with Dr. Rhoads
         Money
-            Medical Bills
-                Service Providers
-                    UC Health
-                    CU Medicine
-                    Health Images
-                    Centers for Gastroenterology
-                    Summit Pathology
-                    AMIC
-                    ER Physicians
-                Sedera
-                    Upload bills
-                    Respond to email
-                    Meet with Sara Gonzalez
             Investments
                 Portfolio
                 Accounts
@@ -84,7 +83,6 @@ Personal Goals
                 Pay bills
                 Spending
                 Track expenses
-            Downwinders Claim
         Organize
             Email
                 Unsubscribe
@@ -112,8 +110,8 @@ Personal Goals
                 Meal planning
                 Shopping
                 Meal prep
-            Laundry
             Clean
+                Laundry
                 Floors
                 Dishes
                 Windows
