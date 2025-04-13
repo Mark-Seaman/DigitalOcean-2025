@@ -7,6 +7,7 @@ brew=/opt/homebrew/bin:/opt/homebrew/sbin
 sublime="/Applications/Sublime Text.app/Contents/SharedSupport/bin"
 vscode1="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH="$brew:$sublime:$vscode1:$syspath"
+export PATH="$HOME/.npm-global/bin:$PATH"
 
 # Python
 export PYENV_ROOT="$HOME/.pyenv"
