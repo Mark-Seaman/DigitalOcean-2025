@@ -33,6 +33,7 @@ export s=$d/Shrinking-World-Pubs
 export t=$i/history/2023/06
 export w=$d/seamansguide.com/webapps
 export EDITOR="$sublime/subl -w"
+export pubs=~/Pubs
 
 
 # ------------
@@ -62,6 +63,7 @@ alias publish='pm pub publish'
 
 # Project Scripts
 alias activity='week activity'
+alias blog='pubs && npm start'
 alias book='subl $book'
 alias course='d $c'
 alias ba='code Documents/shrinking-world.com/bacs350'
@@ -76,6 +78,7 @@ alias hammer="cd $h && source ~/.zshrc"
 alias month='task 30'
 alias pro='d $g/ProMETA && . config/zshrc'
 alias pub='d $d/Shrinking-World-Pubs'
+alias pubs='d $pubs'
 alias sw='code Documents/Shrinking-World-Pubs/sweng'
 alias teach='pm teach'
 alias task='pm task'
