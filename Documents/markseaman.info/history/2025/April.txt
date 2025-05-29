@@ -1,0 +1,937 @@
+==== April 01 ====
+Tuesday
+
+Travel 11
+
+    day in San Francisco
+    breakfast in dining room
+    private time
+    Waymo to China town
+    walk through China town and Nob Hill
+    Shushi restaurant
+    catch the Big Bus
+    get off at Golden Gate park
+    Japanese Tea Garden
+    long bus ride through Presidia
+    sail from San Francisco
+    dance in BB King lounge
+
+Seta 2
+
+    dress up for dining room
+    time with Seta
+
+Fun 1
+
+    comedian
+==== April 02 ====
+Wednesday
+
+Seta 3
+
+    fallout from yesterday
+    the dance
+    time with Seta
+
+Travel 9
+
+    day at sea
+    on deck for a cause
+    buy ponchos
+    breakfast solo in dining room
+    watercolor class
+    Lido dinner
+
+Fun 2
+
+    BB King lounge
+    R & B trio
+    Rolling Stone Band
+==== April 03 ====
+Thursday
+
+Travel 11
+
+    breakfast in dining room
+    docked in Astoria
+    walk in Astoria
+    clam chowder
+    excursion: Ft Clatsop, Astoria Column, Maritime museum
+    sail away from Astoria
+    dinner in dining room
+
+Fun 3
+
+    BB King lounge
+    Rolling Stone Band
+    dance troop
+==== April 04 ====
+Friday
+
+Travel 13
+
+    trouble sleeping
+    sail into Victoria
+    breakfast on Lido deck
+    First Nations greeting
+    Victoria excursion
+    tour of Victoria
+    Buchardt Gardens
+    tour Empress hotel 
+    visit Parliament building
+    walk back to ship
+    dinner in dining room
+    arrange travel
+    pack for trip
+    discuss future travel plans
+
+Church 0
+
+    schedule for Grief Group
+
+Fun 1
+
+    music==== April 05 ====
+Saturday
+
+Travel 13
+
+    breakfast on Lido
+    pack and leave ship
+    take train to airport
+    flight is delayed by hours
+    lunch at airport
+    store luggage
+    switch flight to Seattle
+    take train into waterfront in Vancouver
+    cherry blossoms
+    train back to airport
+    fly to Seattle
+    room service
+
+Seta 1
+
+    time with Seta
+
+Family 0
+
+    Marco Polos of Vancouver
+
+==== April 06 ====
+Sunday
+
+Travel 8
+
+    wake at 4:30
+    ride to airport
+    fly to San Diego
+    shuttle to Old Town
+    train to Carlsbad
+    Barb picks us up at train station
+    laundry
+
+Grow 1
+
+    nap
+    groceries & lunch
+
+Church 2
+
+    visit Oceanside Vineyard - closed 
+    Calvary Chapel
+
+Seta 3
+
+    move matress with Travis
+    ocean sunset 
+    burrito
+    time with Seta
+
+Family 0
+
+    contact family
+==== April 07 ====
+Monday
+
+Write 3
+
+    Our Love Story
+    share Our Love Story
+
+Seta 11
+
+    Seta didn't sleep well
+    Seta gets a cold
+    Mike & Judy @ Papaguyos
+    walk on beach
+    move bed with Travis
+    Pam & Howard
+==== April 08 ====
+Tuesday
+
+Seta 5
+
+    investigate Howard
+    walk on beach
+    house cleaning
+    groom Winnie
+    plan travel for June
+    walk Winnie
+    time with Seta
+
+Grow 1
+
+    nap
+
+Church 3
+
+    Life Group
+
+Family 2
+
+    Josiah speaking at writers conference
+    Josiah & Sam cruise in August
+
+Travel 2
+
+    investigate cruises
+    decide not to get trip insurance
+    send itinerary for Yellowstone trip
+
+Fun 1
+
+    sunny day
+==== April 09 ====
+Wednesday
+
+Travel 6
+
+    pack 
+    drive to airport
+    fly from SAN to DEN
+    ride from airport with Christine
+    settle in at home
+
+Family 2
+
+    visit with Christine
+    Roland & Diane selling their house
+    call Rachel
+    watch Valor on April 22
+
+Church 3
+
+    Life Group - prayer
+    greetings with group
+    visit with Barb, Todd, and Jenny
+
+Seta 1
+
+    good night
+
+Grow 2
+
+    making meaning
+==== April 10 ====
+Thursday
+
+Grow 1
+
+    great night sleep
+    making meaning
+    use voice recorder
+
+Write 3
+
+    Life Moving Forward
+    My Goals for Writing
+    Mark Seaman – Writer, Teacher, Innovator
+    Amazon Author Bio
+
+Innovate 4
+
+    Publishing Schedule
+    Publishing Process
+    Publishing Ecosystem Guide
+    Publishing Tools and Architecture
+
+Business 1
+
+    laundry
+
+Family 2
+
+    Valor babysitting
+    feed snack
+    go to park
+
+Fun 3
+
+    Game of Thrones - Season 5
+    my time
+
+Seta 0
+
+    company arrives for baby shower
+    send out travel plans
+==== April 11 ====
+Friday
+
+Seta 2
+
+    night watch: boundaries and the dance
+    talk on phone
+
+Write 2
+
+    send Stacie's Vision to subscribers
+    Making Meaning
+    10 Ways to Make Meaning
+
+Innovate 4
+
+    Stacie's Vision
+    Publishing Tools and Process
+    Evaluate tool chain: Kit, ConvertKit, Substack
+    explore product publishing strategy
+    Getting Started with Kit
+
+Family 3
+
+    talk with Rachel about upcoming events
+    send VacationToGo message
+    family night
+    discuss Easter
+    discuss family vacation
+
+Grow 1
+
+    nap
+    walk
+
+Fun 2
+
+    Game of Thrones - Season 5
+==== April 12 ====
+Saturday
+
+Grow 0
+
+    wake at 5
+
+Write 3
+
+    Meaning of Life
+    My Rule of Life
+    Stacie's Vision correction
+    writing process
+
+Family 3
+
+    YMCA family retreat
+    Kerri had heart attack
+    talk with Kelli
+
+Church 1
+
+    Grief Support Group: Christine, Deb
+
+Innovate 4
+
+    attempt to install "kit"
+    switch to 11ty
+    setup basic website
+    create product strategy
+    plan priorities
+
+Seta 0
+
+    Marco Polo
+
+Business 1
+
+    clean up house
+
+Fun 2
+
+    Game of Thrones - Season 5
+
+==== April 13 ====
+Sunday
+
+Write 1
+
+    design AI business partner
+
+Innovate 3
+
+    experiment the website organization
+    build structure for multi-level publishing
+    design for publishing payloads
+    product development 
+
+Church 3
+
+    church in Greeley
+    Todd, Jenny, Jose, Miga, Dot, Barb, Clint
+
+Family 2
+
+    Seamans, Christine @ Rio
+
+Fun 2
+
+    used book store in Greeley
+    Game of Thrones - Season 5
+
+Grow 2
+
+    nap
+    walk
+
+Seta 1
+
+    call Seta
+    Mel's baby shower
+    thnk about connection
+
+==== April 14 ====
+Monday
+
+Grow 2
+
+    nap
+    Regular Maintenance Task
+
+Seta 1
+
+    night watch: the dance
+    Six Day Dance
+    meet with Seta
+    Seta has CT Scan
+
+Write 2
+
+    Evernote Pub folders
+    Sabbath
+    Ideas brainstorm
+
+Teach 1
+
+    Autobiography Guide & Questions
+
+Family 2
+
+    plan family retreat
+    book YMCA cabin
+
+Fun 2
+
+    Storm of Swords
+    Seal Team
+
+Innovate 3
+
+    experiment with Google Meet
+    Brainchild - Product Strategy
+
+Friends 1
+
+    communications: Autobiography, Retreat, Philosophy
+
+==== April 15 ====
+Tuesday
+
+Grow 1
+
+    golden hour
+
+Write 5
+
+    25 pages of content
+    - Managing Expectations
+    - Overcoming Perfectionism
+    - Need for Affirmation
+    - Social Anxiety
+    - Overcoming Dysfunctions
+
+Innovate 4
+
+    experiment with 11ty
+    import dysfunctions microbook (25 pages)
+    work on page display
+    automatic folder indexes
+    automatic layout template
+
+Seta 1
+
+    meet with Seta
+    CTScan
+
+Family 1
+
+    take Rachel supplies
+
+Fun 2
+
+    Seal Team
+    my time
+==== April 16 ====
+Wednesday
+
+Write 2
+
+    Practices that Transform - write article
+    Graduated Communication
+    Writing Personal Stories
+    A Song of Nagasaki
+    My AI Partners
+
+Church 3
+
+    Barb Webb
+
+Innovate 4
+
+    Brainchild Story Consulting
+    Terminology for Content Payloads
+    Avatars 
+
+Seta 1
+
+    meet wit Seta
+    discuss publishing & story consulting
+
+Family 4
+
+    Ruby's Talent Show - Dance with Poppy
+    Subway
+    Valor breakdown
+    visit with Lynn
+    visit with Julio & Jackie
+
+==== April 17 ====
+Thursday
+
+Innovate 5
+
+    design workflow and strategy for Story Consulting
+    create Welcome Packet
+    design Marketing Plan for Story Consulting
+    How to Write Your Story
+    My Creative Life
+    use Copilot on 11ty site
+
+Teach 2
+
+    design Teachable courses
+        - How to Tell Your Story 
+        - Living with Purpose
+        - Self-Guided Psychological Rehab
+
+Write 1
+
+    build Your Brainchild Evernote folder
+
+Grow 2
+
+    nap
+    walk
+    schedule sleep study
+
+Seta 2
+
+    publishing business plan
+    Seta's sadness
+
+Family 1
+
+    babysit Valor
+
+Business 1
+
+    grocery list
+    pay credit card & mortgage
+    review money
+==== April 18 ====
+Friday
+
+Seta 2
+
+    night watch: relationship challenges
+    snow Polo
+
+Write 3
+
+    My Creative Life
+    The Four Quests
+
+Business 3
+
+    groceries
+
+Church 1
+
+    follow up with Eric, Barb
+
+Grow 1
+
+    nap
+
+Fun 2
+
+    Seal Team
+
+Innovate 2
+
+    work with 11ty
+==== April 19 ====
+Saturday
+
+Innovate 3
+
+    ideas for A Seaman's Workshop
+    consider video production
+    Unified Product Strategy
+    
+Family 6
+
+    Easter dinner with Mingos
+    Rachel avoided connecting with me
+
+Grow 2
+
+    migraine
+    nap
+
+Seta 1
+
+    phone call 
+
+Fun 2
+
+    Solitaire
+    Seal Team
+==== April 20 ====
+Sunday
+
+Church 5
+
+    Easter church
+    Renew church joined us
+    church picnic
+
+Family 5
+
+    Ruby and Valor @ church picnic with Christine
+    Ruby and Valor @ home with TV
+    get tickets and parking for Cirque du Soliel
+    sadness of loss of friendship
+
+Fun 2
+
+    Cirque du Soliel
+    my time
+
+Teach 2
+
+    Engagement Funnel
+    Production Notes
+    Email for Quests
+    Workshop Development Plan
+==== April 21 ====
+Monday
+
+Grow 3
+
+    golden hour
+    walk to library
+
+Church 1
+
+    message Juan & Lynn
+
+Write 2
+
+    The Pain of Holidays
+    Table of Contents from PDF
+
+Business 1
+
+    laundry
+
+Teach 3
+
+    Four Quests - Content Stack
+    Fruit - Content Stack
+    Fruit Guide PDF
+    business plans
+
+Innovate 1
+
+    try to use voice recorder
+    from PDF to Markdown
+
+Seta 1
+
+    Mel likes me
+    need to meet Lena
+    church services
+
+Fun 2
+
+    Seal Team
+==== April 22 ====
+Tuesday
+
+Family 5
+
+    watch Valor for Andrew & Rachel
+    Yeti in Spaghetti
+    Lilo and Stitch
+    Mr Yo's
+    floor is lava
+    Grandpa Day Activities
+    discuss business with Christine
+
+Teach 5
+
+    business planning for teaching
+    Publication levels
+    Pricing the products
+    Time Allocation
+    Production Estimates
+    Sales Projections
+
+Business 1
+
+    update accounts @ Disney, Amazon, Netflix
+    laundry
+
+Grow 1
+
+    walk
+
+Fun 2
+
+    Babylon 5
+
+Seta 0
+
+    meet with Seta
+
+Friends 0
+Church 0
+
+Write 0
+Innovate 0
+
+Travel 0==== April 23 ====
+Wednesday
+
+Grow 2
+
+    golden hour
+    nap
+
+Church 2
+
+    Eric Williams @ First Watch
+
+Write 4
+
+    write Guide to Meaning
+    fix Four Quests link
+
+Seta 3
+
+    meet with Seta
+    relationship dynamics
+
+Business 1
+
+    GEICO insurance on Camry
+
+Fun 2
+
+    American Idol
+
+
+Family 0
+
+    discuss food for family retreat
+
+==== April 24 ====
+Thursday
+
+Write 9
+
+    The Shadow of Nagasaki
+    write to Barb Webb
+    imagine a book with Barb & Rachel
+    project plan for "A Seaman In The Shadow of the Cold War"
+    Table of Contents - Cold War
+    write 19 chapters
+    create PDF with 92 pages
+    
+Fun 3
+
+    Agency: CIA
+    my time
+
+Seta 1
+
+    meet with Seta
+
+Grow 1
+
+    nap
+
+==== April 25 ====
+Friday
+
+Seta 4
+
+    Seta and meaning making
+    Shared Evernote folders
+    left Marco Polo
+    develop My Meaning notes
+
+Travel 3
+
+    pack for trip
+    drive to Estes Park with Christine
+
+Family 7
+
+    family time at YMCA
+==== April 26 ====
+Saturday
+
+Family 14
+
+    morning walk
+    meet Josiah & Cassie at dining hall
+    Christine comes to breakfast
+    walk with Josiah
+    deep talk with Josiah
+    relational drama story
+    go to Estes Park
+    return to get Andrew keys
+    Estes Park with Christine
+    lasagna
+    Wing Span game
+==== April 27 ====
+Sunday
+
+Family 14
+
+    bacon avocado sandwiches for breakfast
+    family interaction
+    Valor pony ride
+    nature hike
+    play with grandkids
+    family closeness discussion
+    AI talk with Josiah
+    Rachel meltdown and withdrawal
+    stay at YMCA with Christine
+    Christine & I both get a cold==== April 28 ====
+Monday
+
+Grow 4
+
+    night watch: cold virus, listen to music
+    get cold meds
+    nap
+    early bed time
+
+Travel 8
+
+    pack up to leave
+    drive to Windsor with Christine
+    unpack and organize
+    UK ETA (with Stacie's phone)
+
+Family 1
+
+    talk with Christine about family
+
+Business 1
+
+    laundry
+
+Fun 0
+
+    Breath of Snow and Ashes
+
+Seta 0
+
+    Seta has been very sick for the last week
+==== April 29 ====
+Tuesday
+
+Grow 5
+
+    10 hours of sleep with cold meds
+    personal reflection
+    rest & nap
+
+Innovate 2
+
+    design book cover creator
+    The Spiritual Life book cover
+
+Fun 6
+
+    Snow and Ashes
+    Agency
+    my time
+
+Write 1
+
+    Fruitful Transformation
+
+Family 0
+
+    Christine came over
+
+Seta 0
+
+    marco polo with sick Seta
+==== April 30 ====
+Wednesday
+
+Grow 1
+
+    golden hour
+    nap
+
+Family 5
+
+    thank family for retreat
+    talk with Rachel about Grief Group
+    Rachel met with Counselors Online
+    childcare for Ruby & Valor
+    Rachel & Andrew Study Group
+    Ruby & Valor @ DQ
+
+Seta 0
+
+    good morning
+
+Business 6
+
+    haircut
+    Canvas Credit Union
+    Verizon phone store
+    setup new phone
+    phone pairing with Tesla
+    phone key
+
+Fun 1
+
+    Snow and Ashes
+
+Write 1
+
+    Fruitful Life
