@@ -24,6 +24,7 @@ Personal Goals
             Daily writing habits
             Techniques for Writing with AI 
     Public Life (30%)
+        Seta
         Family
             Kids
             Grandkids
@@ -34,7 +35,6 @@ Personal Goals
             Sunday meetings
             Church Board
             Grief Support Group
-        Prometa
     Personal Life (30%)
         Entertainment
             TV
