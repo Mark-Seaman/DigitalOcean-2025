@@ -3,6 +3,8 @@ from django.conf.urls.static import static
 from django.contrib.auth.views import LogoutView
 from django.urls import include, path
 
+from course.views_course import CourseSlidesView
+
 from .views import CourseContentView, CourseListView, ImportDataView, SlidesView, StudentListView, StudentProfileView, TeamView, home_view, login_email_view, login_username_view
 
 urlpatterns = [
@@ -36,6 +38,8 @@ urlpatterns = [
     path('course', CourseListView.as_view(), name='course_list'),
     path('course/<str:course>', CourseContentView.as_view(), name='course_index'),
     path('course/<str:course>/slides/<int:order>',
+         CourseSlidesView.as_view(), name='slides'),
+    path('slides',
          SlidesView.as_view(), name='slides'),
     path('course/<str:course>/students', StudentListView.as_view()),
     path('course/<str:course>/<str:doctype>/<int:order>',

@@ -1,21 +1,25 @@
 .reveal h1 {
     font-size: 200%;
-    color: white;
+    color: yellow;
     text-align: center;
+    text-transform: none;
 
 }
 
 .reveal .title {
     text-align: center;
+    text-transform: none;
 }
 
 .reveal h2.subtitle {
-    color: white;
+    font-size: 100%;
+    /* color: yellow; */
 }
 
 .reveal h2 {
-    font-size: 150%;
-    color: white;
+    font-size: 200%;
+    color: yellow;
+    text-transform: none;
 }
 
 .reveal h3 {
@@ -24,7 +28,7 @@
 
 
 .reveal li {
-    color: #222;
+    color: blue;
 }
 
 .reveal img {
@@ -43,8 +47,4 @@
     border: 1px solid green;
     box-shadow: 2px 2px 5px black;
     border-radius: 20px;
-}
-
-code.html {
-    /*background-color: darkgray;*/
 }
