@@ -73,7 +73,7 @@ def slides_view_context(**kwargs):
     kwargs = read_json(json)
     md_path = f'{slides_path}/writer.md'
     md_text = read_file(md_path)
-
+    kwargs['css'] = "/static/css/slides.css"
     text = render_slides(md_text, **kwargs)
     kwargs.update(dict(server=True, title=kwargs.get("title"), text=text))
     return kwargs
@@ -85,6 +85,7 @@ def course_slides_view_context(**kwargs):
         course=course, order=kwargs["order"], doctype="lesson")
     json = f"Documents/shrinking-world.com/{course.name}/slides_settings.json"
     kwargs = read_json(json)
+    kwargs['css'] = "/static/css/course-slides.css"
     course = kwargs["course"]
     title = f"{course} - Lesson {lesson.order}"
     # md_path = f'Documents/shrinking-world.com/{course.name}/lesson/{lesson.order:02}.md'
