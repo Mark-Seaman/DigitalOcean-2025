@@ -4,7 +4,7 @@ from pathlib import Path
 from publish.files import read_json
 from .course import get_course_content
 from .models import Course
-from .slides import slides_view_context
+from .slides import course_slides_view_context, slides_view_context
 
 
 class CourseContentView(TemplateView):
@@ -23,6 +23,13 @@ class CourseListView(ListView):
         kwargs = super().get_context_data(**kwargs)
         kwargs.update(read_json(Path('Documents') / 'course' / 'course.json'))
         return kwargs
+
+
+class CourseSlidesView(TemplateView):
+    template_name = 'course_slides.html'
+
+    def get_context_data(self, **kwargs):
+        return course_slides_view_context(**kwargs)
 
 
 class SlidesView(TemplateView):
