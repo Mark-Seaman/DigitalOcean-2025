@@ -69,9 +69,9 @@ def render_slides(text, **kwargs):
 
 def slides_view_context(**kwargs):
     slides_path = 'Documents/Shrinking-World-Pubs/playbook/Slides'
-    json = f'{slides_path}/slides_settings.json'
+    json = f'{slides_path}/writer.json'
     kwargs = read_json(json)
-    md_path = f'{slides_path}/writer.md'
+    md_path = kwargs.get("markdown", f'{slides_path}/writer.md')
     md_text = read_file(md_path)
     kwargs['css'] = "/static/css/slides.css"
     text = render_slides(md_text, **kwargs)
