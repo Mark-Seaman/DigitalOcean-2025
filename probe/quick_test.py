@@ -1,5 +1,6 @@
 from datetime import datetime
 from distutils.file_util import copy_file
+from os import chdir
 from pathlib import Path
 from django.contrib.auth.models import User
 from csv import DictReader, reader, writer
@@ -35,10 +36,23 @@ def quick_test():
     # tasks()
     # tests()
     # gwriter()
-    fix_tasks()
+    # fix_tasks()
     # subscribers()
+    show_time_tasks()
     # yearbook()
     return 'Running quick test'
+
+
+def show_time_tasks():
+    d = 'Documents/markseaman.info/history/2025/06'
+    output_file = "June"
+    with open(output_file, 'w', encoding='utf-8') as outfile:
+        for file in sorted(list(Path(d).glob('*'))):
+            outfile.write(f"===== June {file.name} =====\n")
+
+            with open(file, 'r', encoding='utf-8') as infile:
+                outfile.write(infile.read())
+            outfile.write("\n\n")
 
 
 def yearbook():
