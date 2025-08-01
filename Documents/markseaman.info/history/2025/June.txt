@@ -1,0 +1,916 @@
+==== June 01 ====
+Sunday
+
+
+Family 1
+
+    send letter to kids
+
+Seta 6
+
+    receive letter about pause
+    response to Seta
+    write about relationship
+    make decision about the future
+    letter to kids
+    telling others
+
+Church 5
+
+    church in Greeley
+    Ed Chilcott
+    appointment with Barb
+    send invites to Tim, Eric, Polasek, Wayne
+    Juan & Lynn @ Gyros
+
+Fun 2
+
+    Burger King
+    Farr Library
+    Ted Lasso
+    my time
+
+==== June 02 ====
+Monday
+
+Family 3
+
+    response from Rachel and Andrew about breakup
+    pick up grandkids at VBS
+    Freddy's
+
+Seta 3
+
+    What I Need to Continue
+    Thoughts About Breakup Index
+    letter to Seta about breakup
+
+Church 2
+
+    Tim Musslewhite appointment scheduled
+    letter to Tim
+    talk with Bristow Hood
+
+Business 0
+
+    clear out voicemail box
+    laundry
+
+Grow 1
+
+    walk
+
+Fun 3
+
+    Patrick
+    Ted Lasso
+    Yellowstone
+
+Travel 2
+
+    Write about CS Lewis trip
+    The Journey Begins
+
+==== June 03 ====
+Tuesday
+
+Family 2
+
+    Christine & Cassie visit
+    Babylon 5
+    Cassie being squirrelly
+
+Seta 1
+
+    think about relationship
+
+Friends 2
+
+    Building Friendships
+    Relating to My Kids
+
+Church 2
+
+    Tim Musslewhite
+
+Write 4
+
+    Private World of Writing
+    Always the Alien
+    A Seaman Adrift
+    Lost at Sea
+
+Fun 3
+
+    Ted Lasso
+==== June 04 ====
+Wednesday
+
+Grow 3
+
+    night watch: My Love Life (in 3 Acts)
+    sleep in until 9:00
+    think about life goals
+
+Seta 3
+
+    think about relationship
+
+Church 3
+
+    breakfast with Barb
+    Carl and Barb
+    Seta and Me
+
+Fun 5
+
+    games
+    Kaboom
+    Ted Lasso
+    my time
+==== June 05 ====
+Thursday
+
+Grow 2
+
+    create summary for May activity
+    nap
+
+Family 6
+
+    Andrew lost his job
+    talk with Rachel
+    dinner with Andrew @ Roma's
+    discuss Marriage Intensive
+    Andrew and Rachel sign up for Nov Marriage Intensive
+
+Fun 2
+
+    visit Farr Library
+    Yellowstone
+
+Write 2
+
+    organize notes
+    Sunrise: Dawn of a New Life
+
+Friends 2
+
+    create plan for developing relationships
+
+==== June 06 ====
+Friday
+
+Family 3
+
+    family potluck
+
+Write 5
+
+    create product roadmap for Workshops and Guides
+    restructure The Fruitful Life Publication
+    simplify Publication Payloads
+
+Innovate 0
+
+    learn to use Do Not Disturb on phone
+
+Grow 2
+
+    nap (with interruptions)
+
+Fun 4
+
+    visit library
+    GOT
+
+==== June 07 ====
+Saturday
+
+Fun 2
+
+    night watch: Patrick
+    GOT
+    my time
+
+Write 1
+
+    night watch: Healing Seminar
+    
+Family 2
+
+    Josiah visits
+    discuss AI
+
+Teach 7
+
+    25 Steps to Wholeness Workshops
+        Healing
+        Identity
+        Relationships
+        Living with Purpose
+        Personal Growth
+    Lesson Structure Template
+    Healing: Name the Wound
+
+Seta 2
+
+    ponder breakup
+==== June 08 ====
+Sunday
+
+Seta 6
+
+    Our Story
+        Discover New Love
+        Cracks in the Foundation
+        Crossroads
+    Letters to Seta, Kids, and Friends, follow up
+    Lessons from Love
+
+Family 2
+
+    attend Sam's art show
+    buy whale painting
+
+
+Church 2
+
+    skip church in Greeley
+    Generations Church with Juan & Lynn
+
+Fun 4
+
+    Side Effects
+    GOT
+==== June 09 ====
+Monday
+
+Grow 2
+
+    Golden Hour
+    Active Psych Issues
+    Conversation Means Risk
+
+Write 2
+
+    post Golden Hour
+    Writing for Approval
+
+Teach 3
+
+    Project Production Commitments
+    Bouncing between projects while preserving momentum
+    Build Product Roadmap
+    Reveal.JS
+
+Church 3
+
+    Bristow @ Cafe Athens
+
+Family 4
+
+    visit with Christine
+    visit with Rachel, Andrew, Ruby, Valor
+    
+Fun 0
+
+    Girl in the Spider's Web
+==== June 10 ====
+Tuesday
+
+Grow 6
+
+    wake at 4:00
+    Golden Hour
+    pyramids
+    Circles of Trust
+    Building Deeper Relationships
+    Quest for Connection
+    nap
+
+Innovate 1
+
+    ChatGPT problems
+
+
+Friends 4
+
+    Letter to Dear Friend
+    Assessing Connection
+    My People
+    Trudy @ Sandbar
+
+Fun 2
+
+    Girl in the Spider's Web
+    GOT (season 6 finale)
+    mytime
+
+Business 1
+
+    haircut
+==== June 11 ====
+Wednesday
+
+Grow 3
+
+    Golden Hour
+    visit Dr Rhoads
+
+Write 3
+
+    Writing to be Seen
+    Written Communications Layering
+    Better Listener
+
+Church 1
+
+    Terry Murphy
+    Eric Williams
+
+Friends 3
+
+    create a framework for social communications
+    communicate based on personal profiles
+    Terry, Tim, Barb, Bristow, Trudy, Eric
+    game night announcement
+
+Family 1
+
+    babysit Ruby & Valor
+    Father's Day message
+
+Business 1
+
+    laundry
+
+Fun 2
+
+    Shape of Water
+    Traitor==== June 12 ====
+Thursday
+
+Teach 5
+
+    build list of AI Playbook workshops
+    Creativity, Mental Health, Personal Growth
+    Building AI playbooks
+    Toolbox for the Soul
+    Communicating with My Kids
+    AI Playbook Series
+    Creative Tech Series
+    Mental Health Series
+
+Family 1
+
+    talk with Christine
+
+Church 0
+
+    talk with Barb
+
+Seta 2
+
+    meet with Terry Murphy
+
+Business 2
+
+    meet with Will Tyschen
+
+Grow 1
+
+    nap
+
+Fun 3
+
+    Traitor
+    Game of Thrones
+    library
+
+==== June 13 ====
+Friday
+
+Grow 3
+
+    plan daily activities
+    create notes for planning: medical, domestic, digital, money
+    Healthcare Maintenance Tasks
+    nap
+
+Seta 4
+
+    focus on relational closure
+    write Terry
+    write about Seta and Me
+
+
+Friends 2
+
+    update conversation profiles
+    restructure communications notes
+    organize communications notes
+    Trudy @ Sandbar/Strange Brew
+
+Business 1
+
+    buy burritos
+
+Fun 4
+
+    Windsor Lake park
+    GOT
+    Traitor
+    my time
+==== June 14 ====
+Saturday
+
+Seta 5
+
+    write about Seta & Me
+    organize notes about Seta
+    integrate multiple narratives
+    communicate about breakup
+    Telling Our Story
+
+Friends 4
+
+    organize communications notes
+    game night
+
+Grow 1
+
+    nap
+
+Fun 1
+
+    Patrick
+
+Teach 2
+
+    build Evernote folders (AI Playbook, Writer Playbook)
+    work on Writer Playbook
+
+Church 1
+
+    No King rally
+==== June 15 ====
+Sunday
+
+Grow 2
+
+    trouble sleeping
+    nap
+
+Church 1
+
+    skip church in Greeley
+    conference planning
+
+Family 4
+
+    Ruby, Valor, Rachel, Christine @ Dairy Queen
+    Christine @ Thunderbolts
+
+Seta 2
+
+    organize break up notes and communications
+    tell Dad & Don about breakup
+
+Write 4
+
+    Benefits of Singleness
+    Vulnerable Time
+    Eagle, Pelican, and Fish
+    Relationship Notes & Our Story
+
+Fun 1
+
+    Q-Doba
+
+==== June 16 ====
+Monday
+
+Seta 2
+
+    email Terry Murphy
+    create new breakup letter for Seta
+
+Church 7
+
+    pack for conference
+    Conference arrangements
+    book Drury Plaza
+    drive to park-n-ride
+    carpool with Bristow
+    mountain region BBQ
+    evening session
+    check into hotel
+    Jay Pathak
+    Barb getting married
+    talk with Bristow
+
+Grow 1
+
+    walk
+
+Write 3
+
+    write about My Love Life
+    Benefits of Singleness
+    Relational Perfectionism
+    What brings meaning?
+    Protecting my vulnerability
+
+Business 1
+
+    order B12 vitamins
+    mortgage
+    credit card
+
+==== June 17 ====
+Tuesday
+
+Church 13
+
+    morning session
+    afternoon session
+    Beth Moore
+    Tina Colon Williams
+    Andy Saperstein    
+    Rick & Becky
+
+Fun 1
+
+    my time
+==== June 18 ====
+Wednesday
+
+Church 13
+
+    morning session
+    Beth Moore
+    buy 12 for 12 Spiritual Formation Guidebook
+    buy Life You Long For
+    Duke & Marie Lancaster
+    afternoon session
+    Rick Lehman
+    share conference story
+    evening session (worship & ministry)
+    Barb & Carl
+    room with Ed Chilcott
+    hotel at 11:30
+
+Family 1
+
+    talk with Leslie on phone
+    Kelli in accident
+==== June 19 ====
+Thursday
+
+Church 14
+
+    morning session
+    Juneteenth
+    lunch with Barb, Ed, Jenny, Todd @ food truck
+    afternoon session
+    student volunteer movement & the next generation
+    pray over youth
+    carpool with McDowells
+    car not damaged by hailstorm
+==== June 20 ====
+Friday
+
+Church 2
+
+    Wayne Ball @ Cables
+
+Business 1
+
+    laundry
+
+Grow 3
+
+    walk
+    nap
+    high blood pressure
+    Dr Rhoads skin check
+
+Seta 2
+
+    think about relationship ending
+
+Family 3
+
+    talk with Leslie on phone
+    Rachel's family
+    Ruby & Valor kayak with Andrew
+    food prep and cleaning
+
+Fun 3
+
+    GOT
+    my time==== June 21 ====
+Saturday
+
+Seta 8
+
+    What You Mean to Me
+    Our Challenges
+    send messages & wait for reply
+
+Church 1
+
+    phone call with Bristow
+
+Friends 1
+
+    phone call with Trudy
+
+Fun 4
+
+    Roma's 
+    Macbeth
+    GOT
+==== June 22 ====
+Sunday
+
+Grow 3
+
+    walk
+    record time & tasks
+    nap
+
+Church 4
+
+    Greeley Vineyard
+    The Life You Long For
+
+Family 2
+
+    Josiah, Cassie, Christine @ Santeramo's
+    Valor was injured
+
+Fun 3
+
+    visit Linc Library
+    Yellowstone
+    Mahjong & Solitaire
+
+Seta 1
+
+    Seta responds with short acknowledgement
+
+Friends 1
+
+    write to Eric about breakup
+==== June 23 ====
+Monday
+
+Fun 4
+
+    my time
+    buy clothes at Walmart
+    Mahjong and Solitaire
+    Yellowstone
+
+Write 2
+
+    Doing & Being
+    The Healthy Creative Life
+
+Family 3
+
+    How to Train Your Dragon
+
+Friends 4
+
+    Eric Williams @ Rally 5
+    Trudy @ The Boot
+
+Grow 1
+
+    solitude
+    high blood pressure
+
+==== June 24 ====
+Tuesday
+
+Grow 1
+
+    Golden Hour
+    high blood pressure
+    
+
+Family 5
+
+    The Life We're Looking For
+    relationship dynamics
+    Christine & Babylon 5
+
+Write 6
+
+    Golden Hour Notes
+    Four Types of Relationships
+    Excitement & Security
+    The Control Conundrum
+    Learning to Love Well
+    The Adventure of Being Alive
+
+Church 1
+
+    write to April to reconnect
+
+Friends 1
+
+    talk with Trudy about vacation travel
+==== June 25 ====
+Wednesday
+
+Write 3
+
+    night watch: Second Wind
+    my story of restoration
+
+Church 7
+
+    My New Race
+    https://share.evernote.com/note/2cc745ee-bf2f-29b7-0942-e16a8e6a2ff4
+    Terry Murphy
+    April Edwards
+    Barb Webb
+    Gary & Elen
+    update Conversations notes
+    Eric Williams
+    Wayne Ball
+    Mark & Jan Foreman
+    Jose & Bev Medrano
+
+Fun 3
+
+    Patrick
+    Yellowstone
+    Mahjong & Solitaire
+
+Grow 1
+
+    high blood pressure
+    get B12
+==== June 26 ====
+Thursday
+
+Grow 6
+
+    night watch: worry over heart issues
+    high blood pressure
+    Grief Takes Time
+    Relational Roadmap
+    7 Ways to Engage
+    Relationship with Kids
+    My Social Needs
+    walk
+
+Church 4
+
+    Barb Webb visit
+    make grilled cheese
+
+Fun 4
+
+    Yellowstone
+    Deep Water
+    Mahjong & Solitaire
+    my time
+
+==== June 27 ====
+Friday
+
+Grow 6
+
+    night watch: high blood pressure
+    night watch: sit outside at 2
+    identify the Linden fragrance
+    decide to go to Blues Festival
+    chancel trip due to high blood pressure
+    text with Dr Rhoads
+    learn about blood pressure
+    manage fears about health
+
+Family 2
+
+    talk with Josiah about project
+    Christine had job interview
+    Christine locked out of car
+    visit with Christine
+    Christine spends night for my safety
+
+Fun 2
+
+    make list of funny movies
+    The Jerk
+
+Church 2
+
+    Thank you to mentors
+    Reflections on Trust
+
+Business 2
+
+    get new BP med
+    pick up meds
+    appointment for Heart CT scan
+==== June 28 ====
+Saturday
+
+Grow 1
+
+    time with God
+
+Family 3
+
+    visit with Christine
+    Mr Yo's
+    listen to Josiah video
+
+Innovate 4
+
+    design for Seaman's Log, Articles, Guides
+    Process for Seaman's Guides
+
+Business 3
+
+    create login for UC Health
+    register insurance with UC Health
+    create emergency contact
+    make appointment for lab work
+
+Fun 3
+
+    Kingpin
+    Anchorman
+ 
+==== June 29 ====
+Sunday
+
+Church 4
+
+    get response from Jose
+    Greeley Vineyard
+
+Write 3
+
+    write Soul Care and The Disciple's Lifestyle
+    send Soul Care to kids, mentors, and others
+    list of articles written for Seaman's Log
+
+Grow 2
+
+    nap
+    Patrick
+    time in bed
+
+Fun 2
+
+    Albertos
+    How to Lose a Guy
+
+Family 2
+
+    ask Christine to spend night
+    watch TV with Christine
+    Roku
+
+Business 1
+
+    medical forms
+==== June 30 ====
+Monday
+
+Write 4
+
+    develop content for 25 Steps (30 pages)
+
+Family 4
+
+    Ruby & Valor visit
+    craft project with Mexican flag
+    Mexican food for lunch
+    watch Lilo & Stitch
+    email Rachel with thank you
+    email Christine with thank you
+
+Grow 3
+
+    heart scan
+    manage emotions
+    low BP reading
+    nap
+
+Fun 3
+
+    Patrick
+    Almost Famous
+
+Church 0
+
+    talk with Barb
