@@ -28,7 +28,7 @@ export k='./Library/Containers/com.amazon.Kindle/Data/Library/Application Suppor
 export l=$d/Shrinking-World-Pubs/log
 export m="$a/rcp/mbw"
 export n=$a/ntsh
-export o=$d/shrinking-world.org
+export o=$h/Obsidian
 export s=$d/Shrinking-World-Pubs
 export t=$i/history/2023/06
 export w=$d/seamansguide.com/webapps
@@ -44,7 +44,6 @@ alias f='echo unused'
 alias i='echo unused'
 alias j='echo unused'
 alias n='echo unused'
-alias o='echo unused'
 alias v='echo unused'
 alias y='echo unused'
 alias z='echo unused'
@@ -59,6 +58,7 @@ alias create='pm pub create'
 alias doc='pm pub doc'
 alias edit='pm pub edit'
 alias files='pm pub files'
+alias o='d $o'
 alias publish='pm pub publish'
 
 # Project Scripts
