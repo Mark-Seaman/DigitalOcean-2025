@@ -112,7 +112,8 @@ def vc_dirs():
         pubs = hammer / "Documents/Shrinking-World-Pubs"
         github = Path.home() / "Github"
         prometa = github / "ProMETA"
-        dirs = [hammer, pubs]
+        obsidian = hammer / "Obsidian"
+        dirs = [hammer, pubs, obsidian]
         return [PurePath(d) for d in dirs if d.exists()]
 
 
