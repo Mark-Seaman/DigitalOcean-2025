@@ -29,6 +29,7 @@ export l=$d/Shrinking-World-Pubs/log
 export m="$a/rcp/mbw"
 export n=$a/ntsh
 export o=$h/Obsidian
+export f=$o/Public/Guides/Fruit
 export s=$d/Shrinking-World-Pubs
 export t=$i/history/2023/06
 export w=$d/seamansguide.com/webapps
