@@ -3,6 +3,8 @@ Personal Goals
     Creative Life (30%)
     
         Write
+
+            Greenhouse
             
         Teach & Publish
 
@@ -17,6 +19,8 @@ Personal Goals
     
         Friends
 
+            Game Night
+            Follow up
             Redesign Social Life
             Romantic Danger & Safety
         
@@ -30,14 +34,13 @@ Personal Goals
         
         Growth & Health
 
+            Rhythms: More or Less?
             Meaning of Life
             Life with Purpose Workshop
             
         Travel & Adventure & Learning
 
-            Register for OLLI courses
-            Decide on Fall travel
-            Colorado rail trip
+            Fall travel
            
     Business Life (10%)
     
