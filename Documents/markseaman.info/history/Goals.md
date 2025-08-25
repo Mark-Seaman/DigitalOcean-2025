@@ -13,9 +13,9 @@ Personal Goals
             
         Innovate
 
-            Scripts to create PDF and EPUB
+            fix filename issues in Obsidian
+            fix script to create PDF and EPUB
             Book Cover Design Workshop
-            Teachable URL
             Obsidian URL
            
     Social Life (30%)
@@ -24,8 +24,10 @@ Personal Goals
 
             Follow up
             Redesign Social Life
-        
+
         Family
+
+            Andrew & Rachel, Josiah & Sam
             
         Church
             
@@ -46,12 +48,14 @@ Personal Goals
                 Arizona
                 Alaska/Hawaii Cruise
                 Gettysburg
+                Yellowstone
+                YMCA    
            
     Business Life (10%)
     
         Healthcare
 
-            CPAP
+            CPAP follow up - learn, appointment, phone app
         
         Money
     
