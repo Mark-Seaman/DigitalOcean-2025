@@ -9,20 +9,21 @@ Personal Goals
         Teach & Publish
 
             Share Becoming & Fruitful guides
+            Becoming - personal exercises
             
         Innovate
 
             Scripts to create PDF and EPUB
             Book Cover Design Workshop
+            Teachable URL
+            Obsidian URL
            
     Social Life (30%)
     
         Friends
 
-            Game Night
             Follow up
             Redesign Social Life
-            Romantic Danger & Safety
         
         Family
             
@@ -40,11 +41,17 @@ Personal Goals
             
         Travel & Adventure & Learning
 
-            Fall travel
+            Fall travel:
+                Royal Gorge Railway
+                Arizona
+                Alaska/Hawaii Cruise
+                Gettysburg
            
     Business Life (10%)
     
         Healthcare
+
+            CPAP
         
         Money
     
