@@ -45,13 +45,28 @@ class Command(BaseCommand):
 
     def create_json(self, file_path):
         import json
+        pub_dir = file_path.parent.parent
+        pub = pub_dir.name
         data = {
-            "pub-path": str(file_path.parent.parent),
-            "book": str(file_path.parent.parent.parent.parent / "book"),
-            "title": "",
-            "subtitle": "",
-            "author": ""
+            "pub-path": str(pub_dir),
+            "book": str(pub_dir.parent.parent / "books" / pub),
+            "title": str(pub_dir.name),
+            "subtitle": str(pub_dir.parent.name),
+            "author": "Mark Seaman"
         }
+        rel_md_files = self.list_contents(pub_dir)
+        if rel_md_files:
+            self.stdout.write(self.style.SUCCESS(
+                f"Markdown files in {pub_dir}:"))
+            for rel_path in rel_md_files:
+                self.stdout.write(f"- {rel_path}")
+        else:
+            self.stdout.write(self.style.WARNING(
+                f"No markdown files found in {pub_dir}"))
+        # Update JSON file with contents
+        self.save_contents(pub, rel_md_files)
+        self.stdout.write(self.style.SUCCESS(
+            f"Updated {self.json_path(pub)} with contents list."))
         with open(file_path, 'w') as f:
             json.dump(data, f, indent=2)
 
@@ -71,27 +86,14 @@ class Command(BaseCommand):
             self.stdout.write(self.style.ERROR(
                 f"Publication path does not exist: {pub_dir}"))
             return
-        rel_md_files = self.list_contents(pub_dir)
-        if rel_md_files:
-            self.stdout.write(self.style.SUCCESS(
-                f"Markdown files in {pub_dir}:"))
-            for rel_path in rel_md_files:
-                self.stdout.write(f"- {rel_path}")
-        else:
-            self.stdout.write(self.style.WARNING(
-                f"No markdown files found in {pub_dir}"))
 
-        # Update JSON file with contents
-        self.save_contents(pub, rel_md_files)
-        self.stdout.write(self.style.SUCCESS(
-            f"Updated {self.json_path(pub)} with contents list."))
-        build_epub()
+        build_epub(pub_dir)
 
     def list_contents(self, pub_dir):
         md_files = []
         for f in sorted(pub_dir.rglob("*.md")):
             # Skip files in any .dev directory
-            if ".dev" in f.parts:
+            if ".dev" in f.parts or 'Cover.md' in f.parts or 'Title.md' in f.parts:
                 continue
             md_files.append(f)
         return [str(f.relative_to(pub_dir)) for f in md_files]
@@ -110,7 +112,6 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS(f"Cover action for pub: {pub}"))
 
     def handle_words(self, pub):
-        import json
         from pathlib import Path
         json_file = self.json_path(pub)
         data = self.read_json(json_file)
