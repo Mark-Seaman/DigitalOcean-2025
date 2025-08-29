@@ -1,4 +1,5 @@
 from django.core.management.base import BaseCommand
+from publish.epub import build_epub
 
 
 class Command(BaseCommand):
@@ -84,6 +85,7 @@ class Command(BaseCommand):
         self.save_contents(pub, rel_md_files)
         self.stdout.write(self.style.SUCCESS(
             f"Updated {self.json_path(pub)} with contents list."))
+        build_epub()
 
     def list_contents(self, pub_dir):
         md_files = []
