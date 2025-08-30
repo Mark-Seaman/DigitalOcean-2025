@@ -4,18 +4,17 @@ Personal Goals
     
         Write
 
-            Greenhouse
+            Greenhouse (1/day)
             
         Teach & Publish
 
-            Share Becoming & Fruitful guides
-            Becoming - personal exercises
+            Share strategy
+            Quote design
+            Exercise design
             
         Innovate
 
-            fix filename issues in Obsidian
-            fix script to create PDF and EPUB
-            Book Cover Design Workshop
+            Publish - fruitful, becoming, friendship, writer
             Obsidian URL
            
     Social Life (30%)
@@ -27,7 +26,7 @@ Personal Goals
 
         Family
 
-            Andrew & Rachel, Josiah & Sam
+            Family get-together
             
         Church
             
@@ -36,20 +35,11 @@ Personal Goals
         Entertainment
         
         Growth & Health
-
-            Rhythms: More or Less?
-            Meaning of Life
-            Life with Purpose Workshop
             
         Travel & Adventure & Learning
 
-            Fall travel:
-                Royal Gorge Railway
-                Arizona
-                Alaska/Hawaii Cruise
-                Gettysburg
-                Yellowstone
-                YMCA    
+            Seaman's Adventures
+            Why Travel?  make friends, adventure & curiosity, growth & learning, experience life
            
     Business Life (10%)
     
