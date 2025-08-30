@@ -2,45 +2,99 @@ import os
 import subprocess
 from datetime import datetime
 
-# -------- Config --------
-TITLE = "Friendship"
-SUBTITLE = "Healthy and Thriving"
-AUTHOR = "Mark Seaman"
-LANG = "en"
+# # -------- Config --------
+# TITLE = "Friendship"
+# SUBTITLE = "Healthy and Thriving"
+# AUTHOR = "Mark Seaman"
+# LANG = "en"
+# DATE = datetime.now().strftime("%Y-%m-%d")
+# EPUB = "../../books/Friendship.epub"
+# PDF = "../../books/Friendship.pdf"
+# COVER_IMAGE = "Friendship.500.png"
+# CSS_FILE = "epub.css"
+
+# # -------- Input files (ordered) --------
+# CONTENT_FILES = [
+#     "1.md",
+#     "2.md",
+#     "3.md",
+#     "4.md",
+#     "5.md",
+# ]
+
+# # -------- Build PDF --------
+# PDF_ARGS = [
+#     "pandoc",
+#     "--pdf-engine=xelatex",
+#     "-o", PDF,
+#     "Cover.md",
+# ] + CONTENT_FILES
+
+
+# def build_pdf():
+#     def has_xelatex():
+#         from shutil import which
+#         return which("xelatex") is not None
+
+#     if has_xelatex():
+#         print(f"Building {PDF} ...")
+#         print(" ".join(PDF_ARGS))
+#         subprocess.run(PDF_ARGS, check=True)
+#         subprocess.run(["open", PDF])
+#         print(f"Done with {PDF}")
+#     else:
+#         print("Skipping PDF (xelatex not found).")
+
+
 DATE = datetime.now().strftime("%Y-%m-%d")
-EPUB = "../../books/Friendship.epub"
-PDF = "../../books/Friendship.pdf"
-COVER_IMAGE = "Friendship.500.png"
 CSS_FILE = "epub.css"
 
-# -------- Input files (ordered) --------
-CONTENT_FILES = [
-    "1.md",
-    "2.md",
-    "3.md",
-    "4.md",
-    "5.md",
-]
 
-# -------- Build PDF --------
-PDF_ARGS = [
-    "pandoc",
-    "--pdf-engine=xelatex",
-    "-o", PDF,
-    "Cover.md",
-] + CONTENT_FILES
+def build_pdf(pub_path):
+    from publish.management.commands.order import read_json
 
+    script_dir = pub_path / '.dev'
+    script_dir.mkdir(parents=True, exist_ok=True)
+    script_path = script_dir / 'build-pdf.sh'
+    json_path = script_dir / f'{pub_path.name}.json'
 
-def build_pdf():
-    def has_xelatex():
-        from shutil import which
-        return which("xelatex") is not None
+    # Try to get CONTENT_FILES from JSON if available
+    json_data = read_json(json_path)
+    if json_data:
+        content_files = json_data.get('contents', 'CONTENTS not found')
+        author = json_data.get('author', 'AUTHOR not found')
+        title = json_data.get('title', 'TITLE not found')
+        subtitle = json_data.get('subtitle', 'SUBTITLE not found')
+        cover_image = json_data.get('cover-image', 'COVER_IMAGE not found')
+        book = json_data.get('book', 'BOOK not found')
+        book = book.replace('Obsidian/public', '../..') + '.pdf'
 
-    if has_xelatex():
-        print(f"Building {PDF} ...")
-        print(" ".join(PDF_ARGS))
-        subprocess.run(PDF_ARGS, check=True)
-        subprocess.run(["open", PDF])
-        print(f"Done with {PDF}")
-    else:
-        print("Skipping PDF (xelatex not found).")
+    def quote(arg):
+        if ' ' in str(arg) or any(c in str(arg) for c in '"\''):
+            return f'"{arg}"'
+        return str(arg)
+
+    pdf_cmd = [
+        'pandoc',
+        '--pdf-engine=xelatex',
+        '-o', quote(book),
+        'Cover.md',
+        'Title.md',
+        quote(cover_image),
+    ] + [quote(f) for f in content_files]
+
+    with open(script_path, 'w') as f:
+        f.write('#!/bin/bash\n')
+        f.write(f'# Build PDF for {pub_path.name} using Pandoc\n\n')
+        f.write(f'cd {pub_path}\n\n')
+        f.write('pandoc \\\n')
+        for arg in pdf_cmd[1:-len(content_files)]:
+            f.write(f'  {arg} \\\n')
+        for i, mdfile in enumerate(pdf_cmd[-len(content_files):]):
+            if i == len(content_files) - 1:
+                f.write(f'  {mdfile}\n')
+            else:
+                f.write(f'  {mdfile} \\\n')
+        f.write(f'\nopen {quote(book)}\n')
+    os.chmod(script_path, 0o755)
+    print(f"Wrote build script: {script_path}")

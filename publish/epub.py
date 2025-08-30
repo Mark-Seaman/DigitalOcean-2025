@@ -1,68 +1,29 @@
 import os
-from pathlib import Path
-from publish.pdf import PDF_ARGS
 from datetime import datetime
-import subprocess
 
 
-def read_json(file_path):
-    import json
-    from pathlib import Path
-    file_path = Path(file_path)
-    if file_path.exists():
-        with open(file_path, 'r') as f:
-            return json.load(f)
-    return None
-
-
-# -------- Config --------
-TITLE = "Friendship"
-SUBTITLE = "Healthy and Thriving"
-AUTHOR = "Mark Seaman"
-LANG = "en"
 DATE = datetime.now().strftime("%Y-%m-%d")
-EPUB = "../../books/Friendship.epub"
-PDF = "../../books/Friendship.pdf"
-COVER_IMAGE = "Friendship.500.png"
 CSS_FILE = "epub.css"
-
-# -------- Input files (ordered) --------
-CONTENT_FILES = [
-    "1.md",
-    "2.md",
-    "3.md",
-    "4.md",
-    "5.md",
-]
-
-# -------- Build EPUB --------
-EPUB_ARGS = [
-    "pandoc",
-    "--strip-comments",
-    "--standalone",
-    "--epub-cover-image", COVER_IMAGE,
-    "--css", CSS_FILE,
-    "--metadata", f"author={AUTHOR}",
-    "--metadata", f"title={TITLE}",
-    "--metadata", f"subtitle={SUBTITLE}",
-    "--metadata", f"date={DATE}",
-    "-o", EPUB,
-] + CONTENT_FILES
 
 
 def build_epub(pub_path):
+    from publish.management.commands.order import read_json
 
     script_dir = pub_path / '.dev'
     script_dir.mkdir(parents=True, exist_ok=True)
     script_path = script_dir / 'build-epub.sh'
-    json_path = script_dir / 'friendship.json'
+    json_path = script_dir / f'{pub_path.name}.json'
 
     # Try to get CONTENT_FILES from JSON if available
     json_data = read_json(json_path)
-    if json_data and 'contents' in json_data:
-        content_files = json_data['contents']
-    else:
-        content_files = CONTENT_FILES
+    if json_data:
+        content_files = json_data.get('contents', 'CONTENTS not found')
+        author = json_data.get('author', 'AUTHOR not found')
+        title = json_data.get('title', 'TITLE not found')
+        subtitle = json_data.get('subtitle', 'SUBTITLE not found')
+        cover_image = json_data.get('cover-image', 'COVER_IMAGE not found')
+        book = json_data.get('book', 'BOOK not found')
+        book = book.replace('Obsidian/public', '../..') + '.epub'
 
     def quote(arg):
         if ' ' in str(arg) or any(c in str(arg) for c in '"\''):
@@ -73,17 +34,18 @@ def build_epub(pub_path):
         'pandoc',
         '--strip-comments',
         '--standalone',
-        '--epub-cover-image', quote(COVER_IMAGE),
+        '--epub-cover-image', quote(cover_image),
         '--css', quote(CSS_FILE),
-        '--metadata', f'author={quote(AUTHOR)}',
-        '--metadata', f'title={quote(TITLE)}',
-        '--metadata', f'subtitle={quote(SUBTITLE)}',
+        '--metadata', f'author={quote(author)}',
+        '--metadata', f'title={quote(title)}',
+        '--metadata', f'subtitle={quote(subtitle)}',
         '--metadata', f'date={quote(DATE)}',
-        '-o', quote(EPUB)
+        '-o', quote(book)
     ] + [quote(f) for f in content_files]
+
     with open(script_path, 'w') as f:
         f.write('#!/bin/bash\n')
-        f.write('# Build EPUB for Friendship using Pandoc\n\n')
+        f.write(f'# Build EPUB for {pub_path.name} using Pandoc\n\n')
         f.write(f'cd {pub_path}\n\n')
         f.write('pandoc \\\n')
         for arg in epub_cmd[1:-len(content_files)]:
@@ -93,6 +55,6 @@ def build_epub(pub_path):
                 f.write(f'  {mdfile}\n')
             else:
                 f.write(f'  {mdfile} \\\n')
-        f.write(f'open {quote(EPUB)}\n')
+        f.write(f'\nopen {quote(book)}\n')
     os.chmod(script_path, 0o755)
     print(f"Wrote build script: {script_path}")
