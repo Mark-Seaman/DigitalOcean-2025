@@ -2,50 +2,6 @@ import os
 import subprocess
 from datetime import datetime
 
-# # -------- Config --------
-# TITLE = "Friendship"
-# SUBTITLE = "Healthy and Thriving"
-# AUTHOR = "Mark Seaman"
-# LANG = "en"
-# DATE = datetime.now().strftime("%Y-%m-%d")
-# EPUB = "../../books/Friendship.epub"
-# PDF = "../../books/Friendship.pdf"
-# COVER_IMAGE = "Friendship.500.png"
-# CSS_FILE = "epub.css"
-
-# # -------- Input files (ordered) --------
-# CONTENT_FILES = [
-#     "1.md",
-#     "2.md",
-#     "3.md",
-#     "4.md",
-#     "5.md",
-# ]
-
-# # -------- Build PDF --------
-# PDF_ARGS = [
-#     "pandoc",
-#     "--pdf-engine=xelatex",
-#     "-o", PDF,
-#     "Cover.md",
-# ] + CONTENT_FILES
-
-
-# def build_pdf():
-#     def has_xelatex():
-#         from shutil import which
-#         return which("xelatex") is not None
-
-#     if has_xelatex():
-#         print(f"Building {PDF} ...")
-#         print(" ".join(PDF_ARGS))
-#         subprocess.run(PDF_ARGS, check=True)
-#         subprocess.run(["open", PDF])
-#         print(f"Done with {PDF}")
-#     else:
-#         print("Skipping PDF (xelatex not found).")
-
-
 DATE = datetime.now().strftime("%Y-%m-%d")
 CSS_FILE = "epub.css"
 
@@ -62,10 +18,6 @@ def build_pdf(pub_path):
     json_data = read_json(json_path)
     if json_data:
         content_files = json_data.get('contents', 'CONTENTS not found')
-        author = json_data.get('author', 'AUTHOR not found')
-        title = json_data.get('title', 'TITLE not found')
-        subtitle = json_data.get('subtitle', 'SUBTITLE not found')
-        cover_image = json_data.get('cover-image', 'COVER_IMAGE not found')
         book = json_data.get('book', 'BOOK not found')
         book = book.replace('Obsidian/public', '../..') + '.pdf'
 
@@ -79,8 +31,7 @@ def build_pdf(pub_path):
         '--pdf-engine=xelatex',
         '-o', quote(book),
         'Cover.md',
-        'Title.md',
-        quote(cover_image),
+        'Contents.md',
     ] + [quote(f) for f in content_files]
 
     with open(script_path, 'w') as f:
@@ -95,6 +46,18 @@ def build_pdf(pub_path):
                 f.write(f'  {mdfile}\n')
             else:
                 f.write(f'  {mdfile} \\\n')
-        f.write(f'\nopen {quote(book)}\n')
+        success = f'''
+
+# Check for errors and report
+if [ $? -eq 0 ]; then
+    echo "PDF built successfully:"
+    echo open $h/Obsidian/forge/books/{pub_path.name}.pdf
+    # open $h/Obsidian/forge/books/{pub_path.name}.pdf
+else
+    echo "Error building PDF."
+fi
+
+        '''
+        f.write(f'\n{success}\n')
     os.chmod(script_path, 0o755)
     print(f"Wrote build script: {script_path}")

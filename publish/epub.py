@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 DATE = datetime.now().strftime("%Y-%m-%d")
-CSS_FILE = "epub.css"
+CSS_FILE = "../../epub.css"
 
 
 def build_epub(pub_path):
@@ -23,7 +23,7 @@ def build_epub(pub_path):
         subtitle = json_data.get('subtitle', 'SUBTITLE not found')
         cover_image = json_data.get('cover-image', 'COVER_IMAGE not found')
         book = json_data.get('book', 'BOOK not found')
-        book = book.replace('Obsidian/public', '../..') + '.epub'
+        book = book.replace('Obsidian/forge', '../..') + '.epub'
 
     def quote(arg):
         if ' ' in str(arg) or any(c in str(arg) for c in '"\''):
@@ -40,7 +40,8 @@ def build_epub(pub_path):
         '--metadata', f'title={quote(title)}',
         '--metadata', f'subtitle={quote(subtitle)}',
         '--metadata', f'date={quote(DATE)}',
-        '-o', quote(book)
+        '-o', quote(book),
+        'Contents.md'
     ] + [quote(f) for f in content_files]
 
     with open(script_path, 'w') as f:
@@ -55,6 +56,18 @@ def build_epub(pub_path):
                 f.write(f'  {mdfile}\n')
             else:
                 f.write(f'  {mdfile} \\\n')
-        f.write(f'\nopen {quote(book)}\n')
+        success = f'''
+
+# Check for errors and report
+if [ $? -eq 0 ]; then
+    echo "EPUB built successfully:"
+    echo open $h/Obsidian/forge/books/{pub_path.name}.epub
+    # open $h/Obsidian/forge/books/{pub_path.name}.epub
+else
+    echo "Error building EPUB."
+fi
+
+        '''
+        f.write(f'\n{success}\n')
     os.chmod(script_path, 0o755)
     print(f"Wrote build script: {script_path}")
