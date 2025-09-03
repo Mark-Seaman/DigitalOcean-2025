@@ -4,30 +4,28 @@ Personal Goals
     
         Write
 
-            Greenhouse (1/day)
             
         Teach & Publish
 
             Share strategy
-            Quote design
-            Exercise design
             
         Innovate
 
             Publish - fruitful, becoming, friendship, writer
             Obsidian URL
+            Your Brainchild Publishing
+            epub script
            
     Social Life (30%)
     
         Friends
 
-            Follow up
+            Follow up (5 people/day)
             Redesign Social Life
+            Subscribers
 
         Family
 
-            Family get-together
-            
         Church
             
     Personal Life (30%)
@@ -45,8 +43,6 @@ Personal Goals
     
         Healthcare
 
-            CPAP follow up - learn, appointment, phone app
-        
         Money
     
         Organize
