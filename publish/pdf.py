@@ -45,7 +45,7 @@ def build_pdf(pub_path):
                 f.write(f'  {mdfile}\n')
             else:
                 f.write(f'  {mdfile} \\\n')
-                f.write(f'  page.md \\\n')
+                f.write(f'  ../../page.md \\\n')
         success = f'''
 
 # Check for errors and report
@@ -60,4 +60,4 @@ fi
         '''
         f.write(f'\n{success}\n')
     os.chmod(script_path, 0o755)
-    print(f"Wrote build script: {script_path}")
+    print(f"\nWrote build script: \n{script_path}\n")

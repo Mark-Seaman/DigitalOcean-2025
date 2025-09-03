@@ -69,4 +69,4 @@ fi
         '''
         f.write(f'\n{success}\n')
     os.chmod(script_path, 0o755)
-    print(f"Wrote build script: {script_path}")
+    print(f"\nWrote build script: \n{script_path}\n")
