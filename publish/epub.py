@@ -22,8 +22,7 @@ def build_epub(pub_path):
         title = json_data.get('title', 'TITLE not found')
         subtitle = json_data.get('subtitle', 'SUBTITLE not found')
         cover_image = json_data.get('cover-image', 'COVER_IMAGE not found')
-        book = json_data.get('book', 'BOOK not found')
-        book = book.replace('Obsidian/forge', '../..') + '.epub'
+        book = json_data.get('book', 'BOOK not found') + '.epub'
 
     def quote(arg):
         if ' ' in str(arg) or any(c in str(arg) for c in '"\''):
@@ -61,8 +60,8 @@ def build_epub(pub_path):
 # Check for errors and report
 if [ $? -eq 0 ]; then
     echo "EPUB built successfully:"
-    echo open $h/Obsidian/forge/books/{pub_path.name}.epub
-    # open $h/Obsidian/forge/books/{pub_path.name}.epub
+    echo open {book}
+    # open {book}
 else
     echo "Error building EPUB."
 fi

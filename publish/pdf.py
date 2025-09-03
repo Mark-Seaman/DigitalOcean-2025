@@ -18,8 +18,7 @@ def build_pdf(pub_path):
     json_data = read_json(json_path)
     if json_data:
         content_files = json_data.get('contents', 'CONTENTS not found')
-        book = json_data.get('book', 'BOOK not found')
-        book = book.replace('Obsidian/public', '../..') + '.pdf'
+        book = json_data.get('book', 'BOOK not found') + '.pdf'
 
     def quote(arg):
         if ' ' in str(arg) or any(c in str(arg) for c in '"\''):
@@ -46,13 +45,14 @@ def build_pdf(pub_path):
                 f.write(f'  {mdfile}\n')
             else:
                 f.write(f'  {mdfile} \\\n')
+                f.write(f'  page.md \\\n')
         success = f'''
 
 # Check for errors and report
 if [ $? -eq 0 ]; then
     echo "PDF built successfully:"
-    echo open $h/Obsidian/forge/books/{pub_path.name}.pdf
-    # open $h/Obsidian/forge/books/{pub_path.name}.pdf
+    echo open {book}
+    # open {book}
 else
     echo "Error building PDF."
 fi
