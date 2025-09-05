@@ -60,7 +60,7 @@ def create_json(file_path):
 
 
 def json_path(pub):
-    return pub_path(pub) / ".dev" / f"{pub}.json"
+    return pub_path(pub) / "dev" / f"{pub}.json"
 
 
 def pub_path(pub):
@@ -78,7 +78,7 @@ def read_json(file_path):
 def list_contents(pub_dir):
     md_files = []
     for f in sorted(pub_dir.rglob("*.md")):
-        if ".dev" in f.parts or 'Cover.md' in f.parts or 'Title.md' in f.parts:
+        if "dev" in f.parts or 'Cover.md' in f.parts or 'Title.md' in f.parts:
             continue
         md_files.append(f)
     return [str(f.relative_to(pub_dir)) for f in md_files]

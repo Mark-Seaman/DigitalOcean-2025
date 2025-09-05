@@ -9,7 +9,7 @@ CSS_FILE = "../../epub.css"
 def build_epub(pub_path):
     from publish.management.commands.order import read_json
 
-    script_dir = pub_path / '.dev'
+    script_dir = pub_path / 'dev'
     script_dir.mkdir(parents=True, exist_ok=True)
     script_path = script_dir / 'build-epub.sh'
     json_path = script_dir / f'{pub_path.name}.json'
