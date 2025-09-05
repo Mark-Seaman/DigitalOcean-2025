@@ -52,7 +52,7 @@ def build_pdf(pub_path):
 if [ $? -eq 0 ]; then
     echo "PDF built successfully:"
     echo open {book}
-    # open {book}
+    open {book}
 else
     echo "Error building PDF."
 fi

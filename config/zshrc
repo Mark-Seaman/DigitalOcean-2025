@@ -51,38 +51,28 @@ alias y='echo unused'
 alias z='echo unused'
 
 # Pub Script
-alias b='pm pub build'
-alias build='pm pub build'
-alias project='pm pub project'
-alias cover='pm pub cover'
-alias chapter='pm pub chapter'
-alias create='pm pub create'
-alias doc='pm pub doc'
-alias edit='pm pub edit'
-alias files='pm pub files'
 alias o='d $o'
-alias publish='pm pub publish'
+alias build='pm order build'
+alias cover='pm order cover'
+alias order='pm order'
+alias words='pm order words'
+
+# alias chapter='pm order chapter'
+# alias create='pm order create'
+# alias doc='pm order doc'
+# alias edit='pm order edit'
+# alias files='pm order files'
+# alias publish='pm pub publish'
 
 # Project Scripts
 alias activity='week activity'
-alias blog='pubs && npm start'
-alias book='subl $book'
-alias course='d $c'
-alias ba='code Documents/shrinking-world.com/bacs350'
-alias cs='code Documents/shrinking-world.com/cs350'
 alias day='task 1'
-alias demo='cd $g/PythonWebApps'
-alias docs='e Documents'
 alias e='subl'
 alias ea='subl ~/Hammer/config/zshrc'
-alias ghost='d ~/Github/GhostWriter'
 alias hammer="cd $h && source ~/.zshrc"
 alias month='task 30'
-alias pro='d $g/ProMETA && . config/zshrc'
 alias pub='d $d/Shrinking-World-Pubs'
 alias pubs='d $pubs'
-alias sw='code Documents/Shrinking-World-Pubs/sweng'
-alias teach='pm teach'
 alias task='pm task'
 alias today='task 1 today'
 alias week='task 7'
@@ -199,6 +189,32 @@ function py {
     pip freeze
 }
 
+# If this good syntax?
+function build_pdf {
+    ## Select guide or playbook
+    if [ -d "Obsidian/forge/guides/$1" ]; then
+        Obsidian/forge/guides/$1/dev/build-pdf.sh
+    elif [ -d "Obsidian/forge/playbooks/$1" ]; then
+        Obsidian/forge/playbooks/$1/dev/build-pdf.sh
+    fi
+}
+
+function build_epub {
+    ## Select guide or playbook
+    if [ -d "Obsidian/forge/guides/$1" ]; then
+        Obsidian/forge/guides/$1/dev/build-epub.sh
+    elif [ -d "Obsidian/forge/playbooks/$1" ]; then
+        Obsidian/forge/playbooks/$1/dev/build-epub.sh
+    fi
+}
+
+function guide {
+    code Obsidian/forge/guides/$1
+}
+
+function playbook {
+    code Obsidian/forge/playbooks/$1
+}
 
 # Start directory
 export PS1="%3~ : "

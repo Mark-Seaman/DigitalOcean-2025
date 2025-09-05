@@ -64,7 +64,10 @@ def json_path(pub):
 
 
 def pub_path(pub):
-    return Path("Obsidian/forge/guides") / pub
+    # if the guides directory does not exist, then try playbooks
+    if (Path("Obsidian/forge/guides") / pub).exists():
+        return Path("Obsidian/forge/guides") / pub
+    return Path("Obsidian/forge/playbooks") / pub
 
 
 def read_json(file_path):

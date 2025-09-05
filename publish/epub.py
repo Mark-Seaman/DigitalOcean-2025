@@ -61,7 +61,7 @@ def build_epub(pub_path):
 if [ $? -eq 0 ]; then
     echo "EPUB built successfully:"
     echo open {book}
-    # open {book}
+    open {book}
 else
     echo "Error building EPUB."
 fi
