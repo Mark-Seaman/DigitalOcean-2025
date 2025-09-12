@@ -4,40 +4,47 @@ Personal Goals
     
         Write
 
-            
+            formation: scripture, exercises            
+
         Teach & Publish
 
             Share strategy
             
         Innovate
 
-            Publish - fruitful, becoming, friendship, writer
-            Obsidian URL
+            Publish - fruitful, becoming, friendship, formation, writer
+            Obsidian URL - markseaman.org
             Your Brainchild Publishing
-            epub script
            
     Social Life (30%)
     
         Friends
 
             Follow up (5 people/day)
-            Redesign Social Life
-            Subscribers
+            Review Subscribers
+            Game Night
+            Comm Channels
 
         Family
 
+            Andrew birthday
+
         Church
+
+            article: No Coincidences When God Leads
+            Bristow
+            people interested in formation
+            Goce Pecov - collaboration
             
     Personal Life (30%)
     
         Entertainment
         
         Growth & Health
+
+            walk
             
         Travel & Adventure & Learning
-
-            Seaman's Adventures
-            Why Travel?  make friends, adventure & curiosity, growth & learning, experience life
            
     Business Life (10%)
     
