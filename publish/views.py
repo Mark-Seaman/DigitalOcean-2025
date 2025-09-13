@@ -31,7 +31,7 @@ class ContactView(TemplateView):
 
 
 class PubRedirectView(RedirectView):
-    url = '/after'
+    url = 'https://publish.obsidian.md/seaman'
 
 
 class PubRampView(TemplateView):
