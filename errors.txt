@@ -1,0 +1,533 @@
+Sep 13 17:01:23  Operations to perform:
+Sep 13 17:01:23    Apply all migrations: admin, auth, contenttypes, course, probe, publish, sessions, task, writer
+Sep 13 17:01:23  Running migrations:
+Sep 13 17:01:23    No migrations to apply.
+Sep 13 17:01:24  Cloning into 'Shrinking-World-Pubs'...
+Sep 13 17:03:12  Updating files:  40% (964/2353)
+Updating files:  41% (965/2353)
+Updating files:  42% (989/2353)
+Updating files:  43% (1012/2353)
+Updating files:  44% (1036/2353)
+Updating files:  45% (1059/2353)
+Updating files:  46% (1083/2353)
+Updating files:  47% (1106/2353)
+Updating files:  48% (1130/2353)
+Updating files:  49% (1153/2353)
+Updating files:  50% (1177/2353)
+Updating files:  51% (1201/2353)
+Updating files:  52% (1224/2353)
+Updating files:  53% (1248/2353)
+Updating files:  54% (1271/2353)
+Updating files:  55% (1295/2353)
+Updating files:  56% (1318/2353)
+Updating files:  57% (1342/2353)
+Updating files:  58% (1365/2353)
+Updating files:  59% (1389/2353)
+Updating files:  60% (1412/2353)
+Updating files:  61% (1436/2353)
+Updating files:  62% (1459/2353)
+Updating files:  63% (1483/2353)
+Updating files:  64% (1506/2353)
+Updating files:  65% (1530/2353)
+Updating files:  66% (1553/2353)
+Updating files:  67% (1577/2353)
+Updating files:  68% (1601/2353)
+Updating files:  69% (1624/2353)
+Updating files:  70% (1648/2353)
+Updating files:  71% (1671/2353)
+Updating files:  71% (1691/2353)
+Updating files:  72% (1695/2353)
+Updating files:  73% (1718/2353)
+Updating files:  74% (1742/2353)
+Updating files:  75% (1765/2353)
+Updating files:  76% (1789/2353)
+Updating files:  77% (1812/2353)
+Updating files:  78% (1836/2353)
+Updating files:  79% (1859/2353)
+Updating files:  80% (1883/2353)
+Updating files:  81% (1906/2353)
+Updating files:  82% (1930/2353)
+Updating files:  83% (1953/2353)
+Updating files:  84% (1977/2353)
+Updating files:  85% (2001/2353)
+Updating files:  86% (2024/2353)
+Updating files:  87% (2048/2353)
+Updating files:  88% (2071/2353)
+Updating files:  89% (2095/2353)
+Updating files:  90% (2118/2353)
+Updating files:  91% (2142/2353)
+Updating files:  92% (2165/2353)
+Updating files:  93% (2189/2353)
+Updating files:  94% (2212/2353)
+Updating files:  95% (2236/2353)
+Updating files:  96% (2259/2353)
+Updating files:  97% (2283/2353)
+Updating files:  97% (2300/2353)
+Updating files:  98% (2306/2353)
+Updating files:  99% (2330/2353)
+Updating files: 100% (2353/2353)
+Updating files: 100% (2353/2353), done.
+Sep 13 17:03:13  [2025-09-13 17:03:13 +0000] [1] [INFO] Starting gunicorn 21.2.0
+Sep 13 17:03:13  [2025-09-13 17:03:13 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+Sep 13 17:03:13  [2025-09-13 17:03:13 +0000] [1] [INFO] Using worker: sync
+Sep 13 17:03:13  [2025-09-13 17:03:13 +0000] [34] [INFO] Booting worker with pid: 34
+Sep 13 17:04:04  10.244.4.98 - - [13/Sep/2025:11:04:04 -0600] "GET /sampler/02-26 HTTP/1.1" 200 3261 "https://markseaman.org/sampler/02-27.md" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:04:09  10.244.2.30 - - [13/Sep/2025:11:04:09 -0600] "GET /sampler/12-09 HTTP/1.1" 200 4030 "https://seamanslog.com/sampler/12-11.md" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:04:16  10.244.7.124 - - [13/Sep/2025:11:04:16 -0600] "GET / HTTP/1.1" 302 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0"
+Sep 13 17:04:17  Already up to date.
+Sep 13 17:04:17  10.244.4.98 - - [13/Sep/2025:11:04:17 -0600] "GET /after HTTP/1.1" 200 12015 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0"
+Sep 13 17:04:18  Already up to date.
+Sep 13 17:04:18  Internal Server Error: /robots.txt
+Sep 13 17:04:18  Traceback (most recent call last):
+Sep 13 17:04:18    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+Sep 13 17:04:18      response = get_response(request)
+Sep 13 17:04:18                 ^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:04:18    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+Sep 13 17:04:18      response = wrapped_callback(request, *callback_args, **callback_kwargs)
+Sep 13 17:04:18                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:04:18    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+Sep 13 17:04:18      return self.dispatch(request, *args, **kwargs)
+Sep 13 17:04:18             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:04:18    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+Sep 13 17:04:18      return handler(request, *args, **kwargs)
+Sep 13 17:04:18             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:04:18    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 226, in get
+Sep 13 17:04:18      context = self.get_context_data(**kwargs)
+Sep 13 17:04:18                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:04:18    File "/workspace/publish/views.py", line 113, in get_context_data
+Sep 13 17:04:18      kwargs = select_blog_doc(pub, doc, local_host)
+Sep 13 17:04:18               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:04:18    File "/workspace/publish/publication.py", line 213, in select_blog_doc
+Sep 13 17:04:18      p = get_pub(pub)
+Sep 13 17:04:18          ^^^^^^^^^^^^
+Sep 13 17:04:18    File "/workspace/publish/publication.py", line 97, in get_pub
+Sep 13 17:04:18      return Pub.objects.get(name=name)
+Sep 13 17:04:18             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:04:18    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+Sep 13 17:04:18      return getattr(self.get_queryset(), name)(*args, **kwargs)
+Sep 13 17:04:18             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:04:18    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/query.py", line 637, in get
+Sep 13 17:04:18      raise self.model.DoesNotExist(
+Sep 13 17:04:18  publish.models.Pub.DoesNotExist: Pub matching query does not exist.
+Sep 13 17:04:18  10.244.7.124 - - [13/Sep/2025:11:04:18 -0600] "GET /robots.txt HTTP/1.1" 500 87654 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
+Sep 13 17:04:22  10.244.7.124 - - [13/Sep/2025:11:04:22 -0600] "GET /test/4540/ HTTP/1.1" 302 0 "https://shrinking-world.com/test/run" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:04:24  10.244.4.98 - - [13/Sep/2025:11:04:24 -0600] "GET /login/?next=/test/4540/ HTTP/1.1" 200 1939 "https://shrinking-world.com/test/run" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:04:28  Already up to date.
+Sep 13 17:04:28  10.244.4.98 - - [13/Sep/2025:11:04:28 -0600] "GET /after HTTP/1.1" 200 12015 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0"
+Sep 13 17:05:10  10.244.4.98 - - [13/Sep/2025:11:05:10 -0600] "GET /sampler/02-24.md HTTP/1.1" 200 3543 "https://markseaman.org/sampler/02-Index.md" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:05:13  File 'System.ai' not found.
+Sep 13 17:05:13  Internal Server Error: /writer/apps/AppStructure/Settings/ai
+Sep 13 17:05:13  Traceback (most recent call last):
+Sep 13 17:05:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+Sep 13 17:05:13      response = get_response(request)
+Sep 13 17:05:13                 ^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:05:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+Sep 13 17:05:13      response = wrapped_callback(request, *callback_args, **callback_kwargs)
+Sep 13 17:05:13                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:05:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+Sep 13 17:05:13      return self.dispatch(request, *args, **kwargs)
+Sep 13 17:05:13             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:05:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+Sep 13 17:05:13      return handler(request, *args, **kwargs)
+Sep 13 17:05:13             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:05:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 257, in get
+Sep 13 17:05:13      url = self.get_redirect_url(*args, **kwargs)
+Sep 13 17:05:13            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:05:13    File "/workspace/writer/views.py", line 66, in get_redirect_url
+Sep 13 17:05:13      return pub_ai(**kwargs)
+Sep 13 17:05:13             ^^^^^^^^^^^^^^^^
+Sep 13 17:05:13    File "/workspace/writer/ai.py", line 61, in pub_ai
+Sep 13 17:05:13      update_with_ai(doc_file)
+Sep 13 17:05:13    File "/workspace/writer/ai.py", line 52, in update_with_ai
+Sep 13 17:05:13      text = transform_prompt(prompt)
+Sep 13 17:05:13             ^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:05:13    File "/workspace/writer/ai.py", line 16, in transform_prompt
+Sep 13 17:05:13      response = openai.ChatCompletion.create(
+Sep 13 17:05:13                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:05:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+Sep 13 17:05:13      return super().create(*args, **kwargs)
+Sep 13 17:05:13             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:05:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 149, in create
+Sep 13 17:05:13      ) = cls.__prepare_create_request(
+Sep 13 17:05:13          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:05:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 106, in __prepare_create_request
+Sep 13 17:05:13      requestor = api_requestor.APIRequestor(
+Sep 13 17:05:13                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:05:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/openai/api_requestor.py", line 138, in __init__
+Sep 13 17:05:13      self.api_key = key or util.default_api_key()
+Sep 13 17:05:13                            ^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:05:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/openai/util.py", line 186, in default_api_key
+Sep 13 17:05:13      raise openai.error.AuthenticationError(
+Sep 13 17:05:13  openai.error.AuthenticationError: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+Sep 13 17:05:13  10.244.0.4 - - [13/Sep/2025:11:05:13 -0600] "GET /writer/apps/AppStructure/Settings/ai HTTP/1.1" 500 108782 "-" "Mozilla/5.0 (Linux; Android 5.0) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; Bytespider; spider-feedback@bytedance.com)"
+Sep 13 17:06:02  10.244.7.124 - - [13/Sep/2025:11:06:02 -0600] "GET /sampler/12-03 HTTP/1.1" 200 3642 "https://seamanslog.com/sampler/12-04.md" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:06:17  Already up to date.
+Sep 13 17:06:17  Internal Server Error: /robots.txt
+Sep 13 17:06:17  Traceback (most recent call last):
+Sep 13 17:06:17    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+Sep 13 17:06:17      response = get_response(request)
+Sep 13 17:06:17                 ^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:06:17    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+Sep 13 17:06:17      response = wrapped_callback(request, *callback_args, **callback_kwargs)
+Sep 13 17:06:17                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:06:17    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+Sep 13 17:06:17      return self.dispatch(request, *args, **kwargs)
+Sep 13 17:06:17             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:06:17    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+Sep 13 17:06:17      return handler(request, *args, **kwargs)
+Sep 13 17:06:17             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:06:17    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 226, in get
+Sep 13 17:06:17      context = self.get_context_data(**kwargs)
+Sep 13 17:06:17                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:06:17    File "/workspace/publish/views.py", line 113, in get_context_data
+Sep 13 17:06:17      kwargs = select_blog_doc(pub, doc, local_host)
+Sep 13 17:06:17               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:06:17    File "/workspace/publish/publication.py", line 213, in select_blog_doc
+Sep 13 17:06:17      p = get_pub(pub)
+Sep 13 17:06:17          ^^^^^^^^^^^^
+Sep 13 17:06:17    File "/workspace/publish/publication.py", line 97, in get_pub
+Sep 13 17:06:17      return Pub.objects.get(name=name)
+Sep 13 17:06:17             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:06:17    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+Sep 13 17:06:17      return getattr(self.get_queryset(), name)(*args, **kwargs)
+Sep 13 17:06:17             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:06:17    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/query.py", line 637, in get
+Sep 13 17:06:17      raise self.model.DoesNotExist(
+Sep 13 17:06:17  publish.models.Pub.DoesNotExist: Pub matching query does not exist.
+Sep 13 17:06:17  10.244.7.124 - - [13/Sep/2025:11:06:17 -0600] "GET /robots.txt HTTP/1.1" 500 87652 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
+Sep 13 17:06:18  10.244.4.98 - - [13/Sep/2025:11:06:18 -0600] "GET /tech/micropub-Lesson.md HTTP/1.1" 200 6676 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
+Sep 13 17:06:18  10.244.7.124 - - [13/Sep/2025:11:06:18 -0600] "GET / HTTP/1.1" 302 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0"
+Sep 13 17:06:19  Already up to date.
+Sep 13 17:06:19  10.244.4.98 - - [13/Sep/2025:11:06:19 -0600] "GET /after HTTP/1.1" 200 12015 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0"
+Sep 13 17:06:38  10.244.4.98 - - [13/Sep/2025:11:06:38 -0600] "GET /sampler/02-24 HTTP/1.1" 200 3543 "https://markseaman.org/sampler/02-27.md" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:07:51  10.244.4.98 - - [13/Sep/2025:11:07:51 -0600] "GET /sampler/12-01 HTTP/1.1" 200 3663 "https://seamanslog.com/sampler/12-04.md" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:08:05  10.244.7.124 - - [13/Sep/2025:11:08:05 -0600] "GET /sampler/02-21.md HTTP/1.1" 200 3286 "https://markseaman.org/sampler/02-Index.md" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:08:08  10.244.0.4 - - [13/Sep/2025:11:08:08 -0600] "GET /after/37.md HTTP/1.1" 200 5368 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"
+Sep 13 17:08:13  Internal Server Error: /test/4493/approve
+Sep 13 17:08:13  Traceback (most recent call last):
+Sep 13 17:08:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+Sep 13 17:08:13      response = get_response(request)
+Sep 13 17:08:13                 ^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:08:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+Sep 13 17:08:13      response = wrapped_callback(request, *callback_args, **callback_kwargs)
+Sep 13 17:08:13                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:08:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+Sep 13 17:08:13      return self.dispatch(request, *args, **kwargs)
+Sep 13 17:08:13             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:08:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+Sep 13 17:08:13      return handler(request, *args, **kwargs)
+Sep 13 17:08:13             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:08:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 257, in get
+Sep 13 17:08:13      url = self.get_redirect_url(*args, **kwargs)
+Sep 13 17:08:13            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:08:13    File "/workspace/probe/views_probe.py", line 48, in get_redirect_url
+Sep 13 17:08:13      result = TestResult.objects.get(pk=pk)
+Sep 13 17:08:13               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:08:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+Sep 13 17:08:13      return getattr(self.get_queryset(), name)(*args, **kwargs)
+Sep 13 17:08:13             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:08:13    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/query.py", line 637, in get
+Sep 13 17:08:13      raise self.model.DoesNotExist(
+Sep 13 17:08:13  probe.models.TestResult.DoesNotExist: TestResult matching query does not exist.
+Sep 13 17:08:13  10.244.4.98 - - [13/Sep/2025:11:08:13 -0600] "GET /test/4493/approve HTTP/1.1" 500 80613 "https://shrinking-world.com/test/1712" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:08:19  Already up to date.
+Sep 13 17:08:19  Internal Server Error: /robots.txt
+Sep 13 17:08:19  Traceback (most recent call last):
+Sep 13 17:08:19    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+Sep 13 17:08:19      response = get_response(request)
+Sep 13 17:08:19                 ^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:08:19    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+Sep 13 17:08:19      response = wrapped_callback(request, *callback_args, **callback_kwargs)
+Sep 13 17:08:19                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:08:19    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+Sep 13 17:08:19      return self.dispatch(request, *args, **kwargs)
+Sep 13 17:08:19             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:08:19    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+Sep 13 17:08:19      return handler(request, *args, **kwargs)
+Sep 13 17:08:19             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:08:19    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 226, in get
+Sep 13 17:08:19      context = self.get_context_data(**kwargs)
+Sep 13 17:08:19                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:08:19    File "/workspace/publish/views.py", line 113, in get_context_data
+Sep 13 17:08:19      kwargs = select_blog_doc(pub, doc, local_host)
+Sep 13 17:08:19               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:08:19    File "/workspace/publish/publication.py", line 213, in select_blog_doc
+Sep 13 17:08:19      p = get_pub(pub)
+Sep 13 17:08:19          ^^^^^^^^^^^^
+Sep 13 17:08:19    File "/workspace/publish/publication.py", line 97, in get_pub
+Sep 13 17:08:19      return Pub.objects.get(name=name)
+Sep 13 17:08:19             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:08:19    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+Sep 13 17:08:19      return getattr(self.get_queryset(), name)(*args, **kwargs)
+Sep 13 17:08:19             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:08:19    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/query.py", line 637, in get
+Sep 13 17:08:19      raise self.model.DoesNotExist(
+Sep 13 17:08:19  publish.models.Pub.DoesNotExist: Pub matching query does not exist.
+Sep 13 17:08:19  10.244.7.124 - - [13/Sep/2025:11:08:19 -0600] "GET /robots.txt HTTP/1.1" 500 87654 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/coronavirus.png static/images/Shrinking-World-Pubs/journey/coronavirus.png
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/water.jpg static/images/Shrinking-World-Pubs/journey/water.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/lion.jpg static/images/Shrinking-World-Pubs/journey/lion.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/Sakurajima.jpg static/images/Shrinking-World-Pubs/journey/Sakurajima.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/Camp_Desert_Rock.jpg static/images/Shrinking-World-Pubs/journey/Camp_Desert_Rock.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/homeschool.png static/images/Shrinking-World-Pubs/journey/homeschool.png
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/Mom_JFK.jpg static/images/Shrinking-World-Pubs/journey/Mom_JFK.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/JFK2.jpg static/images/Shrinking-World-Pubs/journey/JFK2.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/JFK_Speech.jpg static/images/Shrinking-World-Pubs/journey/JFK_Speech.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/JFK_11.jpg static/images/Shrinking-World-Pubs/journey/JFK_11.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/JFK_Hosts.jpg static/images/Shrinking-World-Pubs/journey/JFK_Hosts.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/journey-cover-800.png static/images/Shrinking-World-Pubs/journey/journey-cover-800.png
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/Wire-wrap_1977.jpg static/images/Shrinking-World-Pubs/journey/Wire-wrap_1977.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/Dog1.jpg static/images/Shrinking-World-Pubs/journey/Dog1.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/journey-cover-1600.png static/images/Shrinking-World-Pubs/journey/journey-cover-1600.png
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/Tscharli2.jpg static/images/Shrinking-World-Pubs/journey/Tscharli2.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/Journey.png static/images/Shrinking-World-Pubs/journey/Journey.png
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/journey-cover-400.png static/images/Shrinking-World-Pubs/journey/journey-cover-400.png
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/Kagoshima.png static/images/Shrinking-World-Pubs/journey/Kagoshima.png
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/Buster-Dog.jpg static/images/Shrinking-World-Pubs/journey/Buster-Dog.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/journey-cover-200.png static/images/Shrinking-World-Pubs/journey/journey-cover-200.png
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/Bomba_atomica.gif static/images/Shrinking-World-Pubs/journey/Bomba_atomica.gif
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/Mom_JFK2.jpg static/images/Shrinking-World-Pubs/journey/Mom_JFK2.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/JFK_10.jpg static/images/Shrinking-World-Pubs/journey/JFK_10.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/JFK_12.jpg static/images/Shrinking-World-Pubs/journey/JFK_12.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/Tumbler_Snapper.pdf static/images/Shrinking-World-Pubs/journey/Tumbler_Snapper.pdf
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/JFK.jpg static/images/Shrinking-World-Pubs/journey/JFK.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/Tscharli1.jpg static/images/Shrinking-World-Pubs/journey/Tscharli1.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/Buster-Dog-500.jpg static/images/Shrinking-World-Pubs/journey/Buster-Dog-500.jpg
+Sep 13 17:09:00  COPY FILES journey Documents/Shrinking-World-Pubs/journey/Images/bunker.jpg static/images/Shrinking-World-Pubs/journey/bunker.jpg
+Sep 13 17:09:00  Internal Server Error: /writer/journey/Cruise/Outline.md/publish
+Sep 13 17:09:00  Traceback (most recent call last):
+Sep 13 17:09:00    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+Sep 13 17:09:00      response = get_response(request)
+Sep 13 17:09:00                 ^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:09:00    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+Sep 13 17:09:00      response = wrapped_callback(request, *callback_args, **callback_kwargs)
+Sep 13 17:09:00                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:09:00    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+Sep 13 17:09:00      return self.dispatch(request, *args, **kwargs)
+Sep 13 17:09:00             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:09:00    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+Sep 13 17:09:00      return handler(request, *args, **kwargs)
+Sep 13 17:09:00             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:09:00    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 257, in get
+Sep 13 17:09:00      url = self.get_redirect_url(*args, **kwargs)
+Sep 13 17:09:00            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:09:00    File "/workspace/writer/views.py", line 60, in get_redirect_url
+Sep 13 17:09:00      return pub_publish(**kwargs)
+Sep 13 17:09:00             ^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:09:00    File "/workspace/writer/publisher.py", line 15, in pub_publish
+Sep 13 17:09:00      publish_script([pub, chapter, doc])
+Sep 13 17:09:00    File "/workspace/writer/publisher.py", line 37, in publish_script
+Sep 13 17:09:00      edit_files([copy_doc_files(pub, chapter)])
+Sep 13 17:09:00    File "/workspace/writer/pub_script.py", line 211, in edit_files
+Sep 13 17:09:00      editor = editor.replace(' -w', '')
+Sep 13 17:09:00               ^^^^^^^^^^^^^^
+Sep 13 17:09:00  AttributeError: 'NoneType' object has no attribute 'replace'
+Sep 13 17:09:00  10.244.4.98 - - [13/Sep/2025:11:09:00 -0600] "GET /writer/journey/Cruise/Outline.md/publish HTTP/1.1" 500 84033 "-" "Mozilla/5.0 (Linux; Android 5.0) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; Bytespider; spider-feedback@bytedance.com)"
+Sep 13 17:09:33  10.244.0.4 - - [13/Sep/2025:11:09:33 -0600] "GET /sampler/02-20.md HTTP/1.1" 200 3122 "https://markseaman.org/sampler/02-Index.md" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:09:38  10.244.4.98 - - [13/Sep/2025:11:09:38 -0600] "GET /sampler/11-28.md HTTP/1.1" 200 3063 "https://seamanslog.com/sampler/11-Index.md" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:10:11  Already up to date.
+Sep 13 17:10:11  Internal Server Error: /robots.txt
+Sep 13 17:10:11  Traceback (most recent call last):
+Sep 13 17:10:11    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+Sep 13 17:10:11      response = get_response(request)
+Sep 13 17:10:11                 ^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:11    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+Sep 13 17:10:11      response = wrapped_callback(request, *callback_args, **callback_kwargs)
+Sep 13 17:10:11                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:11    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+Sep 13 17:10:11      return self.dispatch(request, *args, **kwargs)
+Sep 13 17:10:11             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:11    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+Sep 13 17:10:11      return handler(request, *args, **kwargs)
+Sep 13 17:10:11             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:11    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 226, in get
+Sep 13 17:10:11      context = self.get_context_data(**kwargs)
+Sep 13 17:10:11                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:11    File "/workspace/publish/views.py", line 113, in get_context_data
+Sep 13 17:10:11      kwargs = select_blog_doc(pub, doc, local_host)
+Sep 13 17:10:11               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:11    File "/workspace/publish/publication.py", line 213, in select_blog_doc
+Sep 13 17:10:11      p = get_pub(pub)
+Sep 13 17:10:11          ^^^^^^^^^^^^
+Sep 13 17:10:11    File "/workspace/publish/publication.py", line 97, in get_pub
+Sep 13 17:10:11      return Pub.objects.get(name=name)
+Sep 13 17:10:11             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:11    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+Sep 13 17:10:11      return getattr(self.get_queryset(), name)(*args, **kwargs)
+Sep 13 17:10:11             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:11    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/query.py", line 637, in get
+Sep 13 17:10:11      raise self.model.DoesNotExist(
+Sep 13 17:10:11  publish.models.Pub.DoesNotExist: Pub matching query does not exist.
+Sep 13 17:10:11  10.244.7.124 - - [13/Sep/2025:11:10:11 -0600] "GET /robots.txt HTTP/1.1" 500 87657 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
+Sep 13 17:10:47  Already up to date.
+Sep 13 17:10:47  Internal Server Error: /robots.txt
+Sep 13 17:10:47  Traceback (most recent call last):
+Sep 13 17:10:47    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+Sep 13 17:10:47      response = get_response(request)
+Sep 13 17:10:47                 ^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:47    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+Sep 13 17:10:47      response = wrapped_callback(request, *callback_args, **callback_kwargs)
+Sep 13 17:10:47                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:47    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+Sep 13 17:10:47      return self.dispatch(request, *args, **kwargs)
+Sep 13 17:10:47             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:47    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+Sep 13 17:10:47      return handler(request, *args, **kwargs)
+Sep 13 17:10:47             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:47    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 226, in get
+Sep 13 17:10:47      context = self.get_context_data(**kwargs)
+Sep 13 17:10:47                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:47    File "/workspace/publish/views.py", line 113, in get_context_data
+Sep 13 17:10:47      kwargs = select_blog_doc(pub, doc, local_host)
+Sep 13 17:10:47               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:47    File "/workspace/publish/publication.py", line 213, in select_blog_doc
+Sep 13 17:10:47      p = get_pub(pub)
+Sep 13 17:10:47          ^^^^^^^^^^^^
+Sep 13 17:10:47    File "/workspace/publish/publication.py", line 97, in get_pub
+Sep 13 17:10:47      return Pub.objects.get(name=name)
+Sep 13 17:10:47             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:47    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+Sep 13 17:10:47      return getattr(self.get_queryset(), name)(*args, **kwargs)
+Sep 13 17:10:47             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:10:47    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/query.py", line 637, in get
+Sep 13 17:10:47      raise self.model.DoesNotExist(
+Sep 13 17:10:47  publish.models.Pub.DoesNotExist: Pub matching query does not exist.
+Sep 13 17:10:47  10.244.7.124 - - [13/Sep/2025:11:10:47 -0600] "GET /robots.txt HTTP/1.1" 500 87532 "-" "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)"
+Sep 13 17:10:48  10.244.4.98 - - [13/Sep/2025:11:10:48 -0600] "GET /stacie HTTP/1.1" 200 4192 "-" "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)"
+Sep 13 17:10:53  10.244.2.30 - - [13/Sep/2025:11:10:53 -0600] "GET /sampler/02-13.md HTTP/1.1" 200 3109 "https://markseaman.org/sampler/02-Index.md" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:11:04  10.244.4.98 - - [13/Sep/2025:11:11:04 -0600] "GET /after/49.md HTTP/1.1" 200 4875 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"
+Sep 13 17:11:28  Already up to date.
+Sep 13 17:11:28  10.244.7.124 - - [13/Sep/2025:11:11:28 -0600] "GET /family HTTP/1.1" 200 4142 "-" "meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)"
+Sep 13 17:11:41  10.244.7.124 - - [13/Sep/2025:11:11:41 -0600] "GET /sampler/11-28 HTTP/1.1" 200 3063 "https://seamanslog.com/sampler/12-04.md" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:12:08  Internal Server Error: /test/4483/run
+Sep 13 17:12:08  Traceback (most recent call last):
+Sep 13 17:12:08    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+Sep 13 17:12:08      response = get_response(request)
+Sep 13 17:12:08                 ^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:08    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+Sep 13 17:12:08      response = wrapped_callback(request, *callback_args, **callback_kwargs)
+Sep 13 17:12:08                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:08    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+Sep 13 17:12:08      return self.dispatch(request, *args, **kwargs)
+Sep 13 17:12:08             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:08    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+Sep 13 17:12:08      return handler(request, *args, **kwargs)
+Sep 13 17:12:08             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:08    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 257, in get
+Sep 13 17:12:08      url = self.get_redirect_url(*args, **kwargs)
+Sep 13 17:12:08            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:08    File "/workspace/probe/views_probe.py", line 98, in get_redirect_url
+Sep 13 17:12:08      probe = Probe.objects.get(pk=pk)
+Sep 13 17:12:08              ^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:08    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+Sep 13 17:12:08      return getattr(self.get_queryset(), name)(*args, **kwargs)
+Sep 13 17:12:08             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:08    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/query.py", line 637, in get
+Sep 13 17:12:08      raise self.model.DoesNotExist(
+Sep 13 17:12:08  probe.models.Probe.DoesNotExist: Probe matching query does not exist.
+Sep 13 17:12:08  10.244.4.98 - - [13/Sep/2025:11:12:08 -0600] "GET /test/4483/run HTTP/1.1" 500 79641 "https://shrinking-world.com/test/4483" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:12:11  Already up to date.
+Sep 13 17:12:11  Internal Server Error: /robots.txt
+Sep 13 17:12:11  Traceback (most recent call last):
+Sep 13 17:12:11    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+Sep 13 17:12:11      response = get_response(request)
+Sep 13 17:12:11                 ^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:11    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+Sep 13 17:12:11      response = wrapped_callback(request, *callback_args, **callback_kwargs)
+Sep 13 17:12:11                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:11    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+Sep 13 17:12:11      return self.dispatch(request, *args, **kwargs)
+Sep 13 17:12:11             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:11    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+Sep 13 17:12:11      return handler(request, *args, **kwargs)
+Sep 13 17:12:11             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:11    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 226, in get
+Sep 13 17:12:11      context = self.get_context_data(**kwargs)
+Sep 13 17:12:11                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:11    File "/workspace/publish/views.py", line 113, in get_context_data
+Sep 13 17:12:11      kwargs = select_blog_doc(pub, doc, local_host)
+Sep 13 17:12:11               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:11    File "/workspace/publish/publication.py", line 213, in select_blog_doc
+Sep 13 17:12:11      p = get_pub(pub)
+Sep 13 17:12:11          ^^^^^^^^^^^^
+Sep 13 17:12:11    File "/workspace/publish/publication.py", line 97, in get_pub
+Sep 13 17:12:11      return Pub.objects.get(name=name)
+Sep 13 17:12:11             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:11    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+Sep 13 17:12:11      return getattr(self.get_queryset(), name)(*args, **kwargs)
+Sep 13 17:12:11             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:11    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/query.py", line 637, in get
+Sep 13 17:12:11      raise self.model.DoesNotExist(
+Sep 13 17:12:11  publish.models.Pub.DoesNotExist: Pub matching query does not exist.
+Sep 13 17:12:11  10.244.7.124 - - [13/Sep/2025:11:12:11 -0600] "GET /robots.txt HTTP/1.1" 500 87653 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
+Sep 13 17:12:20  Already up to date.
+Sep 13 17:12:20  Internal Server Error: /robots.txt
+Sep 13 17:12:20  Traceback (most recent call last):
+Sep 13 17:12:20    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+Sep 13 17:12:20      response = get_response(request)
+Sep 13 17:12:20                 ^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:20    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+Sep 13 17:12:20      response = wrapped_callback(request, *callback_args, **callback_kwargs)
+Sep 13 17:12:20                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:20    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+Sep 13 17:12:20      return self.dispatch(request, *args, **kwargs)
+Sep 13 17:12:20             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:20    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+Sep 13 17:12:20      return handler(request, *args, **kwargs)
+Sep 13 17:12:20             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:20    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 226, in get
+Sep 13 17:12:20      context = self.get_context_data(**kwargs)
+Sep 13 17:12:20                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:20    File "/workspace/publish/views.py", line 113, in get_context_data
+Sep 13 17:12:20      kwargs = select_blog_doc(pub, doc, local_host)
+Sep 13 17:12:20               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:20    File "/workspace/publish/publication.py", line 213, in select_blog_doc
+Sep 13 17:12:20      p = get_pub(pub)
+Sep 13 17:12:20          ^^^^^^^^^^^^
+Sep 13 17:12:20    File "/workspace/publish/publication.py", line 97, in get_pub
+Sep 13 17:12:20      return Pub.objects.get(name=name)
+Sep 13 17:12:20             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:20    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+Sep 13 17:12:20      return getattr(self.get_queryset(), name)(*args, **kwargs)
+Sep 13 17:12:20             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:20    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/query.py", line 637, in get
+Sep 13 17:12:20      raise self.model.DoesNotExist(
+Sep 13 17:12:20  publish.models.Pub.DoesNotExist: Pub matching query does not exist.
+Sep 13 17:12:20  10.244.7.124 - - [13/Sep/2025:11:12:20 -0600] "GET /robots.txt HTTP/1.1" 500 87650 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
+Sep 13 17:12:22  10.244.7.124 - - [13/Sep/2025:11:12:22 -0600] "GET /sampler/02-13 HTTP/1.1" 200 3109 "https://markseaman.org/sampler/02-20" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+Sep 13 17:12:59  Internal Server Error: /writer/webdev/Views/StudentView.md/publish
+Sep 13 17:12:59  Traceback (most recent call last):
+Sep 13 17:12:59    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+Sep 13 17:12:59      response = get_response(request)
+Sep 13 17:12:59                 ^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:59    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+Sep 13 17:12:59      response = wrapped_callback(request, *callback_args, **callback_kwargs)
+Sep 13 17:12:59                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:59    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+Sep 13 17:12:59      return self.dispatch(request, *args, **kwargs)
+Sep 13 17:12:59             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:59    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+Sep 13 17:12:59      return handler(request, *args, **kwargs)
+Sep 13 17:12:59             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:59    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/views/generic/base.py", line 257, in get
+Sep 13 17:12:59      url = self.get_redirect_url(*args, **kwargs)
+Sep 13 17:12:59            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:59    File "/workspace/writer/views.py", line 60, in get_redirect_url
+Sep 13 17:12:59      return pub_publish(**kwargs)
+Sep 13 17:12:59             ^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:59    File "/workspace/writer/publisher.py", line 15, in pub_publish
+Sep 13 17:12:59      publish_script([pub, chapter, doc])
+Sep 13 17:12:59    File "/workspace/writer/publisher.py", line 32, in publish_script
+Sep 13 17:12:59      pub = get_pub(pub_name)
+Sep 13 17:12:59            ^^^^^^^^^^^^^^^^^
+Sep 13 17:12:59    File "/workspace/publish/publication.py", line 97, in get_pub
+Sep 13 17:12:59      return Pub.objects.get(name=name)
+Sep 13 17:12:59             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:59    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+Sep 13 17:12:59      return getattr(self.get_queryset(), name)(*args, **kwargs)
+Sep 13 17:12:59             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sep 13 17:12:59    File "/workspace/.heroku/python/lib/python3.11/site-packages/django/db/models/query.py", line 637, in get
+Sep 13 17:12:59      raise self.model.DoesNotExist(
+Sep 13 17:12:59  publish.models.Pub.DoesNotExist: Pub matching query does not exist.
+Sep 13 17:12:59  10.244.4.98 - - [13/Sep/2025:11:12:59 -0600] "GET /writer/webdev/Views/StudentView.md/publish HTTP/1.1" 500 92972 "-" "Mozilla/5.0 (Linux; Android 5.0) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; Bytespider; spider-feedback@bytedance.com)"
+Sep 13 17:13:30  10.244.0.4 - - [13/Sep/2025:11:13:30 -0600] "GET /sampler/11-21.md HTTP/1.1" 200 3430 "https://seamanslog.com/sampler/11-Index.md" "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"

@@ -9,7 +9,13 @@ from writer.pub_script import pub_path, pub_url
 
 
 def transform_prompt(prompt):
-    openai.api_key = getenv("OPENAI_API_KEY")
+    api_key = getenv("OPENAI_API_KEY")
+
+    if not api_key:
+        raise RuntimeError(
+            "Missing OpenAI API key. Set OPENAI_API_KEY in environment.")
+
+    openai.api_key = api_key
 
     # Try up to ten times to transfer
     for i in range(10):
