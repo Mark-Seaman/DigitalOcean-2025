@@ -13,7 +13,6 @@ Personal Goals
         Innovate
 
             Publish - fruitful, becoming, friendship, formation, writer
-            Obsidian URL - markseaman.org
             Your Brainchild Publishing
            
     Social Life (30%)
