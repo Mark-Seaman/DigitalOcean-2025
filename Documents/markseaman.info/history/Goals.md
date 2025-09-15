@@ -4,36 +4,38 @@ Personal Goals
     
         Write
 
-            formation: scripture, exercises            
+            formation: scripture, exercises      
+            organize notes      
 
         Teach & Publish
 
             Share strategy
+            Publish The Way of Jesus
             
         Innovate
 
-            Publish - fruitful, becoming, friendship, formation, writer
+            COMMS - fruitful, becoming, friendship, formation, writer, stacie, hp, grow
             Your Brainchild Publishing
            
     Social Life (30%)
     
         Friends
 
+            Comm Channels - formation (core & others)
+            send The Fruitful Life
             Follow up (5 people/day)
             Review Subscribers
-            Game Night
-            Comm Channels
 
         Family
 
-            Andrew birthday
 
         Church
 
-            article: No Coincidences When God Leads
+            Alan Kraft
             Bristow
-            people interested in formation
             Goce Pecov - collaboration
+            article: No Coincidences When God Leads
+            people interested in formation
             
     Personal Life (30%)
     
@@ -42,6 +44,7 @@ Personal Goals
         Growth & Health
 
             walk
+            dentist
             
         Travel & Adventure & Learning
            
