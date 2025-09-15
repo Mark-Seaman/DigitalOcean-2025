@@ -5,7 +5,8 @@ Personal Goals
         Write
 
             formation: scripture, exercises      
-            organize notes      
+            organize notes  
+            write about My Story Chapter 65    
 
         Teach & Publish
 
@@ -52,11 +53,16 @@ Personal Goals
     
         Healthcare
 
+            schedule MOHS
+            learn about CPAP
+
         Money
     
         Organize
         
         Household
+
+            laundry
 
 
 
