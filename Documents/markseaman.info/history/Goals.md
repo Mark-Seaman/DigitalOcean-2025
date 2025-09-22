@@ -4,17 +4,17 @@ Personal Goals
     
         Write
 
-            formation: scripture, exercises      
+            formation: scripture, exercises
             organize notes  
-            write about My Story Chapter 65    
 
         Teach & Publish
 
-            Share strategy
             Publish The Way of Jesus
+            Share strategy
             
         Innovate
 
+            Setup tools for Rachel
             COMMS - fruitful, becoming, friendship, formation, writer, stacie, hp, grow
             Your Brainchild Publishing
            
@@ -22,19 +22,18 @@ Personal Goals
     
         Friends
 
-            Comm Channels - formation (core & others)
-            send The Fruitful Life
+            Game Night
             Follow up (5 people/day)
             Review Subscribers
 
         Family
 
+            Rachel - Brainchild, Japan
 
         Church
 
             Alan Kraft
             Bristow
-            Goce Pecov - collaboration
             article: No Coincidences When God Leads
             people interested in formation
             
@@ -45,18 +44,21 @@ Personal Goals
         Growth & Health
 
             walk
-            dentist
             
         Travel & Adventure & Learning
+
+            Ft Collins Trolley
+            Mt Drive
            
     Business Life (10%)
     
         Healthcare
 
-            schedule MOHS
             learn about CPAP
 
         Money
+
+            lifetime finances
     
         Organize
         
