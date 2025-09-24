@@ -1,8 +1,7 @@
 from pathlib import Path
-import json
-
-from publish.epub import build_epub
 from publish.pdf import build_pdf
+from publish.epub import build_epub
+import json
 
 
 def build_pub(pub, writer=None):

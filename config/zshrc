@@ -53,7 +53,7 @@ alias z='echo unused'
 # Pub Script
 alias o='d $o'
 alias build='order build'
-alias create='order create'
+alias mkpub='order mkpub'
 alias cover='order cover'
 alias json='order json'
 alias order='cd $h; python Obsidian/forge/mcp/mcp_order.py'
