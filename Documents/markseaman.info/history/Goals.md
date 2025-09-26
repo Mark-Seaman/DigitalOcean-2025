@@ -4,17 +4,21 @@ Personal Goals
     
         Write
 
+            To Do for specific Guides & Playbooks
             formation: scripture, exercises
             organize notes  
 
         Teach & Publish
 
+            Your Brainchild Publishing - the origin story
             Publish The Way of Jesus
             Share strategy
             
         Innovate
 
-            Setup tools for Rachel
+            To Do for Rachel
+            Objectives Q3-Q4
+            Pay Rachel
             COMMS - fruitful, becoming, friendship, formation, writer, stacie, hp, grow
             Your Brainchild Publishing
            
@@ -28,13 +32,11 @@ Personal Goals
 
         Family
 
-            Rachel - Brainchild, Japan
 
         Church
 
             Alan Kraft
             Bristow
-            article: No Coincidences When God Leads
             people interested in formation
             
     Personal Life (30%)
@@ -44,6 +46,7 @@ Personal Goals
         Growth & Health
 
             walk
+            
             
         Travel & Adventure & Learning
 
@@ -64,7 +67,7 @@ Personal Goals
         
         Household
 
-            laundry
+            meal planning
 
 
 
