@@ -1,12 +1,18 @@
 Personal Goals
     
+            
+
+
     Creative Life (30%)
     
         Write
 
+            Invitation to ministry
+            Your life is a testimony            
+            AI and spiritual formation
+            Ideation Playbook
+            The Pastoral Paradox            
             To Do for specific Guides & Playbooks
-            formation: scripture, exercises
-            organize notes  
 
         Teach & Publish
 
@@ -16,6 +22,10 @@ Personal Goals
             
         Innovate
 
+            Cover maker
+            Outline maker
+            Exercise maker
+            Teachable - shrinking-world.org
             To Do for Rachel
             Objectives Q3-Q4
             Pay Rachel
@@ -26,15 +36,21 @@ Personal Goals
     
         Friends
 
-            Game Night
+            Game Night - Party prep
+            Eric Williams
             Follow up (5 people/day)
             Review Subscribers
+            Social effort
+            Faceblog
+            Mary Kay
 
         Family
 
 
         Church
 
+            Goce & Igor 
+            Formation group
             Alan Kraft
             Bristow
             people interested in formation
@@ -62,6 +78,10 @@ Personal Goals
         Money
 
             lifetime finances
+            Juice plus
+            Zoom
+            Prometa
+            Breeze Thru
     
         Organize
         
