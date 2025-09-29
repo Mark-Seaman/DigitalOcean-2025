@@ -1,8 +1,5 @@
 Personal Goals
     
-            
-
-
     Creative Life (30%)
     
         Write
@@ -11,7 +8,6 @@ Personal Goals
             Your life is a testimony            
             AI and spiritual formation
             Ideation Playbook
-            The Pastoral Paradox            
             To Do for specific Guides & Playbooks
 
         Teach & Publish
@@ -19,16 +15,15 @@ Personal Goals
             Your Brainchild Publishing - the origin story
             Publish The Way of Jesus
             Share strategy
+            Publications List & Priorities
             
         Innovate
 
+            Mkpub script
             Cover maker
             Outline maker
             Exercise maker
             Teachable - shrinking-world.org
-            To Do for Rachel
-            Objectives Q3-Q4
-            Pay Rachel
             COMMS - fruitful, becoming, friendship, formation, writer, stacie, hp, grow
             Your Brainchild Publishing
            
@@ -36,7 +31,7 @@ Personal Goals
     
         Friends
 
-            Game Night - Party prep
+            trip to mountains with Trudy
             Eric Williams
             Follow up (5 people/day)
             Review Subscribers
@@ -46,9 +41,13 @@ Personal Goals
 
         Family
 
+            Ruby & Val visit
 
         Church
 
+            Geoff & Eden
+            Bill & Cathy Hayes
+            Men's Retreat - Nov 12
             Goce & Igor 
             Formation group
             Alan Kraft
@@ -62,26 +61,27 @@ Personal Goals
         Growth & Health
 
             walk
-            
+            August/September story
             
         Travel & Adventure & Learning
 
-            Ft Collins Trolley
-            Mt Drive
+            Mt Drive with Trudy
            
     Business Life (10%)
     
         Healthcare
 
             learn about CPAP
+            UC Health appointment
 
         Money
 
             lifetime finances
             Juice plus
             Zoom
-            Prometa
+            Prometa servers
             Breeze Thru
+            Medications
     
         Organize
         
