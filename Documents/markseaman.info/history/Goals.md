@@ -12,10 +12,10 @@ Personal Goals
 
         Teach & Publish
 
+            Publications List & Priorities
             Your Brainchild Publishing - the origin story
             Publish The Way of Jesus
             Share strategy
-            Publications List & Priorities
             
         Innovate
 
@@ -31,7 +31,7 @@ Personal Goals
     
         Friends
 
-            trip to mountains with Trudy
+            trip to Estes Park
             Eric Williams
             Follow up (5 people/day)
             Review Subscribers
