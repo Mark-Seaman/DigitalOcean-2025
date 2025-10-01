@@ -4,6 +4,7 @@ Personal Goals
     
         Write
 
+            Meaning Pub
             Invitation to ministry
             Your life is a testimony            
             AI and spiritual formation
@@ -31,7 +32,6 @@ Personal Goals
     
         Friends
 
-            trip to Estes Park
             Eric Williams
             Follow up (5 people/day)
             Review Subscribers
