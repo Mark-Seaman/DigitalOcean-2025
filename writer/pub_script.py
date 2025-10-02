@@ -10,6 +10,7 @@ from publish.document import title
 from publish.files import create_directory, read_json
 from publish.publication import build_pubs
 from publish.text import text_join, text_lines, word_count
+from writer.obsidian import obsidian_cover
 
 from .cover import create_book_cover
 from .outline import create_index, create_outlines
@@ -52,8 +53,9 @@ def cover_script(args):
     if not args:
         return 'usage: pub cover write'
     pub = args[0]
-    images = pub_path(pub).parent/'Images'
-    return create_book_cover(images)
+    # images = pub_path(pub).parent/'Images'
+    # return create_book_cover(images)
+    obsidian_cover()
 
 
 def create_outline(args):

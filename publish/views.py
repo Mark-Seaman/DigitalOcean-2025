@@ -1,3 +1,4 @@
+from pathlib import Path
 from django.views.generic import RedirectView, TemplateView
 
 from publish.document import document_body, document_html, document_title
@@ -28,6 +29,42 @@ class ContactView(TemplateView):
         doc = kwargs.get("doc", "contact")
         kwargs = select_blog_doc(pub, doc)
         return kwargs
+
+
+class PubCoverView(TemplateView):
+    template_name = "pub/cover.html"
+
+    def get_context_data(self, **kwargs):
+        pub = kwargs.get("pub", "cover")
+        kwargs = obsidian_json(pub)
+        image_file = f"/static/images/CoverArtwork.png"
+        kwargs['image'] = image_file
+        return kwargs
+
+#  http://127.0.0.1:8000/cover/becoming
+
+
+def obsidian_json(pub):
+    # Read the JSON data for the publication
+    json = pub_path(pub) / 'dev' / f'{pub}.json'
+    data = read_json(json)
+    if not data:
+        print(f"Invalid JSON structure in: {json}")
+        return
+    # print(f"Publication Data: {data}")
+    print(f"Title: {data.get('title', 'Untitled')}")
+    print(f"Subtitle: {data.get('subtitle', '')}")
+    print(f"Author: {data.get('author', 'Mark Seaman')}")
+    print(f"Cover Image: {data.get('cover-image', '')}")
+    print(f"Publication Path: {data.get('pub-path', '')}")
+    return data
+
+
+def pub_path(pub):
+    for base_dir in ["growth", "playbooks", "spirituality", "guides"]:
+        path = Path("Obsidian/forge") / base_dir / pub
+        if path.exists():
+            return path
 
 
 class PubRedirectView(RedirectView):

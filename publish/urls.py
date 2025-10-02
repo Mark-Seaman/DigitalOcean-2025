@@ -1,7 +1,7 @@
 from django.urls import path
 
 from .views_note import JumbotronView, NoteCreateView, NoteDeleteView, NoteDetailView, NoteListView, NoteUpdateView, StacieView
-from .views import BouncerRedirectView, ContactView, GalleryView, PubDetailView, PubLibraryView, PubListView, PubRampView, PubRedirectView, PubView
+from .views import BouncerRedirectView, ContactView, GalleryView, PubCoverView, PubDetailView, PubLibraryView, PubListView, PubRampView, PubRedirectView, PubView
 
 urlpatterns = [
 
@@ -33,6 +33,9 @@ urlpatterns = [
     # Blog Pub Ramp
     path("<int:month>-<int:day>", PubRampView.as_view()),
     path("<int:month>-<int:day>/<str:type>", PubRampView.as_view()),
+
+    # Pub Cover
+    path("cover/<str:pub>", PubCoverView.as_view()),
 
     # Display a pub document
     path("<str:pub>", PubDetailView.as_view(), name="pub_detail"),
