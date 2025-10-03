@@ -37,7 +37,6 @@ Personal Goals
             Review Subscribers
             Social effort
             Faceblog
-            Mary Kay
 
         Family
 
