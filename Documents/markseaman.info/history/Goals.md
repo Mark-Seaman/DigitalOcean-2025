@@ -20,7 +20,6 @@ Personal Goals
     
         Friends
 
-            Game Night
             Broadcast
 
         Family
@@ -41,7 +40,6 @@ Personal Goals
             
         Travel & Adventure & Learning
 
-             Trudy @ Tavern
            
     Business Life (10%)
     
@@ -50,7 +48,6 @@ Personal Goals
 
         Money
 
-            Mortgage, Credit Card, Rocket
             lifetime finances
             Zoom
             Prometa servers
