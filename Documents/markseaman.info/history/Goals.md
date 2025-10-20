@@ -31,8 +31,6 @@ Personal Goals
 
         Family
 
-            dinner with Kimberly
-            Rub/Val event
 
         Church
 
@@ -56,7 +54,6 @@ Personal Goals
         Healthcare
 
             MOHS arrangements (10 minutes)
-            haircut
 
         Money
 
