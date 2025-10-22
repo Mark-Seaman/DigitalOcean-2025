@@ -15,25 +15,23 @@ Personal Goals
         Innovate - build tools and workflow
 
             Teachable domain
-            April coordination
+            working with April
             publications to publish
-            word count markdown files
 
     Social Life (30%)
     
         Friends
 
-            business cards
             Broadcast
             Facebook
-            dinner & lunch invites
-            Kimberly & Trudy
 
         Family
 
 
         Church
 
+            Bonnie & Dale
+            Rob Strouse
             follow up
             meeting invites
             San Diego folks
