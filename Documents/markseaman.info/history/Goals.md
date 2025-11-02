@@ -5,12 +5,15 @@ Personal Goals
         Write - putting thoughts and feelings into words
 
             send video course guidebook to April
+            April Teachable login
+            My Story (64)
+            greenhouse --> pub
 
         Teach & Publish - share my ideas with others
 
             create slide deck for video course teaching
             create title advisor
-            new book covers
+            build community network
       
         Innovate - build tools and workflow
 
@@ -46,12 +49,12 @@ Personal Goals
             
         Travel & Adventure & Learning
 
+            life goals and experiences (October 2025)
+
            
     Business Life (10%)
     
         Healthcare
-
-            MOHS arrangements (10 minutes)
 
         Money
 
