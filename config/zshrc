@@ -77,6 +77,7 @@ alias month='task 30'
 alias pub='d $d/Shrinking-World-Pubs'
 alias pubs='d $pubs'
 alias quote=./Obsidian/forge/mcp/quote.py
+alias rcp="~/.ntsh/rcp"
 alias task='pm task'
 alias today='task 1 today'
 alias week='task 7'
