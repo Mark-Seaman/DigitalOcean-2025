@@ -58,6 +58,7 @@ alias cover='order cover'
 alias content='order content'
 alias json='order json'
 alias order='cd $h; python Obsidian/forge/mcp/mcp_order.py'
+alias manuscript='order manuscript'
 alias words='order words'
 
 # alias chapter='pm order chapter'
