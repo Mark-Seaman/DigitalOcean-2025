@@ -52,6 +52,9 @@ alias z='echo unused'
 
 # Pub Script
 alias o='d $o'
+alias forge='d $o/forge'
+alias ob='open -a Obsidian'
+alias ev='open -a Evernote'
 alias build='order build'
 alias mkpub='order mkpub'
 alias cover='order cover'
