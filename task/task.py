@@ -69,7 +69,7 @@ def fix_tasks(**kwargs):
         return sub(rf'\n{t1} *(\d*)', fr'\n{t2} \1', text)
 
     def task_in_files(task):
-        directory = Path("Documents/markseaman.info/history")
+        directory = Path("Obsidian/private/history")
         for path in directory.rglob("*/*"):
             if path.is_file():
                 text = path.read_text()
@@ -78,7 +78,7 @@ def fix_tasks(**kwargs):
                     print(path, tasks)
 
     def rename_task(old_task, new_task):
-        directory = Path("Documents/markseaman.info/history")
+        directory = Path("Obsidian/private/history")
         for path in directory.rglob("*/??"):
             if path.is_file():
                 # print(path)
@@ -372,7 +372,7 @@ def task_import_files(days=7, date=None):
     def read_task_file(date):
         # print(date)
         d = date.replace("-", "/")
-        history = Path(f'Documents/markseaman.info/history/{d}')
+        history = Path(f'Obsidian/private/history/{d}')
         if history.exists():
             text = history.read_text()
             Task.objects.filter(date=date).delete()

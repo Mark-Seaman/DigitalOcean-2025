@@ -52,7 +52,7 @@ def edit_task_files():
     def path_name(path, date):
         return path / (date.strftime("%Y/%m/%d"))
 
-    path = Path("Documents/markseaman.info/history")
+    path = Path("Obsidian/Private/history")
     edit_file([path/'Goals.md', path/localdate().strftime("%Y/%m")])
     # edit_file([path/'Goals.md'])
     open_files(path, 0, 3, path_name, create_history_file)
