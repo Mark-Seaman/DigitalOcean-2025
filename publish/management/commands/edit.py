@@ -1,3 +1,4 @@
+import shlex
 from os import environ
 
 from django.core.management.base import BaseCommand
@@ -21,31 +22,18 @@ class Command(BaseCommand):
             self.stdout.write(format_exc())
 
 
-def file_args(args):
-    directory = environ["p"]
-    if exists(args[0]) and isdir(args[0]):
-        # print(f'Directory:  {args[0]}')
-        directory = args[0]
-        args = args[1:]
-    files = ""
-    for f in args:
-        d = join(directory, f)
-        if exists(d):
-            files += join(directory, f) + " "
-        elif exists(f):
-            files += f + " "
-        else:
-            files += join(directory, "", f) + " "
-    # print(f"EDIT (dir={directory}, files={files})")
-    return files
-
-
 def edit_file(args):
-    if isinstance(args, list):
-        files = file_args(args)
-    else:
-        files = args
     exe_path = "subl"
-    command = f"{exe_path} {files}"
+    # create command string as f-string. with exe_path and str(args)
+
+    # normalize args into a string and safely quote
+    if isinstance(args, (list, tuple)):
+        arg_str = " ".join(shlex.quote(str(a)) for a in args)
+    elif args is None:
+        arg_str = ""
+    else:
+        arg_str = shlex.quote(str(args))
+
+    command = f"{exe_path} {arg_str}".strip()
     # print(command)
     shell(command)

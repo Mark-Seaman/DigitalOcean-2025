@@ -114,47 +114,9 @@ def fix_tasks(**kwargs):
             x.delete()
 
     def setup_activities():
-        # rename_tasktype('Public', 'Connect')
-        # rename_tasktype('Private', 'Enjoy')
-        # rename_tasktype('Work', 'Create')
+        define_activity('Health', 'Work')
+        define_activity('Organize', 'Work')
 
-        # TaskType.objects.get(name='Learn').delete()
-        # delete_activity('Fun')
-        # delete_activity('Grow')
-        # delete_activity('Code')
-        # delete_activity('Church')
-        # delete_activity('Family')
-        # delete_activity('Software')
-        # delete_activity('People')
-        # delete_activity('Network')
-        # delete_activity('Tools')
-
-        define_activity('ProMETA', 'Connect')
-        define_activity('Seta', 'Connect')
-        # define_activity('Stacie', 'Connect')
-        # define_activity('Friends', 'Connect')
-        # define_activity('Family', 'Connect')
-        # define_activity('Church', 'Connect')
-        # define_activity('Innovate', 'Create')
-        # define_activity('Teach', 'Create')
-        # define_activity('Write', 'Create')
-        # define_activity('Fun', 'Enjoy')
-        # define_activity('Grow', 'Enjoy')
-        # define_activity('Travel', 'Enjoy')
-        define_activity('Business', 'Work')
-
-        # rename_task('Learn', 'Innovate')
-        # rename_task('Software', 'Innovate')
-        # rename_task('Network', 'Write')
-        # rename_task('People', 'Family')
-        # rename_task('Tools', 'Software')
-        # rename_task('Code', 'Software')
-        # rename_task('Career', 'Business')
-        # rename_task('Networking', 'Business')
-        # task_in_files('Career')
-
-    # save_task_data()
-    # days = kwargs.get('days', 30)
     setup_activities()
     return show_activities()
 
@@ -330,6 +292,8 @@ def task_command(command):
     if command and command[0] == 'activity':
         activity = True
         act = command[1:]
+
+    fix_tasks()
     return update_tasks(days=days, date=day, activity=activity, act=act)
 
 
