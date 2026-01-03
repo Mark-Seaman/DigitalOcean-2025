@@ -33,6 +33,7 @@ export s=$d/Shrinking-World-Pubs
 export t=$o/Private/history/2026
 export EDITOR="$sublime/subl -w"
 export pubs=~/Pubs
+export mcp=$h/Obsidian/forge/mcp
 
 
 # ------------
@@ -82,6 +83,7 @@ alias week='task 7'
 alias year='task 365'
 
 # Workflow
+alias agent="python $mcp/tool.py"
 alias o='d $o; open -a Obsidian $o'
 alias private='d $p; open -a Obsidian $p'
 alias cprc='cp ~/Hammer/config/zshrc ~/.zshrc && . ~/.zshrc'
