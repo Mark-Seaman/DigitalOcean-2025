@@ -62,8 +62,8 @@ def combine_work_tasks(table, total):
 
 
 def fix_tasks(**kwargs):
-    # def find_tasks(text):
-    #     return findall(r'\n[A-Z][a-z]* *\d*', text)
+    def find_tasks(text):
+        return findall(r'\n[A-Z][a-z]* *\d*', text)
 
     def replace_task(t1, t2, text):
         return sub(rf'\n{t1} *(\d*)', fr'\n{t2} \1', text)
@@ -116,6 +116,7 @@ def fix_tasks(**kwargs):
     def setup_activities():
         define_activity('Health', 'Work')
         define_activity('Organize', 'Work')
+        define_activity('Household', 'Work')
 
     setup_activities()
     return show_activities()
