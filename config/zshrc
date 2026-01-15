@@ -32,7 +32,6 @@ export p=$o/Private
 export s=$d/Shrinking-World-Pubs
 export t=$o/Private/history/2026
 export EDITOR="$sublime/subl -w"
-export pubs=~/Pubs
 export mcp=$h/Obsidian/forge/mcp
 
 
@@ -50,7 +49,7 @@ alias z='echo unused'
 # Pub Script
 alias forge='d $o/forge'
 alias ev='open -a Evernote'
-alias build='order build'
+alias build='agent build'
 alias mkpub='order mkpub'
 alias cover='order cover'
 alias content='order content'
@@ -85,6 +84,7 @@ alias year='task 365'
 
 # Workflow
 alias agent="python $mcp/tool.py"
+alias pub='agent publication'
 alias o='d $o; open -a Obsidian $o'
 alias private='d $p; open -a Obsidian $p'
 alias cprc='cp ~/Hammer/config/zshrc ~/.zshrc && . ~/.zshrc'
@@ -196,33 +196,6 @@ function py {
     echo PYENV = `pyenv which python`
     echo "Python Packages"
     pip freeze
-}
-
-# If this good syntax?
-function build_pdf {
-    ## Select guide or playbook
-    if [ -d "Obsidian/forge/guides/$1" ]; then
-        Obsidian/forge/guides/$1/dev/build-pdf.sh
-    elif [ -d "Obsidian/forge/playbooks/$1" ]; then
-        Obsidian/forge/playbooks/$1/dev/build-pdf.sh
-    fi
-}
-
-function build_epub {
-    ## Select guide or playbook
-    if [ -d "Obsidian/forge/guides/$1" ]; then
-        Obsidian/forge/guides/$1/dev/build-epub.sh
-    elif [ -d "Obsidian/forge/playbooks/$1" ]; then
-        Obsidian/forge/playbooks/$1/dev/build-epub.sh
-    fi
-}
-
-function guide {
-    code Obsidian/forge/guides/$1
-}
-
-function playbook {
-    code Obsidian/forge/playbooks/$1
 }
 
 # Start directory
