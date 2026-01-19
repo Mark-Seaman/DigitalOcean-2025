@@ -19,27 +19,27 @@ eval "$(pyenv init -)"
 # ------------
 # Variables
 
-export h=~/Hammer
-export d=$p/Documents
-export g=$HOME/Github
-export a=$HOME/Archive
-export i="/Users/seaman/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
-export l=$d/Shrinking-World-Pubs/log
-export m="$a/rcp/mbw"
-export n=$a/ntsh
-export o=$h/Obsidian
-export p=$o/Private
-export s=$d/Shrinking-World-Pubs
-export t=$o/Private/history/2026
+export a="$HOME/Archive"
+export b="$o/forge/books"
+export d="$p/Documents"
 export EDITOR="$sublime/subl -w"
-export mcp=$h/Obsidian/forge/mcp
-
+export f="$o/forge"
+export g="$HOME/Github"
+export h="$HOME/Hammer"
+export i="/Users/seaman/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
+export l="$d/Shrinking-World-Pubs/log"
+export m="$a/rcp/mbw"
+export mcp="$h/Obsidian/forge/mcp"
+export n="$a/ntsh"
+export o="$h/Obsidian"
+export p="$o/Private"
+export s="$d/Shrinking-World-Pubs"
+export t="$o/Private/history/2026"
 
 # ------------
 # ALIASES
 
 # Unused
-alias f='echo unused'
 alias j='echo unused'
 alias n='echo unused'
 alias v='echo unused'
@@ -47,14 +47,14 @@ alias y='echo unused'
 alias z='echo unused'
 
 # Pub Script
-alias forge='d $o/forge'
+alias forge="d $o/forge"
 alias ev='open -a Evernote'
 alias build='agent build'
 alias mkpub='order mkpub'
 alias cover='order cover'
 alias content='order content'
 alias json='order json'
-alias order='cd $h; python Obsidian/forge/mcp/mcp_order.py'
+alias order="cd $h; python Obsidian/forge/mcp/mcp_order.py"
 alias manuscript='order manuscript'
 alias words='order words'
 
@@ -67,7 +67,6 @@ alias ea='subl ~/Hammer/config/zshrc'
 alias hammer="cd $h && source ~/.zshrc"
 alias month='task 30'
 alias pub='d $d/Shrinking-World-Pubs'
-alias pubs='d $pubs'
 alias quote=./Obsidian/forge/mcp/quote.py
 alias rcpe='e "/Users/seaman/Library/Mobile Documents/com~apple~CloudDocs/Desktop/.ntsh/rcpf"'
 alias rcp="/Users/seaman/Library/Mobile\ Documents/com~apple~CloudDocs/Desktop/.ntsh/rcp"
@@ -77,14 +76,14 @@ alias week='task 7'
 alias year='task 365'
 
 # MCP
+alias books="ls -lt $b"
 alias agent="python $mcp/tool.py"
 alias pub='agent publication'
-alias o='d $o; open -a Obsidian $o'
-alias ob='d $o'
-alias private='d $p; open -a Obsidian $p'
+alias o="d $o; open -a Obsidian $o"
+alias ob="d $o"
+alias private="d $p; open -a Obsidian $p"
 alias cprc='cp ~/Hammer/config/zshrc ~/.zshrc && . ~/.zshrc'
 alias todo='pm todo'
-alias epub='d $w && open textbook.epub'
 alias dropbox='open ~/Dropbox/Stacie-Mark'
 alias treed='tree -d -L 3'
 alias m='e Documents/mastodon'
