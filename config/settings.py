@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     "django_extensions",
 
     # My Apps
+    "brainchild",
     "course",
     "publish",
     "probe",

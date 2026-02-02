@@ -54,17 +54,31 @@
             "justMyCode": true
         },
         {
-            "name": "Pub Script",
+            "name": "Blog Scan",
             "type": "python",
             "request": "launch",
-            "program": "manage.py",
+            "program": "/Users/seaman/Hammer/Obsidian/forge/mcp/tool.py",
             "cwd": "${workspaceFolder}",
             "args": [
-                "pub",
-                "cover",
-                "cruise"
+                "social",
+                "scan",
+                "all"
             ],
-            "django": true,
+            "django": false,
+            "justMyCode": true
+        },
+        {
+            "name": "Blog Add Post",
+            "type": "python",
+            "request": "launch",
+            "program": "/Users/seaman/Hammer/Obsidian/forge/mcp/tool.py",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "social",
+                "add",
+                "growth"
+            ],
+            "django": false,
             "justMyCode": true
         }
     ]

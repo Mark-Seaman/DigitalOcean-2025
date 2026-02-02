@@ -78,14 +78,17 @@ alias year='task 365'
 # MCP
 alias books="ls -lt $b"
 alias agent="python $mcp/tool.py"
+alias cpr='cd $p && c'
 alias pub='agent publication'
 alias o="d $o; open -a Obsidian $o"
 alias ob="d $o"
+alias social='agent social'
 alias private="d $p; open -a Obsidian $p"
 alias cprc='cp ~/Hammer/config/zshrc ~/.zshrc && . ~/.zshrc'
 alias todo='pm todo'
 alias dropbox='open ~/Dropbox/Stacie-Mark'
 alias treed='tree -d -L 3'
+alias promo='agent promo'
 alias m='e Documents/mastodon'
 alias i='d $i; open $i'
 alias a='open https://chat.openai.com/'
