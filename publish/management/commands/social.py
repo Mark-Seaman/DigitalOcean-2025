@@ -8,15 +8,16 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument('action', type=str, help='Action to perform')
-        parser.add_argument('pub', type=str, help='Publication name or ID')
+        parser.add_argument('pub', type=str, nargs='?',
+                            help='Publication name or ID')
 
     def handle(self, *args, **options):
         action = options['action']
         pub = options['pub']
 
         if action == 'pubs':
+            list_publications(pub)
             show_pubs(pub)
-            # list_publications()
         elif action == 'scan':
             scan_for_blog_content()
         elif action == 'build':

@@ -70,27 +70,28 @@ def markdown_sections(path):
 # --------------------- Show publications --------------------- #
 
 
-def show_pubs(category='all'):
-    if category == 'all':
-        for group in ['spirituality', 'growth', 'playbooks', 'home']:
-            show_pubs(group)
+def show_pubs(category=None):
+    if not category:
+        for group in PubCategory.objects.all():
+            show_pubs(group.name)
         return
 
-    for category in PubCategory.objects.filter(name=category):
-        print(f'\n{"="*60}\nCategory: {category.name}\n{"="*60}\n')
+    group = PubCategory.objects.get(name=category)
+    print(f'\n{"="*60}\nCategory: {category}\n{"="*60}\n')
 
-        for p in Pub.objects.filter(category=category):
-            print(f'\n{"-"*40}\n{p.pub_path}\n{"-"*40}\n')
-            print(p.pub_path)
-            print(p.blog_content_path)
-            for bp in p.blog_posts.all():
-                print(f'    {bp.id} - {bp.title}')
+    for p in Pub.objects.filter(category=group):
+        print(f'\n{"-"*40}\n{p.pub_path}\n{"-"*40}\n')
+        print(p.pub_path)
+        print(p.blog_content_path)
+        for bp in p.blog_posts.all():
+            print(f'    {bp.id} - {bp.title}')
 
 
-def list_publications(group='all'):
-    if group == 'all':
-        for group in ['spirituality', 'growth', 'playbooks', 'home']:
-            list_publications(group)
+def list_publications(group=None):
+    setup_pub_categories()
+    if not group:
+        for group in PubCategory.objects.all():
+            list_publications(group.name)
         return
 
     for blog_dir in Path('Obsidian/forge/').glob(f'{group}/*/dev/'):
@@ -132,8 +133,12 @@ def show_blog_pages():
             for post in BlogPage.objects.filter(post__pub=p):
                 print(f'        {post.pk} - {post.title}')
 
-# PubCategory.objects.all().delete()
-# PubCategory.objects.get_or_create(name="growth")
-# PubCategory.objects.get_or_create(name="playbooks")
-# PubCategory.objects.get_or_create(name="home")
-# PubCategory.objects.get_or_create(name="spirituality")
+
+def setup_pub_categories():
+    # PubCategory.objects.all().delete()
+    if not PubCategory.objects.all():
+        print("Setting up publication categories...")
+        PubCategory.objects.get_or_create(name="growth")
+        PubCategory.objects.get_or_create(name="playbooks")
+        PubCategory.objects.get_or_create(name="home")
+        PubCategory.objects.get_or_create(name="spirituality")
