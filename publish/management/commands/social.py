@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 
-from brainchild.social import list_publications, scan_for_blog_content, show_pubs
+from brainchild.social import add_blog_pages, list_publications, scan_for_blog_content, show_blog_pages, show_pubs
 
 
 class Command(BaseCommand):
@@ -23,7 +23,7 @@ class Command(BaseCommand):
             pass
             # build_pub(pub, self)
         elif action == 'add':
-            pass
+            add_blog_pages()
         else:
             self.stdout.write(self.style.ERROR(f"Unknown action: {action}"))
 

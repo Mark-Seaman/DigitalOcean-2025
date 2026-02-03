@@ -76,6 +76,7 @@ alias week='task 7'
 alias year='task 365'
 
 # MCP
+alias blog='pm social'
 alias books="ls -lt $b"
 alias agent="python $mcp/tool.py"
 alias cpr='cd $p && c'

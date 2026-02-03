@@ -1,7 +1,8 @@
 from pathlib import Path
+import random
 from re import split
 from tokenize import group
-from brainchild.models import BlogPost, PubCategory, Pub
+from brainchild.models import BlogPage, BlogPost, PubCategory, Pub
 
 # --------------------- Scan for blog content --------------------- #
 
@@ -100,6 +101,36 @@ def list_publications(group='all'):
             category=group
         )
 
+# ------------------ Blog Pages ------------------#
+
+
+def add_blog_pages(post='all', pages=3):
+    print(f'Adding {pages} blog pages for post: {post}')
+    for page in range(pages):
+        posts = BlogPost.objects.all()
+        # random selection of a blog post
+        x = random.choice(posts)
+        add_blog_page(x)
+    show_blog_pages()
+
+
+def add_blog_page(post, order=1):
+    return BlogPage.objects.get_or_create(
+        post=post,
+        title=post.title,
+        content=post.content,
+        order=order
+    )
+
+
+def show_blog_pages():
+    print("Blog Pages:\n\n")
+    for category in PubCategory.objects.all():
+        print(f'\n\n{category.name}:\n')
+        for p in Pub.objects.filter(category=category):
+            print(f'   {p.title}')
+            for post in BlogPage.objects.filter(post__pub=p):
+                print(f'        {post.pk} - {post.title}')
 
 # PubCategory.objects.all().delete()
 # PubCategory.objects.get_or_create(name="growth")

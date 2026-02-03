@@ -48,3 +48,21 @@ class BlogPost(models.Model):
 
     def __str__(self):
         return f"{self.title} ({self.pub.title})"
+
+
+class BlogPage(models.Model):
+    post = models.ForeignKey(
+        BlogPost, on_delete=models.CASCADE, related_name='pages')
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    order = models.IntegerField(default=0)
+
+    @property
+    def blog_page_path(self):
+        return f"/public/{self.post.pub.category.name}/blog/{self.post.order}.md"
+
+    class Meta:
+        ordering = ['order']
+
+    def __str__(self):
+        return f"{self.title} ({self.post.title})"
