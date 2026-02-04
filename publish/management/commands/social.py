@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 
-from brainchild.social import add_blog_pages, build_blog_files, list_publications, scan_for_blog_content, show_pubs, reset_blog_data
+from brainchild.social import add_blog_pages, build_blog_files, construct_blog, list_publications, scan_for_blog_content, show_blog_pages, show_pubs, reset_blog_data
 
 
 class Command(BaseCommand):
@@ -18,6 +18,10 @@ class Command(BaseCommand):
         if action == 'pubs':
             list_publications(pub)
             show_pubs(pub)
+        elif action == 'pages':
+            show_blog_pages()
+        elif action == 'construct':
+            construct_blog()
         elif action == 'scan':
             scan_for_blog_content()
         elif action == 'build':

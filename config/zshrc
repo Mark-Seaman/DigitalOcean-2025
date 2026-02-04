@@ -65,6 +65,7 @@ alias doit=./Obsidian/forge/mcp/doit.py
 alias e='subl'
 alias ea='subl ~/Hammer/config/zshrc'
 alias hammer="cd $h && source ~/.zshrc"
+alias harmony='open https://www.eharmony.com/messenger'
 alias month='task 30'
 alias pub='d $d/Shrinking-World-Pubs'
 alias quote=./Obsidian/forge/mcp/quote.py
