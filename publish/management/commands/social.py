@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 
-from brainchild.social import add_blog_pages, list_publications, scan_for_blog_content, show_blog_pages, show_pubs
+from brainchild.social import add_blog_pages, build_blog_files, list_publications, scan_for_blog_content, show_pubs, reset_blog_data
 
 
 class Command(BaseCommand):
@@ -21,19 +21,10 @@ class Command(BaseCommand):
         elif action == 'scan':
             scan_for_blog_content()
         elif action == 'build':
-            pass
-            # build_pub(pub, self)
+            build_blog_files()
         elif action == 'add':
-            add_blog_pages()
+            add_blog_pages(pub)
+        elif action == 'initialize':
+            reset_blog_data()
         else:
             self.stdout.write(self.style.ERROR(f"Unknown action: {action}"))
-
-    # def handle_build(self, pub):
-    #     from pathlib import Path
-    #     pub_dir = Path("Obsidian/public/guides") / pub
-    #     if not pub_dir.exists():
-    #         self.stdout.write(self.style.ERROR(
-    #             f"Publication path does not exist: {pub_dir}"))
-    #         return
-    #     build_pdf(pub_dir)
-    #     build_epub(pub_dir)
