@@ -2,7 +2,7 @@ from django.template import Engine, Context
 from pathlib import Path
 import random
 from re import split
-
+from json import loads
 from brainchild.models import BlogPage, BlogPost, PubCategory, Pub
 
 # --------------------- Scan for blog content --------------------- #
@@ -11,6 +11,7 @@ from brainchild.models import BlogPage, BlogPost, PubCategory, Pub
 def construct_blog():
     print(f'Constructing blog for all groups')
     # reset_blog_data()
+    # Pub.objects.all().delete()
     list_publications()
     scan_for_blog_content()
     show_pubs()
@@ -20,16 +21,19 @@ def construct_blog():
 
 
 def reset_blog_data():
-    BlogPost.objects.all().delete()
+    # BlogPost.objects.all().delete()
     Pub.objects.all().delete()
     PubCategory.objects.all().delete()
-    PubCategory.objects.get_or_create(name="growth")
-    PubCategory.objects.get_or_create(name="playbooks")
-    PubCategory.objects.get_or_create(name="spirituality")
-    scan_for_blog_content()
+    PubCategory.objects.get_or_create(name="growth", title="Personal Growth")
+    PubCategory.objects.get_or_create(
+        name="playbooks", title="Creative Playbooks")
+    PubCategory.objects.get_or_create(
+        name="spirituality", title="Spiritual Guides")
+    # scan_for_blog_content()
 
 
 def scan_for_blog_content():
+    BlogPost.objects.all().delete()
 
     def extract_blog_posts(p):
         blog_content_path = Path(p.blog_content_path)
@@ -39,7 +43,8 @@ def scan_for_blog_content():
             p.delete()
             return
 
-        public_path = Path(f"Obsidian/public/{p.category.name}/{p.name}")
+        public_path = Path(
+            f"Obsidian/public/{p.category.name}/{p.name}/{p.name}.md")
         if not public_path.exists():
             print(
                 f'Public Blog path does not exist: {public_path}')
@@ -102,19 +107,25 @@ def show_pubs(category=None):
 
 
 def list_publications(group=None):
+
+    def pub_title(pub, blog_dir):
+        json_path = blog_dir / f'{pub}.json'
+        if json_path.exists():
+            json_data = loads(json_path.read_text(encoding='utf-8'))
+            return json_data.get("title", None)
+
     if not group:
         for group in PubCategory.objects.all():
             list_publications(group.name)
         return
 
-    print(f'List blog articles for group {group}')
+    print(f'Articles: {group}')
     for blog_dir in Path('Obsidian/forge/').glob(f'{group}/*/dev/'):
-        pub = blog_dir.parent.name
-        Pub.add_pub(
-            name=blog_dir.parent.name,
-            pub_path=str(blog_dir.parent),
-            category=group
-        )
+        pub_name = blog_dir.parent.name
+        title = pub_title(pub_name, blog_dir)
+        print(f'    - {pub_name} - {title}')
+        path = str(blog_dir.parent)
+        Pub.add_pub(pub_name, title, path, group)
 
 
 def show_blog_pages():
@@ -173,26 +184,22 @@ def add_blog_page(post):
     page, created = BlogPage.objects.get_or_create(
         post=post,
         defaults={
-            "title": post.title,
-            "content": post.content,
             "order": order
         }
     )
-    if not created:
-        page.title = post.title
-        page.content = post.content
-        page.save()
-
     return page, created
 
 
 # --------------------- Website Files --------------------- #
 
-BLOG_TEMPLATE = """# {{ blog}}
+BLOG_TEMPLATE = """### {{ blog}}
 
-{{ text }}
+{{ text|safe }}
 
-Prev: [[{{ prev }}]].  Go Deeper [[{{ more }}]]. Next [[{{ next }}]]
+---
+
+Prev: [{{ prev_title }}]({{ prev }}) -- Go Deeper [{{ more_title }}]({{ more }})  --  Next: [{{ next_title }}]({{ next }})
+
 """
 
 
@@ -204,6 +211,11 @@ def write_blog_post(entry):
     file_path.parent.mkdir(parents=True, exist_ok=True)
     file_path.write_text(content, encoding="utf-8")
     return file_path
+
+
+def page_title(group, page_order):
+    return BlogPage.objects.get(
+        post__pub__category__name=group, order=page_order).post.title
 
 
 def build_blog_files(group=None):
@@ -218,15 +230,22 @@ def build_blog_files(group=None):
         pub_name = page.post.pub
         num_posts = BlogPage.objects.filter(
             post__pub__category__name=group).count()
-        prev = page.order - 1 if page.order > 1 else num_posts-1
+        prev = page.order - 1 if page.order > 1 else num_posts
         next = page.order + 1 if page.order < num_posts else 1
+        more = f'{pub_name}/{pub_name}'
+        more_title = page.post.pub.title
+        prev_title = page_title(group, prev)
+        next_title = page_title(group, next)
         entry = {
-            "blog": "Brainchild Blog",
+            "blog": page.post.pub.category.title,
             "title": page.post.title,
             "text": page.post.content,
             "file": f'Obsidian/public/{cat_name}/blog/{page.order:02d}.md',
             "prev": f'{prev:02d}',
             "next": f'{next:02d}',
-            "more": f'public/{cat_name}/{pub_name}/{pub_name}',
+            "prev_title": prev_title,
+            "next_title": next_title,
+            "more": f'{more}',
+            "more_title": more_title,
         }
         write_blog_post(entry)

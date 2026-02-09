@@ -3,6 +3,7 @@ from django.db import models
 
 class PubCategory(models.Model):
     name = models.CharField(max_length=100)
+    title = models.CharField(max_length=100, blank=True, null=True)
     description = models.TextField(blank=True, null=True)
 
     def __str__(self):
@@ -11,7 +12,7 @@ class PubCategory(models.Model):
 
 class Pub(models.Model):
     name = models.CharField(max_length=200)
-    subtitle = models.CharField(max_length=200, blank=True, null=True)
+    title = models.CharField(max_length=200, blank=True, null=True)
     author = models.CharField(max_length=100, blank=True, null=True)
     pub_path = models.CharField(max_length=300)
     category = models.ForeignKey(
@@ -27,15 +28,14 @@ class Pub(models.Model):
     # add a Pub record if it doesn't already exist
 
     @classmethod
-    def add_pub(cls, name, subtitle=None, author=None, pub_path=None, category=None):
-        category_obj, created = PubCategory.objects.get_or_create(
-            name=category)
+    def add_pub(cls, name, title, pub_path, category, author=None):
+        cat, _ = PubCategory.objects.get_or_create(name=category)
         pub = cls.objects.get_or_create(
             name=name,
-            subtitle=subtitle,
+            title=title,
             author=author,
             pub_path=pub_path,
-            category=category_obj
+            category=cat
         )
         return pub
 
