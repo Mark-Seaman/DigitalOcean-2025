@@ -16,9 +16,8 @@ python run_prompt.py output.txt "Write a haiku about Python"
 
 ## Dependencies
 
-- `anthropic` Python SDK
-- `ANTHROPIC_API_KEY` environment variable must be set
+- Claude Code CLI (`claude`) must be installed and logged in — no separate API key needed
 
 ## Architecture
 
-`run_prompt.py` is a single-file CLI tool. It uses the Anthropic streaming API (`client.messages.stream`) but only returns the final message text, writing it to the specified output file.
+`run_prompt.py` is a single-file CLI tool. It shells out to `claude -p <prompt>` and writes the output to the specified file. Must be run from a regular terminal, not from within a Claude Code session.
