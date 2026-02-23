@@ -1,21 +1,22 @@
-import anthropic
+import subprocess
 import sys
 
 
 def run_prompt(prompt: str, output_file: str) -> None:
-    client = anthropic.Anthropic()
-
     print(f"Running prompt...")
 
-    with client.messages.stream(
-        model="claude-opus-4-6",
-        max_tokens=4096,
-        messages=[{"role": "user", "content": prompt}],
-    ) as stream:
-        result = stream.get_final_message().content[0].text
+    result = subprocess.run(
+        ["claude", "-p", prompt],
+        capture_output=True,
+        text=True,
+    )
+
+    if result.returncode != 0:
+        print(f"Error: {result.stderr}")
+        sys.exit(1)
 
     with open(output_file, "w") as f:
-        f.write(result)
+        f.write(result.stdout)
 
     print(f"Output written to: {output_file}")
 
