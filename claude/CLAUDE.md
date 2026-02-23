@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a minimal Python script that sends a prompt to the Claude API (claude-opus-4-6) and writes the response to a file.
+This is a minimal Python script that sends a prompt to the Claude CLI and writes the response to a file.
 
 ## Usage
 
