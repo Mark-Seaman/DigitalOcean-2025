@@ -16,11 +16,9 @@ Transforms are defined as markdown files in `/Users/seaman/Hammer/claude/transfo
 3. Read the transform definition from `/Users/seaman/Hammer/claude/transforms/<transform_name>.md`.
    - If the transform file does not exist, list available transforms and stop.
 
-4. Apply the transform instructions to the file content. Return only the transformed text — no preamble or commentary.
+4. Apply the transform instructions to the file content directly — do not shell out or use any subprocess. Return only the transformed text — no preamble or commentary.
 
 5. Show a unified diff between the original and transformed content.
    - If there are no changes, say so and stop.
 
-6. Ask the user: **"Apply changes? [y/N]"**
-
-7. If confirmed, write the revised content back to the file using the Edit or Write tool.
+6. Write the revised content back to the file using the Edit or Write tool. Confirm to the user that changes were applied.
