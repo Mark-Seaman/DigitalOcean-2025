@@ -1,0 +1,1 @@
+Condense the text to approximately half its current length. Cut redundant sentences, combine related ideas, and eliminate padding. Preserve all key points and the original meaning. Do not add new content.

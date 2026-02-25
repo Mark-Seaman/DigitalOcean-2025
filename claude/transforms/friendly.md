@@ -1,0 +1,1 @@
+Rewrite the text to sound warmer and more approachable. Keep the meaning intact but adjust the tone to feel more conversational, personal, and inviting. Avoid sounding cold, stiff, or overly formal. Preserve the author's voice and intent.

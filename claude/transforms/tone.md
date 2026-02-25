@@ -1,0 +1,1 @@
+Improve the overall tone of the text. Make it cleaner, more confident, and more engaging. Remove hedging, passive constructions, and filler phrases. Keep the meaning and structure the same but sharpen the voice so it lands with more clarity and purpose.
