@@ -22,8 +22,6 @@ Format: `<chapter_number>` (e.g., `2`)
    - Write in first person
    - Deepen meaning — do not pad content
 
-5. Show the generated article to the user.
+5. Write the content to `<cwd>/<chapter_number>.md` using the Write tool.
 
-6. Ask the user: **"Save to `<chapter_number>.md`? [y/N]"**
-
-7. If confirmed, write the content to `<cwd>/<chapter_number>.md` using the Write tool.
+6. Show the generated article to the user and confirm the path it was saved to.
