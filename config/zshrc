@@ -22,6 +22,7 @@ eval "$(pyenv init -)"
 export a="$HOME/Archive"
 export b="$o/forge/books"
 export d="/Users/seaman/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
+export e="/Users/seaman/Documents/evernotes/evernote-obsidian/notes"
 export EDITOR="$sublime/subl -w"
 export f="$o/forge"
 export g="$HOME/Github"
@@ -49,6 +50,10 @@ alias z='echo unused'
 # Pub Script
 alias forge="d $o/forge"
 alias ev='open -a Evernote'
+alias everknow='agent everknow'
+alias contents='everknow contents'
+alias files='everknow files'
+alias notebook='everknow notebook'
 alias build='agent build'
 alias mkpub='order mkpub'
 alias cover='order cover'
