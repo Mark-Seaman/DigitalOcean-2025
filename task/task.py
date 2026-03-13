@@ -114,7 +114,7 @@ def fix_tasks(**kwargs):
             x.delete()
 
     def setup_activities():
-        define_activity('Health', 'Work')
+        define_activity('Grow', 'Work')
         define_activity('Organize', 'Work')
         define_activity('Household', 'Work')
 
