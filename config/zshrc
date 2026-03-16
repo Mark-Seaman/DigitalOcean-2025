@@ -50,11 +50,13 @@ alias z='echo unused'
 # Pub Script
 alias forge="d $o/forge"
 alias ev='open -a Evernote'
+alias ek='agent everknow'
 alias everknow='agent everknow'
 alias contents='everknow contents'
 alias files='everknow files'
 alias notebook='everknow notebook'
 alias build='agent build'
+alias recent='agent recent'
 alias mkpub='order mkpub'
 alias cover='order cover'
 alias content='order content'
