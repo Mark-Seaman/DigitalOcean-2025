@@ -91,6 +91,7 @@ alias cpr='cd $p && c'
 alias pub='agent publication'
 alias o="d $o; open -a Obsidian $o"
 alias ob="d $o"
+alias repo='agent repo'
 alias social='agent social'
 alias private="agent private"
 alias cprc='cp ~/Hammer/config/zshrc ~/.zshrc && . ~/.zshrc'
