@@ -48,119 +48,103 @@ alias y='echo unused'
 alias z='echo unused'
 
 # Pub Script
-alias forge="d $o/forge"
-alias ev='open -a Evernote'
-alias ek='agent everknow'
-alias everknow='agent everknow'
-alias contents='everknow contents'
-alias files='everknow files'
-alias notebook='everknow notebook'
-alias build='agent build'
-alias recent='agent recent'
-alias mkpub='order mkpub'
-alias cover='order cover'
-alias content='order content'
-alias json='order json'
-alias order="cd $h; python Obsidian/forge/mcp/mcp_order.py"
-alias manuscript='order manuscript'
-alias words='order words'
-
-# Project Scripts
+alias a='open https://chat.openai.com/'
 alias activity='week activity'
-alias day='task 1'
-alias doit=./Obsidian/forge/mcp/doit.py
-alias e='subl'
-alias ea='subl ~/Hammer/config/zshrc'
-alias hammer="cd $h && source ~/.zshrc"
-alias harmony='open https://www.eharmony.com/messenger'
-alias month='task 30'
-alias pub='d $d/Shrinking-World-Pubs'
-alias quote=./Obsidian/forge/mcp/quote.py
-alias rcpe='e "/Users/seaman/Library/Mobile Documents/com~apple~CloudDocs/Desktop/.ntsh/rcpf"'
-alias rcp="/Users/seaman/Library/Mobile\ Documents/com~apple~CloudDocs/Desktop/.ntsh/rcp"
-alias task='pm task'
-alias today='task 1 today'
-alias week='task 7'
-alias year='task 365'
-
-# MCP
+alias agent="python $mcp/tool.py"
+alias bard='open  https://bard.google.com'
 alias blog='pm social'
 alias books="ls -lt $b"
-alias agent="python $mcp/tool.py"
-alias cpr='cd $p && c'
-alias pub='agent publication'
-alias o="d $o; open -a Obsidian $o"
-alias ob="d $o"
-alias repo='agent repo'
-alias social='agent social'
-alias private="agent private"
-alias cprc='cp ~/Hammer/config/zshrc ~/.zshrc && . ~/.zshrc'
-alias todo='pm todo'
-alias dropbox='open ~/Dropbox/Stacie-Mark'
-alias treed='tree -d -L 3'
-alias promo='agent promo'
-alias m='e Documents/mastodon'
-alias i='d $i; open $i'
-alias a='open https://chat.openai.com/'
-
-# Websites
-alias hoopla='open https://www.hoopladigital.com/my/hoopla'
-alias gmail='open https://mail.google.com'
+alias build='agent build'
 alias chat='open  https://mail.google.com/chat'
-alias bard='open  https://bard.google.com'
-alias github='open https://github.com/Mark-Seaman?page=1&tab=repositories'
-alias tella='open https://auth.tella.tv/u/login/identifier?state=hKFo2SBtbUdFWEpmNl9qOWRRWFFSV3dYVk9DSVZCN3BGT1poTKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGNOOGs2R2JFQ0RyWE1nVzBGY0tlS09MOEdEOHFxcDlNo2NpZNkgeTdQM0tPOGQ5QzhsWGw0NmVLalFLVFh6VUY3UnhxbWs'
-alias uncmail='open https://outlook.office.com'
-alias maps='open https://www.google.com/maps/place/404+Crystal+Beach+Dr,+Windsor,+CO+80550/@40.461123,-104.902838,17z/data=!3m1!4b1!4m2!3m1!1s0x876eae2fe3eaa51b:0xdf4f905a65d54401'
-
-# Linux command context
 alias cl='d $h/claude; claude'
+alias content='order content'
+alias contents='everknow contents'
+alias cover='order cover'
+alias cpr='cd $p && c'
+alias cprc='cp ~/Hammer/config/zshrc ~/.zshrc && . ~/.zshrc'
+alias day='task 1'
+alias deploy='x deploy'
+alias doit=./Obsidian/forge/mcp/doit.py
+alias dropbox='open ~/Dropbox/Stacie-Mark'
+alias dt='pm test'
+alias e='subl'
+alias ea='subl ~/Hammer/config/zshrc'
+alias ek='agent everknow'
+alias ev='open -a Evernote'
+alias everknow='agent everknow'
+alias files='everknow files'
+alias forge="d $o/forge"
 alias g='grep --color=auto'
-alias l='ls -al'
-alias lc='wc -l'
-alias u='d ..'
-alias host="python -c 'import platform;print(platform.node())'"
-alias h='history 100'
-alias p=python
-alias w='open https://mail.google.com/mail/u/0/#inbox'
-
-# Git aliases
 alias ga='git add -A . && git commit -m'
 alias gc='pm vc commit'
 alias gco='git checkout'
 alias gd='git diff'
+alias github='open https://github.com/Mark-Seaman?page=1&tab=repositories'
 alias gl='git log --name-only'
+alias gmail='open https://mail.google.com'
 alias gs='pm vc status'
+alias h='history 100'
+alias hammer="cd $h && source ~/.zshrc"
+alias harmony='open https://www.eharmony.com/messenger'
+alias hoopla='open https://www.hoopladigital.com/my/hoopla'
+alias host="python -c 'import platform;print(platform.node())'"
+alias i='d $i; open $i'
+alias imac='ssh seaman@marks-imac.local'
+alias imager='pm imager'
+alias json='order json'
+alias k='pkill -f "python manage.py runserver"'
+alias l='ls -al'
+alias lc='wc -l'
+alias m='e Documents/mastodon'
+alias macbook='ssh markseaman@marks-macbook.local'
+alias manuscript='order manuscript'
+alias maps='open https://www.google.com/maps/place/404+Crystal+Beach+Dr,+Windsor,+CO+80550/@40.461123,-104.902838,17z/data=!3m1!4b1!4m2!3m1!1s0x876eae2fe3eaa51b:0xdf4f905a65d54401'
+alias migrate='pm makemigrations && pm migrate'
+alias mkpub='order mkpub'
+alias month='task 30'
+alias notebook='everknow notebook'
+alias ntsh='. $n/zshrc'
+alias o="d $o; open -a Obsidian $o"
+alias ob="d $o"
+alias order="cd $h; python Obsidian/forge/mcp/mcp_order.py"
+alias p=python
+alias pack='pm pack close'
+alias pm='python manage.py'
+alias private="agent private"
+alias promo='agent promo'
+alias pub='agent publication'
 alias pull='pm vc pull'
 alias push='pm vc push'
-alias s='git status'
-alias vc='cd $p && pm vc'
-
-# Django aliases
-alias pm='python manage.py'
-alias r='sh $h/config/runserver'
-alias k='pkill -f "python manage.py runserver"'
-alias migrate='pm makemigrations && pm migrate'
-alias x='pm x'
-alias deploy='x deploy'
-
-# Servers
-alias imac='ssh seaman@marks-imac.local'
-alias macbook='ssh markseaman@marks-macbook.local'
-alias ntsh='. $n/zshrc'
-alias unpack='pm pack open'
-alias pack='pm pack close'
-alias imager='pm imager'
-
-# Test aliases
-alias t='reset && pm tst run'
-alias tst='pm tst run'
-alias tlike='pm tst like && tst'
-alias tres='pm tst results | less'
-alias treset='pm tst reset'
-alias dt='pm test'
 alias q='pm tst quick'
 alias qt='pm tst quick'
+alias quote=./Obsidian/forge/mcp/quote.py
+alias r='sh $h/config/runserver'
+alias rcp="/Users/seaman/Library/Mobile\ Documents/com~apple~CloudDocs/Desktop/.ntsh/rcp"
+alias rcpe='e "/Users/seaman/Library/Mobile Documents/com~apple~CloudDocs/Desktop/.ntsh/rcpf"'
+alias recent='agent repo recent'
+alias repo='agent repo'
+alias s='git status'
+alias social='agent social'
+alias t='reset && pm tst run'
+alias task='pm task'
+alias tella='open https://auth.tella.tv/u/login/identifier?state=hKFo2SBtbUdFWEpmNl9qOWRRWFFSV3dYVk9DSVZCN3BGT1poTKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGNOOGs2R2JFQ0RyWE1nVzBGY0tlS09MOEdEOHFxcDlNo2NpZNkgeTdQM0tPOGQ5QzhsWGw0NmVLalFLVFh6VUY3UnhxbWs'
+alias tlike='pm tst like && tst'
+alias todo='pm todo'
+alias today='task 1 today'
+alias treed='tree -d -L 3'
+alias tres='pm tst results | less'
+alias treset='pm tst reset'
+alias tst='pm tst run'
+alias u='d ..'
+alias uncmail='open https://outlook.office.com'
+alias unpack='pm pack open'
+alias vc='cd $p && pm vc'
+alias w='open https://mail.google.com/mail/u/0/#inbox'
+alias week='task 7'
+alias words='order words'
+alias x='pm x'
+alias year='task 365'
+
 
 
 # -----------------
@@ -210,4 +194,5 @@ export PS1="%3~ : "
 cd ~/Hammer
 ls
 figlet `host`
+
 
