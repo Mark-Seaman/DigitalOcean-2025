@@ -1,12 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(find:/Users/seaman/Hammer/Obsidian/*)",
-      "Bash(grep:/Users/seaman/Hammer/Obsidian/*)",
-      "Read(/Users/seaman/Hammer/Obsidian/*)",
-      "Write(/Users/seaman/Hammer/Obsidian/*)",
-      "Glob(/Users/seaman/Hammer/Obsidian/*)",
-      "Grep(/Users/seaman/Hammer/Obsidian/*)"
+      "Bash(find:/Users/seaman/Hammer/Obsidian/**)",
+      "Bash(grep:/Users/seaman/Hammer/Obsidian/**)",
+      "Read(/Users/seaman/Hammer/Obsidian/**)",
+      "Write(/Users/seaman/Hammer/Obsidian/**)",
+      "Glob(/Users/seaman/Hammer/Obsidian/**)",
+      "Grep(/Users/seaman/Hammer/Obsidian/**)"
     ]
   }
 }
