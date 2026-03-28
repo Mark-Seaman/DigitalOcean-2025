@@ -17,8 +17,6 @@ Format: `<output_file> <context_file>`
    - Include 4–6 paragraphs
    - Break paragraphs every 40–50 words
 
-4. Show the generated content to the user.
+4. Write the content to `output_file` using the Write tool.
 
-5. Ask the user: **"Save to `<output_file>`? [y/N]"**
-
-6. If confirmed, write the content to `output_file` using the Write tool.
+5. Show the generated content to the user and confirm the path it was saved to.
