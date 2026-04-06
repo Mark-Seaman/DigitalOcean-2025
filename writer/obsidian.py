@@ -34,7 +34,16 @@ def obsidian_cover():
 
 
 def pub_path(pub):
-    for base_dir in ["growth", "playbooks", "spirituality", "guides"]:
-        path = Path("Obsidian/forge") / base_dir / pub
-        if path.exists():
-            return path
+    forge_dir = Path("Obsidian/forge")
+    if not forge_dir.exists():
+        return None
+
+    # Look through all series directories in forge
+    for series_dir in forge_dir.iterdir():
+        if series_dir.is_dir():
+            pub_path = series_dir / pub
+            # Check if the publication has the required JSON file
+            json_file = pub_path / "dev" / f"{pub}.json"
+            if json_file.exists():
+                return pub_path
+    return None

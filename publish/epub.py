@@ -1,5 +1,6 @@
 import os
 from datetime import datetime
+from pathlib import Path
 
 
 DATE = datetime.now().strftime("%Y-%m-%d")
@@ -22,7 +23,14 @@ def build_epub(pub_path):
         title = json_data.get('title', 'TITLE not found')
         subtitle = json_data.get('subtitle', 'SUBTITLE not found')
         cover_image = json_data.get('cover-image', 'COVER_IMAGE not found')
-        book = json_data.get('book', 'BOOK not found') + '.epub'
+        book_path = json_data.get('book', 'BOOK not found') + '.epub'
+
+        # Convert to absolute paths to avoid directory change issues
+        hammer_root = Path.cwd()
+        abs_book_path = hammer_root / book_path
+        abs_pub_path = hammer_root / pub_path
+        abs_cover_path = abs_pub_path / cover_image
+        abs_css_path = hammer_root / 'Obsidian/forge/epub.css'
 
     def quote(arg):
         if ' ' in str(arg) or any(c in str(arg) for c in '"\''):
@@ -33,40 +41,38 @@ def build_epub(pub_path):
         'pandoc',
         '--strip-comments',
         '--standalone',
-        '--epub-cover-image', quote(cover_image),
-        '--css', quote(CSS_FILE),
+        '--epub-cover-image', str(abs_cover_path),
+        '--css', str(abs_css_path),
         '--metadata', f'author={quote(author)}',
         '--metadata', f'title={quote(title)}',
         '--metadata', f'subtitle={quote(subtitle)}',
         '--metadata', f'date={quote(DATE)}',
-        '-o', quote(book),
-        'Contents.md'
-    ] + [quote(f) for f in content_files]
+        '-o', str(abs_book_path),
+        str(abs_pub_path / 'Contents.md')
+    ]
+
+    # Add content files
+    for f in content_files:
+        epub_cmd.append(str(abs_pub_path / f))
 
     with open(script_path, 'w') as f:
         f.write('#!/bin/bash\n')
         f.write(f'# Build EPUB for {pub_path.name} using Pandoc\n\n')
-        f.write(f'cd {pub_path}\n\n')
-        f.write('pandoc \\\n')
-        for arg in epub_cmd[1:-len(content_files)]:
-            f.write(f'  {arg} \\\n')
-        for i, mdfile in enumerate(epub_cmd[-len(content_files):]):
-            if i == len(content_files) - 1:
-                f.write(f'  {mdfile}\n')
-            else:
-                f.write(f'  {mdfile} \\\n')
-        success = f'''
+        f.write('# Using absolute paths to avoid directory change issues\n')
+        f.write(' '.join(quote(arg) for arg in epub_cmd))
+        f.write('\n\n')
 
+        success = f'''
 # Check for errors and report
 if [ $? -eq 0 ]; then
     echo "EPUB built successfully:"
-    echo open {book}
-    open {book}
+    echo "open {abs_book_path}"
+    open "{abs_book_path}"
 else
     echo "Error building EPUB."
 fi
+'''
+        f.write(success)
 
-        '''
-        f.write(f'\n{success}\n')
     os.chmod(script_path, 0o755)
     print(f"\nWrote build script: \n{script_path}\n")
