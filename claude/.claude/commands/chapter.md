@@ -1,4 +1,4 @@
-Build a chapter article for a publication. The current directory is the pub directory.
+Build a chapter article for a publication.
 
 Arguments: $ARGUMENTS
 Format: `<chapter_number>` (e.g., `2`)
@@ -8,7 +8,11 @@ Format: `<chapter_number>` (e.g., `2`)
 1. Parse `$ARGUMENTS` to get `chapter_number` (e.g., `2`).
    - If missing, ask the user for the chapter number and stop.
 
-2. Read the context file at `<cwd>/dev/outlines/<chapter_number>.md`.
+2. Read the pub directory from `/Users/seaman/Hammer/claude/.claude/active_pub`.
+   - If it does not exist or is empty, tell the user to run `/pub` first and stop.
+   - Trim any whitespace. This is `pub_dir`.
+
+3. Read the context file at `<pub_dir>/dev/outlines/<chapter_number>.md`.
    - If it does not exist, tell the user and stop.
 
 3. The context file contains a deep outline followed by a prompt. Use both the outline structure and the prompt instruction to write the article.
@@ -22,6 +26,6 @@ Format: `<chapter_number>` (e.g., `2`)
    - Write in first person
    - Deepen meaning — do not pad content
 
-5. Write the content to `<cwd>/<chapter_number>.md` using the Write tool.
+5. Write the content to `<pub_dir>/<chapter_number>.md` using the Write tool.
 
 6. Show the generated article to the user and confirm the path it was saved to.
