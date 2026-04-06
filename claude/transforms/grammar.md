@@ -1,1 +1,0 @@
-Fix grammar, spelling, and punctuation errors in the text. Correct any grammatical mistakes, typos, and punctuation issues. Preserve the original meaning, voice, and structure exactly. Only correct clear errors — do not restyle, restructure, or paraphrase.

@@ -1,1 +1,0 @@
-Improve word choice throughout the text. Replace weak, vague, or overused words with more precise and vivid alternatives. Eliminate redundancy and filler words. Keep the meaning and structure unchanged — only improve the specific words used.

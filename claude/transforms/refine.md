@@ -1,1 +1,0 @@
-The file content is itself an AI prompt. Execute the prompt faithfully and replace the file's entire contents with the response. Do not include the original prompt text in the output — return only the generated content.
