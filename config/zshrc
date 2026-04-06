@@ -126,6 +126,7 @@ alias rcp="/Users/seaman/Library/Mobile\ Documents/com~apple~CloudDocs/Desktop/.
 alias rcpe='e "/Users/seaman/Library/Mobile Documents/com~apple~CloudDocs/Desktop/.ntsh/rcpf"'
 alias recent='agent repo recent'
 alias repo='agent repo'
+alias status='agent status'
 alias sync='agent repo sync'
 alias s='git status'
 alias social='agent social'
