@@ -34,7 +34,7 @@ export mcp="$h/Obsidian/forge/mcp"
 export n="$a/ntsh"
 export o="$h/Obsidian"
 export p="$o/Private"
-export s="$d/Shrinking-World-Pubs"
+export s="$h/Documents/Shrinking-World-Pubs"
 export t="$o/Private/history/2026"
 
 # ------------
