@@ -1,13 +1,25 @@
 {
   "permissions": {
     "allow": [
+      "Bash(cat:*)",
+      "Bash(ls:*)",
       "Bash(find:/Users/seaman/Hammer/Obsidian/**)",
       "Bash(grep:/Users/seaman/Hammer/Obsidian/**)",
+      "Bash(rm:/Users/seaman/Hammer/Obsidian/**)",
+      "Bash(cp:/Users/seaman/Hammer/Obsidian/**)",
+      "Bash(mv:/Users/seaman/Hammer/Obsidian/**)",
+      "Bash(mkdir:/Users/seaman/Hammer/Obsidian/**)",
+      "Bash(code:*)",
       "Read(/Users/seaman/Hammer/Obsidian/**)",
       "Write(/Users/seaman/Hammer/Obsidian/**)",
       "Edit(/Users/seaman/Hammer/Obsidian/**)",
       "Glob(/Users/seaman/Hammer/Obsidian/**)",
-      "Grep(/Users/seaman/Hammer/Obsidian/**)"
+      "Grep(/Users/seaman/Hammer/Obsidian/**)",
+      "Read(/Users/seaman/Hammer/claude/**)",
+      "Write(/Users/seaman/Hammer/claude/**)",
+      "Edit(/Users/seaman/Hammer/claude/**)",
+      "Glob(/Users/seaman/Hammer/claude/**)",
+      "Grep(/Users/seaman/Hammer/claude/**)"
     ],
     "additionalDirectories": [
       "/Users/seaman/Hammer/Obsidian"
