@@ -20,7 +20,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # Variables
 
 export a="$HOME/Archive"
-export b="$o/forge/books"
+export b="$HOME/Hammer/Obsidian/forge/books"
 export d="/Users/seaman/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
 export e="/Users/seaman/Documents/evernotes/evernote-obsidian/notes"
 export EDITOR="$sublime/subl -w"
@@ -28,6 +28,7 @@ export f="$o/forge"
 export g="$HOME/Github"
 export h="$HOME/Hammer"
 export i="/Users/seaman/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
+export j="$HOME/Hammer/Obsidian/private/junkyard"
 export l="$d/Shrinking-World-Pubs/log"
 export m="$a/rcp/mbw"
 export mcp="$h/Obsidian/tools"
@@ -45,7 +46,6 @@ alias j='echo unused'
 alias n='echo unused'
 alias v='echo unused'
 alias y='echo unused'
-alias z='echo unused'
 
 # Pub Script
 alias a='open https://chat.openai.com/'
@@ -57,7 +57,7 @@ alias bard='open  https://bard.google.com'
 alias blog='pm social'
 alias books="ls -lt $b"
 alias build='agent build'
-alias toc='agent toc'
+
 alias changes='agent repo changes'
 alias chapters='agent chapters'
 alias chat='open  https://mail.google.com/chat'
@@ -71,6 +71,7 @@ alias cpr='cd $p && c'
 alias cprc='cp ~/Hammer/config/zshrc ~/.zshrc && . ~/.zshrc'
 alias day='task 1'
 alias deploy='x deploy'
+
 alias doit='agent doit'
 alias dropbox='open ~/Dropbox/Stacie-Mark'
 alias dt='pm test'
@@ -81,6 +82,7 @@ alias ev='open -a Evernote'
 alias everknow='agent everknow'
 alias files='everknow files'
 alias forge="d $o/forge"
+
 alias g='grep --color=auto'
 alias ga='git add -A . && git commit -m'
 alias gc='pm vc commit'
@@ -95,6 +97,7 @@ alias hammer="cd $h && source ~/.zshrc"
 alias harmony='open https://www.eharmony.com/messenger'
 alias hoopla='open https://www.hoopladigital.com/my/hoopla'
 alias host="python -c 'import platform;print(platform.node())'"
+
 alias i='d $i; open $i'
 alias imac='ssh seaman@marks-imac.local'
 alias imager='pm imager'
@@ -112,6 +115,7 @@ alias mkpub='order mkpub'
 alias month='task 30'
 alias notebook='everknow notebook'
 alias ntsh='. $n/zshrc'
+
 alias o="agent obsidian"
 alias ob="d $o"
 alias order="cd $h; python Obsidian/tools/mcp_order.py"
@@ -124,6 +128,7 @@ alias pub='agent publication'
 alias pubstatus='agent status'
 alias pull='pm vc pull'
 alias push='pm vc push'
+
 alias q='pm tst quick'
 alias qt='pm tst quick'
 alias quote=./Obsidian/tools/quote.py
@@ -141,12 +146,14 @@ alias t='reset && pm tst run'
 alias task='pm task'
 alias tella='open https://auth.tella.tv/u/login/identifier?state=hKFo2SBtbUdFWEpmNl9qOWRRWFFSV3dYVk9DSVZCN3BGT1poTKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGNOOGs2R2JFQ0RyWE1nVzBGY0tlS09MOEdEOHFxcDlNo2NpZNkgeTdQM0tPOGQ5QzhsWGw0NmVLalFLVFh6VUY3UnhxbWs'
 alias tlike='pm tst like && tst'
+alias toc='agent toc'
 alias todo='pm todo'
 alias today='task 1 today'
 alias treed='tree -d -L 3'
 alias tres='pm tst results | less'
 alias treset='pm tst reset'
 alias tst='pm tst run'
+
 alias u='d ..'
 alias uncmail='open https://outlook.office.com'
 alias unpack='pm pack open'
@@ -156,6 +163,7 @@ alias week='task 7'
 alias words='order words'
 alias x='pm x'
 alias year='task 365'
+alias z='e $h/config/zshrc'
 
 
 
