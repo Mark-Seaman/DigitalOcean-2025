@@ -73,6 +73,7 @@ alias day='task 1'
 alias deploy='x deploy'
 
 alias doit='agent doit'
+alias refine='agent refine'
 alias dropbox='open ~/Dropbox/Stacie-Mark'
 alias dt='pm test'
 alias e='subl'
