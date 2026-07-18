@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 # Linux Shell Contexts
 
 # Path Context
@@ -136,7 +136,7 @@ alias qt='pm tst quick'
 alias quote=./Obsidian/tools/quote.py
 alias r='sh $h/config/runserver'
 alias rcp="/Users/seaman/Library/Mobile\ Documents/com~apple~CloudDocs/Desktop/.ntsh/rcp"
-alias rcpe='e "/Users/seaman/Library/Mobile Documents/com~apple~CloudDocs/Desktop/.ntsh/rcpf"'
+alias rcpe='f="/Users/seaman/Library/Mobile Documents/com~apple~CloudDocs/Desktop/.ntsh/rcpf" && sort -uf -o "$f" "$f" && e "$f"'
 alias recent='agent repo recent'
 alias repo='agent repo'
 alias status='agent status'
