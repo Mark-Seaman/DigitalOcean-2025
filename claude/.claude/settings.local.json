@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/Users/seaman/Hammer/Obsidian/**)",
+      "Write(/Users/seaman/Hammer/Obsidian/**)",
+      "Read(/Users/seaman/Hammer/claude/**)",
+      "Write(/Users/seaman/Hammer/claude/**)",
+      "Bash(gh repo:*)",
+      "Bash(gh status:*)",
+      "WebSearch",
+      "Bash(echo === $f ===:*)",
+      "Bash(python:*)",
+      "Bash(echo:*)",
+      "Bash(head:*)",
+      "Bash(bash:*)",
+      "Bash(ls:*)",
+      "Bash(pub wholeness:*)",
+      "Bash(agent time:*)",
+      "Bash(python3:*)",
+      "Bash(grep:*)",
+      "Bash(git:*)",
+      "Bash(pub seen:*)",
+      "Bash(pub marketing:*)",
+      "Bash(pub epic:*)",
+      "Bash(pub pilgrimage:*)",
+      "Bash(cd:*)",
+      "Bash(promo pilgrimage:*)",
+      "Bash(wc:*)",
+      "Bash(pub eros:*)"
+    ]
+  }
+}
