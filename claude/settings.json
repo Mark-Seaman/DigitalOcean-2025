@@ -49,9 +49,10 @@
       "Bash(alias:*)",
       "Bash(total=:*)",
       "Bash(w=:*)",
+      "Write(/.claude/commands/*)",
       "WebSearch",
       "WebFetch"
     ],
-    "defaultMode": "dontAsk"
+    "defaultMode": "askEdits"
   }
 }
