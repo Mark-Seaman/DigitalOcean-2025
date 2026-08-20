@@ -117,6 +117,7 @@ def fix_tasks(**kwargs):
         define_activity('Grow', 'Work')
         define_activity('Organize', 'Work')
         define_activity('Household', 'Work')
+        define_activity('Kim', 'Connect')
 
     setup_activities()
     return show_activities()
