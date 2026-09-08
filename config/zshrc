@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 # Linux Shell Contexts
 
 # Path Context
@@ -53,6 +53,7 @@ alias activity='week activity'
 alias agent="python $mcp/tool.py"
 alias aspire='agent aspire'
 alias assemble='agent assemble'
+alias cls="printf '\033[2J\033[3J\033[H'"
 alias bard='open  https://bard.google.com'
 alias blog='pm social'
 alias books="ls -lt $b"
