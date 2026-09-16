@@ -18,34 +18,41 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 # ------------
 # Variables
+export o="$h/Obsidian"
+export p="$o/private"
 
 export a="$HOME/Archive"
-export b="$HOME/Hammer/Obsidian/forge/books"
+export b='$o/forge/books'
 export d="/Users/seaman/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
 export e="/Users/seaman/Documents/evernotes/evernote-obsidian/notes"
 export EDITOR="$sublime/subl -w"
-export f="$o/forge"
+export f="$o/Fisher-Seaman"
 export g="$HOME/Github"
 export h="$HOME/Hammer"
 export i="/Users/seaman/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
-export j="$HOME/Hammer/Obsidian/private/junkyard"
+export j="$p/junkyard"
 export l="$d/Shrinking-World-Pubs/log"
 export m="$a/rcp/mbw"
 export mcp="$h/Obsidian/tools"
 export n="$a/ntsh"
-export o="$h/Obsidian"
-export p="$o/private"
 export s="$h/Documents/Shrinking-World-Pubs"
-export t="$o/private/history/2026"
+export t="$p/history/2026"
 
 # ------------
 # ALIASES
 
 # Unused
-alias j='echo unused'
+alias c='echo unused'
+alias k='echo unused'
+alias q='echo unused'
+alias r='echo unused'
 alias n='echo unused'
+alias u='echo unused'
 alias v='echo unused'
+alias w='echo unused'
+alias x='echo unused'
 alias y='echo unused'
+alias z='echo unused'
 
 # Pub Script
 alias a='open https://chat.openai.com/'
