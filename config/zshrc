@@ -22,7 +22,7 @@ export o="$h/Obsidian"
 export p="$o/private"
 
 export a="$HOME/Archive"
-export b="$o/forge/books"
+export b="$o/Brainchild"
 export c="$o/Communications"
 export d="/Users/seaman/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
 export e="/Users/seaman/Documents/evernotes/evernote-obsidian/notes"
