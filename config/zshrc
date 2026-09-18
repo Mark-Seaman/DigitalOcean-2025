@@ -43,7 +43,6 @@ export t="$p/history/2026"
 # ALIASES
 
 # Unused
-alias c='echo unused'
 alias k='echo unused'
 alias q='echo unused'
 alias r='echo unused'
@@ -188,6 +187,7 @@ function d {
 }
 
 # Big commit on current directory
+unalias c
 function c {
     git add -A .       &&
     git commit -m "$*" &&
