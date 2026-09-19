@@ -38,6 +38,7 @@ export mcp="$h/Obsidian/tools"
 export n="$a/ntsh"
 export s="$h/Documents/Shrinking-World-Pubs"
 export t="$p/history/2026"
+export u="$o/Publications"
 
 # ------------
 # ALIASES
@@ -47,12 +48,10 @@ alias k='echo unused'
 alias q='echo unused'
 alias r='echo unused'
 alias n='echo unused'
-alias u='echo unused'
 alias v='echo unused'
 alias w='echo unused'
 alias x='echo unused'
 alias y='echo unused'
-alias z='echo unused'
 
 # Pub Script
 alias a='open https://chat.openai.com/'
@@ -173,7 +172,7 @@ alias week='task 7'
 alias words='order words'
 alias x='pm x'
 alias year='task 365'
-alias z='e $h/config/zshrc'
+alias z='agent repo sweep'
 
 
 
