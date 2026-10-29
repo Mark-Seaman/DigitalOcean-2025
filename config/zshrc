@@ -18,6 +18,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 # ------------
 # Variables
+export h="$HOME/Hammer"
 export o="$h/Obsidian"
 export p="$o/private"
 
@@ -29,7 +30,6 @@ export e="/Users/seaman/Documents/evernotes/evernote-obsidian/notes"
 export EDITOR="$sublime/subl -w"
 export f="$o/Fisher-Seaman"
 export g="$HOME/Github"
-export h="$HOME/Hammer"
 export i="/Users/seaman/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
 export j="$p/junkyard"
 export l="$d/Shrinking-World-Pubs/log"
